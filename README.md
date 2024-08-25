@@ -2,6 +2,6 @@
 Platform E-Commerce khusus jual-beli barang bekas yang masih layak dan bernilai untuk digunakan kembali
 
 Kelompok 6  
-Anggota 1 : Rizkita Alisha Ramadhani (Software Architect)  
-Anggota 2 : Athaya Harmana Putri (Front End Developer)  
-Anggota 3 : Stephanus Edward Parulian (Back End Developer)
+Anggota 1 :   
+Anggota 2 :   
+Anggota 3 : 
