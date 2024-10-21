@@ -27,7 +27,14 @@ namespace WinFormsApp1
                 {
                     BuyerID = 1;
                     Address = "Jalan Kaliurang KM 5 Pogung Baru E/17A, Sinduadi, Mlati, Sleman, DI Yogyakarta, 55284";
-                    PhoneNumber = "+6282212345876";
+                    PhoneNumber = "+6282212345871";
+                    return true;
+                }
+                else if (LoginUsername == "2" && LoginEmail == "2" && Password == "2")
+                {
+                    BuyerID = 2;
+                    Address = "Jalan Kaliurang KM 5 Pogung Baru E/18A, Sinduadi, Mlati, Sleman, DI Yogyakarta, 55284";
+                    PhoneNumber = "+6282212345872";
                     return true;
                 }
                 else
@@ -46,6 +53,10 @@ namespace WinFormsApp1
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
             if (e.KeyCode == Keys.F11)
             {
                 if (this.WindowState == FormWindowState.Maximized)
@@ -64,7 +75,7 @@ namespace WinFormsApp1
         private void btnLogin_Click(object sender, EventArgs e)
         {
             Buyer buyer = new Buyer(tbUsername.Text, tbEmail.Text, tbPassword.Text);
-            if(buyer.Login(buyer.LoginUsername, buyer.LoginEmail, buyer.Password))
+            if (buyer.Login(buyer.LoginUsername, buyer.LoginEmail, buyer.Password))
             {
                 MessageBox.Show("Login Berhasil");
                 // Buka BuyerForm dan tutup LoginForm
@@ -76,6 +87,11 @@ namespace WinFormsApp1
             {
                 MessageBox.Show("Login Gagal");
             }
+        }
+
+        private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

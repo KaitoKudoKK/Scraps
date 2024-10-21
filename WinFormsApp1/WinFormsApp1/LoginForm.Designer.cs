@@ -1,4 +1,4 @@
-﻿
+
 namespace WinFormsApp1
 {
     partial class LoginForm
@@ -193,7 +193,8 @@ namespace WinFormsApp1
             MaximumSize = new Size(1920, 1080);
             MinimumSize = new Size(640, 360);
             Name = "LoginForm";
-            Text = "Form1";
+            Text = "Login";
+            FormClosed += LoginForm_FormClosed;
             Load += Form1_Load;
             KeyDown += Form1_KeyDown;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
