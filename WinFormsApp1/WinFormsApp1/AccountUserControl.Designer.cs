@@ -44,8 +44,6 @@
             panel4 = new Panel();
             label8 = new Label();
             label9 = new Label();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
             label10 = new Label();
             label11 = new Label();
             label12 = new Label();
@@ -59,8 +57,6 @@
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -85,6 +81,7 @@
             // 
             btnChat.BackColor = Color.Transparent;
             btnChat.BackgroundImageLayout = ImageLayout.None;
+            btnChat.Cursor = Cursors.Hand;
             btnChat.FlatAppearance.BorderSize = 0;
             btnChat.FlatStyle = FlatStyle.Flat;
             btnChat.Font = new Font("Montserrat Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
@@ -217,26 +214,6 @@
             label9.TabIndex = 6;
             label9.Text = "Jalan Kaliurang KM 5 Pogung Baru E/17A, Sinduadi, Mlati, Sleman, DI Yogyakarta, 55284";
             // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(124, 788);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(40, 36);
-            pictureBox2.TabIndex = 13;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackColor = Color.Transparent;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(118, 849);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(55, 41);
-            pictureBox3.TabIndex = 15;
-            pictureBox3.TabStop = false;
-            // 
             // label10
             // 
             label10.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel);
@@ -293,8 +270,10 @@
             // 
             // btnPlus1
             // 
-            btnPlus1.BackColor = Color.Transparent;
-            btnPlus1.BackgroundImageLayout = ImageLayout.None;
+            btnPlus1.BackColor = Color.FromArgb(238, 239, 244);
+            btnPlus1.BackgroundImage = (Image)resources.GetObject("btnPlus1.BackgroundImage");
+            btnPlus1.BackgroundImageLayout = ImageLayout.Center;
+            btnPlus1.Cursor = Cursors.Hand;
             btnPlus1.FlatAppearance.BorderSize = 0;
             btnPlus1.FlatStyle = FlatStyle.Flat;
             btnPlus1.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
@@ -304,12 +283,15 @@
             btnPlus1.Size = new Size(50, 50);
             btnPlus1.TabIndex = 25;
             btnPlus1.UseVisualStyleBackColor = false;
+            btnPlus1.Click += btnPlus1_Click;
             btnPlus1.Paint += btnPlus1_Paint;
             // 
             // btnPlus2
             // 
             btnPlus2.BackColor = Color.FromArgb(238, 239, 244);
-            btnPlus2.BackgroundImageLayout = ImageLayout.None;
+            btnPlus2.BackgroundImage = (Image)resources.GetObject("btnPlus2.BackgroundImage");
+            btnPlus2.BackgroundImageLayout = ImageLayout.Center;
+            btnPlus2.Cursor = Cursors.Hand;
             btnPlus2.FlatAppearance.BorderSize = 0;
             btnPlus2.FlatStyle = FlatStyle.Flat;
             btnPlus2.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
@@ -319,6 +301,7 @@
             btnPlus2.Size = new Size(69, 52);
             btnPlus2.TabIndex = 26;
             btnPlus2.UseVisualStyleBackColor = false;
+            btnPlus2.Click += btnPlus2_Click;
             btnPlus2.Paint += btnPlus2_Paint;
             // 
             // AccountUserControl
@@ -331,8 +314,6 @@
             Controls.Add(label12);
             Controls.Add(label11);
             Controls.Add(label10);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
             Controls.Add(panel4);
             Controls.Add(panel3);
             Controls.Add(panel2);
@@ -354,8 +335,6 @@
             panel3.PerformLayout();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
         }
 
@@ -376,8 +355,6 @@
         private Panel panel4;
         private Label label8;
         private Label label9;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
         private PictureBox pictureBox5;
         private Label label10;
         private Label label11;

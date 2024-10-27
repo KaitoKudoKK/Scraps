@@ -197,6 +197,7 @@
             // button1
             // 
             button1.BackColor = Color.FromArgb(7, 79, 84);
+            button1.Cursor = Cursors.Hand;
             button1.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
             button1.ForeColor = Color.White;
             button1.Location = new Point(746, 663);

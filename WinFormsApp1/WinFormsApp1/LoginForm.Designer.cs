@@ -159,6 +159,7 @@ namespace WinFormsApp1
             // btnLogin
             // 
             btnLogin.BackColor = Color.FromArgb(7, 79, 84);
+            btnLogin.Cursor = Cursors.Hand;
             btnLogin.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
             btnLogin.ForeColor = Color.White;
             btnLogin.Location = new Point(1432, 590);

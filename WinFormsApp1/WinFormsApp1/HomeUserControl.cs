@@ -70,5 +70,15 @@ namespace WinFormsApp1
         {
             MessageBox.Show("Barang ditambahkan ke cart!");
         }
+
+        private void btnPlus2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Barang ditambahkan ke cart!");
+        }
+
+        private void btnPlus3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Barang ditambahkan ke cart!");
+        }
     }
 }

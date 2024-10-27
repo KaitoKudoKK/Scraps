@@ -46,7 +46,11 @@ namespace WinFormsApp1
             // 
             btnHome.BackColor = Color.White;
             btnHome.BackgroundImageLayout = ImageLayout.None;
+            btnHome.Cursor = Cursors.Hand;
+            btnHome.FlatAppearance.BorderColor = Color.White;
             btnHome.FlatAppearance.BorderSize = 0;
+            btnHome.FlatAppearance.MouseDownBackColor = Color.DarkGray;
+            btnHome.FlatAppearance.MouseOverBackColor = Color.LightGray;
             btnHome.FlatStyle = FlatStyle.Flat;
             btnHome.Font = new Font("Montserrat", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnHome.Location = new Point(51, 0);
@@ -71,7 +75,11 @@ namespace WinFormsApp1
             // 
             btnCart.BackColor = Color.White;
             btnCart.BackgroundImageLayout = ImageLayout.None;
+            btnCart.Cursor = Cursors.Hand;
+            btnCart.FlatAppearance.BorderColor = Color.White;
             btnCart.FlatAppearance.BorderSize = 0;
+            btnCart.FlatAppearance.MouseDownBackColor = Color.DarkGray;
+            btnCart.FlatAppearance.MouseOverBackColor = Color.LightGray;
             btnCart.FlatStyle = FlatStyle.Flat;
             btnCart.Font = new Font("Montserrat", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCart.Location = new Point(266, 0);
@@ -96,7 +104,11 @@ namespace WinFormsApp1
             // 
             btnChat.BackColor = Color.White;
             btnChat.BackgroundImageLayout = ImageLayout.None;
+            btnChat.Cursor = Cursors.Hand;
+            btnChat.FlatAppearance.BorderColor = Color.White;
             btnChat.FlatAppearance.BorderSize = 0;
+            btnChat.FlatAppearance.MouseDownBackColor = Color.DarkGray;
+            btnChat.FlatAppearance.MouseOverBackColor = Color.LightGray;
             btnChat.FlatStyle = FlatStyle.Flat;
             btnChat.Font = new Font("Montserrat", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnChat.Location = new Point(422, 0);
@@ -121,7 +133,11 @@ namespace WinFormsApp1
             // 
             btnAccount.BackColor = Color.White;
             btnAccount.BackgroundImageLayout = ImageLayout.None;
+            btnAccount.Cursor = Cursors.Hand;
+            btnAccount.FlatAppearance.BorderColor = Color.White;
             btnAccount.FlatAppearance.BorderSize = 0;
+            btnAccount.FlatAppearance.MouseDownBackColor = Color.DarkGray;
+            btnAccount.FlatAppearance.MouseOverBackColor = Color.LightGray;
             btnAccount.FlatStyle = FlatStyle.Flat;
             btnAccount.Font = new Font("Montserrat", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAccount.Location = new Point(585, 0);
