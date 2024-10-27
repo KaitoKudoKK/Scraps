@@ -95,13 +95,14 @@
             // 
             btnPlus1.BackColor = Color.White;
             btnPlus1.BackgroundImageLayout = ImageLayout.None;
+            btnPlus1.Cursor = Cursors.Hand;
             btnPlus1.FlatAppearance.BorderSize = 0;
             btnPlus1.FlatStyle = FlatStyle.Flat;
             btnPlus1.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
             btnPlus1.Location = new Point(407, 404);
             btnPlus1.Margin = new Padding(0);
             btnPlus1.Name = "btnPlus1";
-            btnPlus1.Size = new Size(50, 50);
+            btnPlus1.Size = new Size(60, 60);
             btnPlus1.TabIndex = 3;
             btnPlus1.Text = "+";
             btnPlus1.UseVisualStyleBackColor = false;
@@ -202,6 +203,7 @@
             // 
             btnPlus2.BackColor = Color.White;
             btnPlus2.BackgroundImageLayout = ImageLayout.None;
+            btnPlus2.Cursor = Cursors.Hand;
             btnPlus2.FlatAppearance.BorderSize = 0;
             btnPlus2.FlatStyle = FlatStyle.Flat;
             btnPlus2.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
@@ -212,6 +214,7 @@
             btnPlus2.TabIndex = 3;
             btnPlus2.Text = "+";
             btnPlus2.UseVisualStyleBackColor = false;
+            btnPlus2.Click += btnPlus2_Click;
             btnPlus2.Paint += btnPlus2_Paint;
             // 
             // pbStar7
@@ -290,6 +293,7 @@
             // 
             btnPlus3.BackColor = Color.White;
             btnPlus3.BackgroundImageLayout = ImageLayout.None;
+            btnPlus3.Cursor = Cursors.Hand;
             btnPlus3.FlatAppearance.BorderSize = 0;
             btnPlus3.FlatStyle = FlatStyle.Flat;
             btnPlus3.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
@@ -300,6 +304,7 @@
             btnPlus3.TabIndex = 3;
             btnPlus3.Text = "+";
             btnPlus3.UseVisualStyleBackColor = false;
+            btnPlus3.Click += btnPlus3_Click;
             btnPlus3.Paint += btnPlus3_Paint;
             // 
             // pbStar11

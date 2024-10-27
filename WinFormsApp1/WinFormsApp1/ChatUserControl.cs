@@ -32,5 +32,10 @@ namespace WinFormsApp1
             label12.BackColor = Color.FromArgb(0, 0, 0, 0);
             label13.BackColor = Color.FromArgb(0, 0, 0, 0);
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

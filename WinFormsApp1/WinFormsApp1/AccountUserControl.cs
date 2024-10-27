@@ -37,5 +37,18 @@ namespace WinFormsApp1
             buttonPath.AddEllipse(0, 0, btnPlus1.Width, btnPlus1.Height);
             btnPlus1.Region = new Region(buttonPath);
         }
+
+        private void btnPlus1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPlus2_Click(object sender, EventArgs e)
+        {
+            // Buka LoginForm dan tutup BuyerForm
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide(); // Menyembunyikan form login setelah berhasil login
+        }
     }
 }
