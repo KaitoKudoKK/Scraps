@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WinFormsApp1
 {
-    internal class product
+    internal class Product
     {
         public int ProductID { get; set; }
         public string Name { get; set; }
@@ -16,9 +16,45 @@ namespace WinFormsApp1
         public string Status { get; set; }
         public int SellerID { get; set; }
 
-        public void AddProduct() { }
-        public void UpdateProduct() { }
-        public void DeleteProduct() { }
-        public void MarkAsSold() { }
+        // Constructor
+        public Product(int productID, string name, string description, float price, string category, string status, int sellerID)
+        {
+            this.ProductID = productID;
+            this.Name = name;
+            this.Description = description;
+            this.Price = price;
+            this.Category = category;
+            this.Status = status; // Gunakan parameter status atau tetapkan nilai default di sini
+            this.SellerID = sellerID;
+        }
+
+        // Getter dan Setter (Encapsulation)
+        public int GetProductID() => ProductID;
+        public string GetName() => Name;
+        public float GetPrice() => Price;
+        public string GetStatus() => Status;
+
+        // Method untuk menambah, mengupdate, menandai sebagai terjual, dan menghapus produk
+        public void Addproduct() => Console.WriteLine($"{Name} added to the catalog.");
+        
+        public void UpdateProduct(string newName, string newDescription, float newPrice)
+        {
+            Name = newName;
+            Description = newDescription;
+            Price = newPrice;
+            Console.WriteLine($"{Name} has been updated.");
+        }
+
+        public void MarkAsSold()
+        {
+            Status = "Sold";
+            Console.WriteLine($"{Name} is now marked as sold.");
+        }
+
+        public void DeleteProduct()
+        {
+            Status = "Deleted"; // Tandai produk sebagai "Deleted"
+            Console.WriteLine($"{Name} has been deleted from the catalog.");
+        }
     }
 }
