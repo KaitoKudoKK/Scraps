@@ -293,7 +293,7 @@
             // 
             // btnPlus1
             // 
-            btnPlus1.BackColor = Color.FromArgb(238, 239, 244);
+            btnPlus1.BackColor = Color.Transparent;
             btnPlus1.BackgroundImageLayout = ImageLayout.None;
             btnPlus1.FlatAppearance.BorderSize = 0;
             btnPlus1.FlatStyle = FlatStyle.Flat;
