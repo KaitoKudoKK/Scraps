@@ -1,3 +1,6 @@
+using Npgsql;
+using System.Data;
+
 namespace WinFormsApp1
 {
     public partial class LoginForm : Form
@@ -6,6 +9,11 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+        private NpgsqlConnection conn;
+        string connstring = "Host=localhost;Port=5432;Username=postgres;Password=12345678;Database=scraps";
+        public DataTable dt;
+        public static NpgsqlCommand cmd;
+        private string sql = null;
 
         public class Buyer
         {
@@ -49,6 +57,7 @@ namespace WinFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            conn = new NpgsqlConnection(connstring);
 
         }
 
