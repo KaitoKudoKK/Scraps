@@ -1,23 +1,36 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WinFormsApp1
 {
-    internal class Buyer
+    internal class Buyer : User
     {
-        public int BuyerID { get; set; }
-        public string Username { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
         public string Address { get; set; }
         public string PhoneNumber { get; set; }
 
-        public void SignUp() { }
-        public void Login() { }
-        public void UpdateProfile() { }
-        public void Logout() { }
+        public Buyer(int buyerID, string username, string email, string password, string address, string phoneNumber)
+            : base(buyerID, username, email, password)
+        {
+            this.Address = address;
+            this.PhoneNumber = phoneNumber;
+        }
+
+        // Override UpdateProfile without parameters
+        public override void UpdateProfile()
+        {
+            // Call base UpdateProfile
+            base.UpdateProfile();
+
+            // Additional updates for Buyer
+            Console.WriteLine($"Buyer's profile updated: Address - {Address}, Phone Number - {PhoneNumber}");
+        }
+
+        public void SignUp()
+        {
+            Console.WriteLine("Buyer signed up with the following details:");
+            Console.WriteLine($"Username: {Username}");
+            Console.WriteLine($"Email: {Email}");
+            Console.WriteLine($"Address: {Address}");
+            Console.WriteLine($"Phone Number: {PhoneNumber}");
+        }
     }
 }

@@ -1,3 +1,6 @@
+using Npgsql;
+using System.Data;
+
 namespace WinFormsApp1
 {
     public partial class LoginForm : Form
@@ -6,6 +9,12 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+        private NpgsqlConnection conn;
+        string connstring = "Host=localhost;Port=5432;Username=postgres;Password=12345678;Database=scraps";
+        public DataTable dt;
+        public static NpgsqlCommand cmd;
+        private string sql = null;
+
         public class Buyer
         {
             public int BuyerID { get; set; }
@@ -48,6 +57,7 @@ namespace WinFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            conn = new NpgsqlConnection(connstring);
 
         }
 
@@ -74,12 +84,12 @@ namespace WinFormsApp1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Buyer buyer = new Buyer(tbUsername.Text, tbEmail.Text, tbPassword.Text);
+            Buyer buyer = new(tbUsername.Text, tbEmail.Text, tbPassword.Text);
             if (buyer.Login(buyer.LoginUsername, buyer.LoginEmail, buyer.Password))
             {
                 MessageBox.Show("Login Berhasil");
                 // Buka BuyerForm dan tutup LoginForm
-                BuyerForm buyerForm = new BuyerForm();
+                BuyerForm buyerForm = new();
                 buyerForm.Show();
                 this.Hide(); // Menyembunyikan form login setelah berhasil login
             }
