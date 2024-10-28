@@ -6,6 +6,7 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
         public class Buyer
         {
             public int BuyerID { get; set; }
@@ -74,12 +75,12 @@ namespace WinFormsApp1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Buyer buyer = new Buyer(tbUsername.Text, tbEmail.Text, tbPassword.Text);
+            Buyer buyer = new(tbUsername.Text, tbEmail.Text, tbPassword.Text);
             if (buyer.Login(buyer.LoginUsername, buyer.LoginEmail, buyer.Password))
             {
                 MessageBox.Show("Login Berhasil");
                 // Buka BuyerForm dan tutup LoginForm
-                BuyerForm buyerForm = new BuyerForm();
+                BuyerForm buyerForm = new();
                 buyerForm.Show();
                 this.Hide(); // Menyembunyikan form login setelah berhasil login
             }

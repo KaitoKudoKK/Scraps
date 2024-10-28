@@ -1,27 +1,49 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WinFormsApp1
 {
-    internal class Admin
+    internal class Admin : User
     {
-        public int AdminID { get; set; }
-        public string Username { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
+        public Admin(int adminID, string username, string email, string password)
+            : base(adminID, username, email, password)
+        {
+        }
 
-        public void Login() { }
-        public void ConfirmOrder() { }
-        public void ConfirmPayment() { }
-        public void SellingReport() { }
-        public void Logout() { }
+        // Override UpdateProfile from User class
+        public override void UpdateProfile()
+        {
+            base.UpdateProfile(); // Call the base method to handle common profile updates
+            Console.WriteLine("Admin's profile updated.");
+        }
+
+        public void ConfirmOrder()
+        {
+            Console.WriteLine("Order has been confirmed by admin.");
+        }
+
+        public void ConfirmPayment()
+        {
+            Console.WriteLine("Payment has been confirmed by admin.");
+        }
+
+        public void SellingReport()
+        {
+            Console.WriteLine("Admin generated a selling report.");
+        }
+
+        // Optionally, you can add a method to log in as well
+        public void Login(string inputPassword)
+        {
+            if (CheckPassword(inputPassword))
+            {
+                Console.WriteLine($"{Username} (Admin) logged in successfully.");
+            }
+            else
+            {
+                Console.WriteLine("Login failed: Incorrect password.");
+            }
+        }
+
+        // Logout method inherited from User
     }
-
-
-
-
-
 }

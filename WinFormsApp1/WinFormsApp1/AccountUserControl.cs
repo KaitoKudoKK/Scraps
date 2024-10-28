@@ -24,7 +24,7 @@ namespace WinFormsApp1
 
         private void btnPlus2_Paint(object sender, PaintEventArgs e)
         {
-            System.Drawing.Drawing2D.GraphicsPath buttonPath = new System.Drawing.Drawing2D.GraphicsPath();
+            System.Drawing.Drawing2D.GraphicsPath buttonPath = new();
             // Membuat button berbentuk lingkaran
             buttonPath.AddEllipse(0, 0, btnPlus2.Width, btnPlus2.Height);
             btnPlus2.Region = new Region(buttonPath);
@@ -32,7 +32,7 @@ namespace WinFormsApp1
 
         private void btnPlus1_Paint(object sender, PaintEventArgs e)
         {
-            System.Drawing.Drawing2D.GraphicsPath buttonPath = new System.Drawing.Drawing2D.GraphicsPath();
+            System.Drawing.Drawing2D.GraphicsPath buttonPath = new();
             // Membuat button berbentuk lingkaran
             buttonPath.AddEllipse(0, 0, btnPlus1.Width, btnPlus1.Height);
             btnPlus1.Region = new Region(buttonPath);
@@ -46,7 +46,7 @@ namespace WinFormsApp1
         private void btnPlus2_Click(object sender, EventArgs e)
         {
             // Buka LoginForm dan tutup BuyerForm
-            LoginForm loginForm = new LoginForm();
+            LoginForm loginForm = new();
             loginForm.Show();
             this.Hide(); // Menyembunyikan form login setelah berhasil login
         }
