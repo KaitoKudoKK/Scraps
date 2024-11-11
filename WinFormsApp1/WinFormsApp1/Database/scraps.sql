@@ -1,31 +1,12 @@
---
--- PostgreSQL database dump
---
-
--- Dumped from database version 16.1
--- Dumped by pg_dump version 16.1
-
-SET statement_timeout = 0;
-SET lock_timeout = 0;
-SET idle_in_transaction_session_timeout = 0;
-SET client_encoding = 'UTF8';
-SET standard_conforming_strings = on;
-SELECT pg_catalog.set_config('search_path', '', false);
-SET check_function_bodies = false;
-SET xmloption = content;
-SET client_min_messages = warning;
-SET row_security = off;
-
-SET default_tablespace = '';
-
-SET default_table_access_method = heap;
+SET search_path TO public;
+CREATE SCHEMA IF NOT EXISTS public;
 
 --
 -- Name: admin; Type: TABLE; Schema: public; Owner: postgres
 --
-
+CREATE SEQUENCE admin_id_seq START 20240001;
 CREATE TABLE public.admin (
-    adminid integer NOT NULL,
+    adminid character varying(100) DEFAULT 'ADMIN' || nextval('admin_id_seq'),
     admin_name character varying(25),
     admin_email character varying(25),
     admin_password character varying(25)
@@ -38,15 +19,15 @@ ALTER TABLE public.admin OWNER TO postgres;
 -- Name: buyer; Type: TABLE; Schema: public; Owner: postgres
 --
 
+CREATE SEQUENCE buyer_id_seq START 20240001;
 CREATE TABLE public.buyer (
-    buyerid integer NOT NULL,
+    buyerid character varying(100) DEFAULT 'BUYER' || nextval('buyer_id_seq'),
     buyer_username character varying(25),
     buyer_email character varying(25),
     buyer_password character varying(25),
     buyer_address character varying(25),
     buyer_phone character varying(25)
 );
-
 
 ALTER TABLE public.buyer OWNER TO postgres;
 
@@ -55,8 +36,8 @@ ALTER TABLE public.buyer OWNER TO postgres;
 --
 
 CREATE TABLE public.buyer_review (
-    buyerid integer,
-    reviewid integer
+    buyerid character varying(100),
+    reviewid character varying(100)
 );
 
 
@@ -66,11 +47,13 @@ ALTER TABLE public.buyer_review OWNER TO postgres;
 -- Name: cart; Type: TABLE; Schema: public; Owner: postgres
 --
 
+CREATE SEQUENCE cart_id_seq START 20240001;
 CREATE TABLE public.cart (
-    cartid integer NOT NULL,
-    buyerid integer,
-    productid integer
+    cartid character varying(100) DEFAULT 'CART' || nextval('cart_id_seq'),
+    buyerid character varying(100),
+    productid character varying(100)
 );
+
 
 
 ALTER TABLE public.cart OWNER TO postgres;
@@ -80,8 +63,8 @@ ALTER TABLE public.cart OWNER TO postgres;
 --
 
 CREATE TABLE public.cart_buyer (
-    cartid integer,
-    buyerid integer
+    cartid character varying(100),
+    buyerid character varying(100)
 );
 
 
@@ -91,8 +74,9 @@ ALTER TABLE public.cart_buyer OWNER TO postgres;
 -- Name: category; Type: TABLE; Schema: public; Owner: postgres
 --
 
+CREATE SEQUENCE category_id_seq START 20240001;
 CREATE TABLE public.category (
-    categoryid integer NOT NULL,
+    categoryid character varying(100) DEFAULT 'CATEGORY' || nextval('category_id_seq'),
     category_name character varying(25)
 );
 
@@ -103,12 +87,13 @@ ALTER TABLE public.category OWNER TO postgres;
 -- Name: chat; Type: TABLE; Schema: public; Owner: postgres
 --
 
+CREATE SEQUENCE chat_id_seq START 20240001;
 CREATE TABLE public.chat (
-    chatid integer NOT NULL,
+    chatid character varying(100) DEFAULT 'CHAT' || nextval('chat_id_seq'),
     content character varying,
     "timestamp" date,
-    sellerid integer,
-    buyerid integer
+    sellerid character varying(100),
+    buyerid character varying(100)
 );
 
 
@@ -118,12 +103,13 @@ ALTER TABLE public.chat OWNER TO postgres;
 -- Name: orders; Type: TABLE; Schema: public; Owner: postgres
 --
 
+CREATE SEQUENCE orders_id_seq START 20240001;
 CREATE TABLE public.orders (
-    orderid integer NOT NULL,
+    orderid character varying(100) DEFAULT 'ORDER' || nextval('orders_id_seq'),
     total_price double precision,
     order_status character varying(25),
-    buyerid integer,
-    productid integer
+    buyerid character varying(100),
+    productid character varying(100)
 );
 
 
@@ -133,12 +119,13 @@ ALTER TABLE public.orders OWNER TO postgres;
 -- Name: payment; Type: TABLE; Schema: public; Owner: postgres
 --
 
+CREATE SEQUENCE payment_id_seq START 20240001;
 CREATE TABLE public.payment (
-    paymentid integer NOT NULL,
+    paymentid character varying(100) DEFAULT 'PAY' || nextval('payment_id_seq'),
     amount double precision,
     payment_date date,
     payment_method character varying(25),
-    orderid integer
+    orderid character varying(100)
 );
 
 
@@ -148,13 +135,14 @@ ALTER TABLE public.payment OWNER TO postgres;
 -- Name: product; Type: TABLE; Schema: public; Owner: postgres
 --
 
+CREATE SEQUENCE product_id_seq START 20240001;
 CREATE TABLE public.product (
-    productid integer NOT NULL,
+    productid character varying(100) DEFAULT 'PROD' || nextval('product_id_seq'),
     product_name character varying(25),
     product_desc character varying(200),
     product_price double precision,
     product_status character varying(25),
-    sellerid integer
+    sellerid character varying(100)
 );
 
 
@@ -165,8 +153,8 @@ ALTER TABLE public.product OWNER TO postgres;
 --
 
 CREATE TABLE public.product_cart (
-    cartid integer,
-    productid integer
+    cartid character varying(100),
+    productid character varying(100)
 );
 
 
@@ -177,8 +165,8 @@ ALTER TABLE public.product_cart OWNER TO postgres;
 --
 
 CREATE TABLE public.product_category (
-    productid integer,
-    categoryid integer
+    productid character varying(100),
+    categoryid character varying(100)
 );
 
 
@@ -189,8 +177,8 @@ ALTER TABLE public.product_category OWNER TO postgres;
 --
 
 CREATE TABLE public.product_review (
-    productid integer,
-    reviewid integer
+    productid character varying(100),
+    reviewid character varying(100)
 );
 
 
@@ -200,13 +188,14 @@ ALTER TABLE public.product_review OWNER TO postgres;
 -- Name: review; Type: TABLE; Schema: public; Owner: postgres
 --
 
+CREATE SEQUENCE review_id_seq START 20240001;
 CREATE TABLE public.review (
-    reviewid integer NOT NULL,
+    reviewid character varying(100) DEFAULT 'REVIEW' || nextval('review_id_seq'),
     rating integer,
     comment character varying(100),
     review_date date,
-    productid integer,
-    buyerid integer
+    productid character varying(100),
+    buyerid character varying(100)
 );
 
 
@@ -216,8 +205,9 @@ ALTER TABLE public.review OWNER TO postgres;
 -- Name: seller; Type: TABLE; Schema: public; Owner: postgres
 --
 
+CREATE SEQUENCE seller_id_seq START 20240001;
 CREATE TABLE public.seller (
-    sellerid integer NOT NULL,
+    sellerid character varying(100) DEFAULT 'SELLER' || nextval('seller_id_seq') ,
     seller_username character varying(25),
     seller_email character varying(25),
     seller_password character varying(25),

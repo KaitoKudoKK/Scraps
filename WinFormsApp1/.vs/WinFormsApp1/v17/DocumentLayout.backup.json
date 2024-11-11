@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\winformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\database\\scraps.sql||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\database\\scraps.sql||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\winformsapp1\\accountusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\accountusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -13,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\winformsapp1\\homeusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\homeusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\winformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\chatusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -47,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\buyerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -79,10 +87,6 @@
       "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\buyerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\cartusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\cartusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -101,11 +105,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "scraps.sql",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Database\\scraps.sql",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Database\\scraps.sql",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Database\\scraps.sql",
+              "RelativeToolTip": "WinFormsApp1\\Database\\scraps.sql",
+              "ViewState": "AgIAANoAAAAAAAAAAAAAAOQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-11-10T13:10:34.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\LoginForm.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\LoginForm.cs",
@@ -117,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "AccountUserControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\AccountUserControl.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\AccountUserControl.cs",
@@ -128,8 +145,54 @@
               "EditorCaption": " [Design]"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Payment.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Payment.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Payment.cs",
+              "RelativeToolTip": "WinFormsApp1\\Payment.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA8wBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T07:34:46.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\LoginForm.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\LoginForm.cs",
+              "RelativeToolTip": "WinFormsApp1\\LoginForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T03:57:56.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BuyerForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\BuyerForm.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\BuyerForm.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\BuyerForm.cs [Design]",
+              "RelativeToolTip": "WinFormsApp1\\BuyerForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T03:57:41.117Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "HomeUserControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\HomeUserControl.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\HomeUserControl.cs",
@@ -141,23 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BuyerForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\BuyerForm.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\BuyerForm.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\BuyerForm.cs [Design]",
-              "RelativeToolTip": "WinFormsApp1\\BuyerForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T03:57:41.117Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "ChatUserControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\ChatUserControl.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\ChatUserControl.cs",
@@ -168,12 +215,8 @@
               "EditorCaption": " [Design]"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "ChatUserControl.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\ChatUserControl.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\ChatUserControl.cs",
@@ -186,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "LoginForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\LoginForm.Designer.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\LoginForm.Designer.cs",
@@ -199,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Buyer.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Buyer.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Buyer.cs",
@@ -212,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "CartUserControl.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\CartUserControl.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\CartUserControl.cs",
@@ -224,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "AccountUserControl.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\AccountUserControl.Designer.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\AccountUserControl.Designer.cs",
@@ -237,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "BuyerForm.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\BuyerForm.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\BuyerForm.cs",
@@ -250,20 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\LoginForm.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\LoginForm.cs",
-              "RelativeToolTip": "WinFormsApp1\\LoginForm.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAcwDwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T03:57:56.684Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "product.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\product.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\product.cs",
@@ -275,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Order.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Order.cs",
@@ -287,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "AccountUserControl.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\AccountUserControl.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\AccountUserControl.cs",
@@ -300,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Admin.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Admin.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Admin.cs",
@@ -312,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Seller.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Seller.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Seller.cs",
@@ -324,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Cart.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Cart.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Cart.cs",
@@ -336,19 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Payment.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Payment.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Payment.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Payment.cs",
-              "RelativeToolTip": "WinFormsApp1\\Payment.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAADwvxMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T07:34:46.95Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "BuyerForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\BuyerForm.Designer.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\BuyerForm.Designer.cs",
@@ -361,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "CartUserControl.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\CartUserControl.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\CartUserControl.cs",
@@ -374,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "HomeUserControl.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\HomeUserControl.Designer.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\HomeUserControl.Designer.cs",
@@ -387,7 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
