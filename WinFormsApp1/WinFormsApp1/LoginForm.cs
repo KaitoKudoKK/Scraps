@@ -10,7 +10,7 @@ namespace WinFormsApp1
             InitializeComponent();
         }
         private NpgsqlConnection conn;
-        string connstring = "Host=localhost;Port=5432;Username=postgres;Password=12345678;Database=scraps";
+        string connstring = "Host=localhost;Port=5432;Username=postgres;Password=qwerty123;Database=scraps";
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;
