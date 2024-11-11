@@ -1,93 +1,105 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\",
+  "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\winformsapp1\\accountusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\accountusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\lenovo\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\winformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\lenovo\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\lenovo\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\winformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\chatusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\chatusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\chatusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\chatusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\winformsapp1\\cartusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\cartusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\lenovo\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\buyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\buyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\accountusercontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\accountusercontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\winformsapp1\\buyerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\buyerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\buyerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\buyerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\lenovo\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\winformsapp1\\accountusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\accountusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\seller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\seller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\accountusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\accountusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\winformsapp1\\homeusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\winformsapp1\\homeusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\homeusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\buyerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\winformsapp1\\buyerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\buyerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\winformsapp1\\chatusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\chatusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\lenovo\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\chatusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\chatusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\winformsapp1\\cartusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\cartusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\lenovo\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\buyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\buyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\lenovo\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\accountusercontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\accountusercontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\lenovo\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\buyerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\buyerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\lenovo\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\lenovo\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\lenovo\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\seller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\seller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\lenovo\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\accountusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\accountusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\lenovo\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\lenovo\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\lenovo\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\buyerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\buyerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\lenovo\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\cartusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\lenovo\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\cartusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\cartusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\asus\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\homeusercontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\lenovo\\source\\repos\\scraps\\winformsapp1\\winformsapp1\\homeusercontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1736932A-1D99-4117-ACF2-FABDE0BF6821}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\homeusercontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -101,69 +113,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ChatUserControl.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\ChatUserControl.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\ChatUserControl.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\ChatUserControl.cs",
-              "RelativeToolTip": "WinFormsApp1\\ChatUserControl.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA/wCcAAAAAAAAAAAAAAA==",
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\LoginForm.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\LoginForm.cs [Design]",
+              "RelativeToolTip": "WinFormsApp1\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T11:28:26.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T03:55:43.638Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ChatUserControl.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\ChatUserControl.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\ChatUserControl.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\ChatUserControl.cs [Design]",
-              "RelativeToolTip": "WinFormsApp1\\ChatUserControl.cs [Design]",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Program.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Program.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Program.cs",
+              "RelativeToolTip": "WinFormsApp1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T11:27:47.329Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\LoginForm.Designer.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\LoginForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\LoginForm.Designer.cs",
-              "RelativeToolTip": "WinFormsApp1\\LoginForm.Designer.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T11:23:23.794Z",
+              "WhenOpened": "2024-11-11T09:07:22.228Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\LoginForm.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\LoginForm.cs [Design]",
-              "RelativeToolTip": "WinFormsApp1\\LoginForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T03:55:43.638Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountUserControl.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\AccountUserControl.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\AccountUserControl.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\AccountUserControl.cs [Design]",
-              "RelativeToolTip": "WinFormsApp1\\AccountUserControl.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T14:29:39.455Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
@@ -171,124 +151,201 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Buyer.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Buyer.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\Buyer.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Buyer.cs",
-              "RelativeToolTip": "WinFormsApp1\\Buyer.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA0wBcAAABcAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "register.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\register.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\register.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\register.cs [Design]*",
+              "RelativeToolTip": "WinFormsApp1\\register.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T07:01:03.094Z",
+              "WhenOpened": "2024-11-11T08:51:26.622Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "register.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\register.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\register.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\register.cs*",
+              "RelativeToolTip": "WinFormsApp1\\register.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T08:40:34.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BuyerForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\BuyerForm.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\BuyerForm.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\BuyerForm.cs [Design]",
-              "RelativeToolTip": "WinFormsApp1\\BuyerForm.cs [Design]",
+              "DocumentIndex": 6,
+              "Title": "AccountUserControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\AccountUserControl.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\AccountUserControl.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\AccountUserControl.cs [Design]",
+              "RelativeToolTip": "WinFormsApp1\\AccountUserControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T03:57:41.117Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CartUserControl.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\CartUserControl.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\CartUserControl.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\CartUserControl.cs [Design]",
-              "RelativeToolTip": "WinFormsApp1\\CartUserControl.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T14:28:30.079Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-20T14:29:39.455Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "AccountUserControl.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\AccountUserControl.Designer.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\AccountUserControl.Designer.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\AccountUserControl.Designer.cs",
-              "RelativeToolTip": "WinFormsApp1\\AccountUserControl.Designer.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAIA2wF4BAAAdAAAAAAAAAA==",
+              "Title": "HomeUserControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\HomeUserControl.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\HomeUserControl.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\HomeUserControl.cs [Design]",
+              "RelativeToolTip": "WinFormsApp1\\HomeUserControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T08:51:38.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-20T14:13:12.496Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BuyerForm.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\BuyerForm.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\BuyerForm.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\BuyerForm.cs",
-              "RelativeToolTip": "WinFormsApp1\\BuyerForm.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAADwv28AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T04:05:47.06Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\LoginForm.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\LoginForm.cs",
               "RelativeToolTip": "WinFormsApp1\\LoginForm.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAcwDwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-21T03:57:56.684Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 4,
+              "Title": "LoginForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\LoginForm.Designer.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\LoginForm.Designer.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\LoginForm.Designer.cs",
+              "RelativeToolTip": "WinFormsApp1\\LoginForm.Designer.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAmwEQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T11:23:23.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BuyerForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\BuyerForm.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\BuyerForm.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\BuyerForm.cs [Design]",
+              "RelativeToolTip": "WinFormsApp1\\BuyerForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T03:57:41.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ChatUserControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\ChatUserControl.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\ChatUserControl.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\ChatUserControl.cs [Design]",
+              "RelativeToolTip": "WinFormsApp1\\ChatUserControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T11:27:47.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ChatUserControl.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\ChatUserControl.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\ChatUserControl.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\ChatUserControl.cs",
+              "RelativeToolTip": "WinFormsApp1\\ChatUserControl.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAswCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T11:28:26.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Buyer.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Buyer.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Buyer.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Buyer.cs",
+              "RelativeToolTip": "WinFormsApp1\\Buyer.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwBcAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T07:01:03.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CartUserControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\CartUserControl.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\CartUserControl.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\CartUserControl.cs [Design]",
+              "RelativeToolTip": "WinFormsApp1\\CartUserControl.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T14:28:30.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AccountUserControl.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\AccountUserControl.Designer.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\AccountUserControl.Designer.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\AccountUserControl.Designer.cs",
+              "RelativeToolTip": "WinFormsApp1\\AccountUserControl.Designer.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAWwF4BAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T08:51:38.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BuyerForm.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\BuyerForm.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\BuyerForm.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\BuyerForm.cs",
+              "RelativeToolTip": "WinFormsApp1\\BuyerForm.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAADwv28AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T04:05:47.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "product.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\product.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\product.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\product.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\product.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\product.cs",
               "RelativeToolTip": "WinFormsApp1\\product.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAADwvzUAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAswDUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T02:04:37.902Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Order.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Order.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Order.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Order.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Order.cs",
               "RelativeToolTip": "WinFormsApp1\\Order.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T02:25:29.637Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "AccountUserControl.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\AccountUserControl.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\AccountUserControl.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\AccountUserControl.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\AccountUserControl.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\AccountUserControl.cs",
               "RelativeToolTip": "WinFormsApp1\\AccountUserControl.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAcwDAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T02:30:59.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-28T02:30:59.612Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Admin.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Admin.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Admin.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Admin.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Admin.cs",
               "RelativeToolTip": "WinFormsApp1\\Admin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -296,23 +353,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "Seller.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Seller.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Seller.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Seller.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Seller.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Seller.cs",
               "RelativeToolTip": "WinFormsApp1\\Seller.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwCIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAA1wCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T02:35:27.892Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "Cart.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Cart.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Cart.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Cart.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Cart.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Cart.cs",
               "RelativeToolTip": "WinFormsApp1\\Cart.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -320,49 +377,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "Payment.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Payment.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Payment.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Payment.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Payment.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\Payment.cs",
               "RelativeToolTip": "WinFormsApp1\\Payment.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAADwvxMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAADwvxMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-20T07:34:46.95Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "BuyerForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\BuyerForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\BuyerForm.Designer.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\BuyerForm.Designer.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\BuyerForm.Designer.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\BuyerForm.Designer.cs",
               "RelativeToolTip": "WinFormsApp1\\BuyerForm.Designer.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAIwOsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T04:06:50.449Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T04:06:50.449Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "CartUserControl.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\CartUserControl.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\CartUserControl.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\CartUserControl.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\CartUserControl.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\CartUserControl.cs",
               "RelativeToolTip": "WinFormsApp1\\CartUserControl.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAD4vxMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T02:17:56.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-21T02:17:56.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "HomeUserControl.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\HomeUserControl.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\HomeUserControl.Designer.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\HomeUserControl.Designer.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\HomeUserControl.Designer.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\HomeUserControl.Designer.cs",
               "RelativeToolTip": "WinFormsApp1\\HomeUserControl.Designer.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAD4v5sBAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -370,7 +425,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -379,17 +434,6 @@
               "ViewState": "AgIAALkUAAAAAAAAAAAwwMEUAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2024-10-20T09:40:14.799Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "HomeUserControl.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\HomeUserControl.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\HomeUserControl.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\Scraps\\WinFormsApp1\\WinFormsApp1\\HomeUserControl.cs [Design]",
-              "RelativeToolTip": "WinFormsApp1\\HomeUserControl.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T14:13:12.496Z"
             }
           ]
         }
