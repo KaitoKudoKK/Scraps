@@ -355,7 +355,6 @@
         private Panel panel4;
         private Label label8;
         private Label label9;
-        private PictureBox pictureBox5;
         private Label label10;
         private Label label11;
         private Label label12;

@@ -91,7 +91,7 @@ CREATE SEQUENCE chat_id_seq START 20240001;
 CREATE TABLE public.chat (
     chatid character varying(100) DEFAULT 'CHAT' || nextval('chat_id_seq'),
     content character varying,
-    "timestamp" date,
+    timestamp date DEFAULT NOW(),
     sellerid character varying(100),
     buyerid character varying(100)
 );
@@ -123,7 +123,7 @@ CREATE SEQUENCE payment_id_seq START 20240001;
 CREATE TABLE public.payment (
     paymentid character varying(100) DEFAULT 'PAY' || nextval('payment_id_seq'),
     amount double precision,
-    payment_date date,
+    payment_date date DEFAULT NOW(),
     payment_method character varying(25),
     orderid character varying(100)
 );
@@ -193,7 +193,7 @@ CREATE TABLE public.review (
     reviewid character varying(100) DEFAULT 'REVIEW' || nextval('review_id_seq'),
     rating integer,
     comment character varying(100),
-    review_date date,
+    review_date date DEFAULT NOW(),
     productid character varying(100),
     buyerid character varying(100)
 );
