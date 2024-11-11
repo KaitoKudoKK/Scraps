@@ -71,12 +71,12 @@ namespace WinFormsApp1
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Merriweather Sans ExtraBold", 128F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 128F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
             label1.ForeColor = Color.White;
             label1.Location = new Point(0, 0);
             label1.Margin = new Padding(0);
             label1.Name = "label1";
-            label1.Size = new Size(835, 207);
+            label1.Size = new Size(746, 147);
             label1.TabIndex = 2;
             label1.Text = "Welcome to";
             // 
@@ -84,53 +84,53 @@ namespace WinFormsApp1
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Merriweather Sans ExtraBold", 128F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
+            label2.Font = new Font("Microsoft Sans Serif", 128F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
             label2.ForeColor = Color.White;
             label2.Location = new Point(0, 152);
             label2.Margin = new Padding(0);
             label2.Name = "label2";
-            label2.Size = new Size(560, 207);
+            label2.Size = new Size(503, 147);
             label2.TabIndex = 3;
             label2.Text = "Scraps!";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Montserrat", 78F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
+            label3.Font = new Font("Microsoft Sans Serif", 78F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
             label3.ForeColor = Color.FromArgb(7, 79, 84);
             label3.Location = new Point(1307, 129);
             label3.Name = "label3";
-            label3.Size = new Size(299, 108);
+            label3.Size = new Size(259, 89);
             label3.TabIndex = 2;
             label3.Text = "Log In";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Montserrat", 40F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
+            label4.Font = new Font("Microsoft Sans Serif", 40F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
             label4.Location = new Point(1077, 352);
             label4.Name = "label4";
-            label4.Size = new Size(261, 55);
+            label4.Size = new Size(236, 46);
             label4.TabIndex = 3;
             label4.Text = "Username : ";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Montserrat", 40F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
+            label5.Font = new Font("Microsoft Sans Serif", 40F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
             label5.Location = new Point(1077, 420);
             label5.Name = "label5";
-            label5.Size = new Size(167, 55);
+            label5.Size = new Size(153, 46);
             label5.TabIndex = 4;
             label5.Text = "Email : ";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Montserrat", 40F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
+            label6.Font = new Font("Microsoft Sans Serif", 40F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
             label6.Location = new Point(1077, 484);
             label6.Name = "label6";
-            label6.Size = new Size(245, 55);
+            label6.Size = new Size(229, 46);
             label6.TabIndex = 5;
             label6.Text = "Password : ";
             // 
@@ -138,21 +138,21 @@ namespace WinFormsApp1
             // 
             tbUsername.Location = new Point(1344, 352);
             tbUsername.Name = "tbUsername";
-            tbUsername.Size = new Size(502, 56);
+            tbUsername.Size = new Size(502, 53);
             tbUsername.TabIndex = 6;
             // 
             // tbEmail
             // 
             tbEmail.Location = new Point(1344, 420);
             tbEmail.Name = "tbEmail";
-            tbEmail.Size = new Size(502, 56);
+            tbEmail.Size = new Size(502, 53);
             tbEmail.TabIndex = 7;
             // 
             // tbPassword
             // 
             tbPassword.Location = new Point(1344, 484);
             tbPassword.Name = "tbPassword";
-            tbPassword.Size = new Size(502, 56);
+            tbPassword.Size = new Size(502, 53);
             tbPassword.TabIndex = 8;
             tbPassword.UseSystemPasswordChar = true;
             // 
@@ -160,7 +160,7 @@ namespace WinFormsApp1
             // 
             btnLogin.BackColor = Color.FromArgb(7, 79, 84);
             btnLogin.Cursor = Cursors.Hand;
-            btnLogin.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
+            btnLogin.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
             btnLogin.ForeColor = Color.White;
             btnLogin.Location = new Point(1432, 590);
             btnLogin.Name = "btnLogin";
@@ -173,12 +173,12 @@ namespace WinFormsApp1
             // LoginForm
             // 
             AcceptButton = btnLogin;
-            AutoScaleDimensions = new SizeF(120F, 120F);
+            AutoScaleDimensions = new SizeF(96F, 96F);
             AutoScaleMode = AutoScaleMode.Dpi;
             AutoScroll = true;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            ClientSize = new Size(1902, 1033);
+            ClientSize = new Size(1370, 749);
             Controls.Add(btnLogin);
             Controls.Add(tbPassword);
             Controls.Add(tbEmail);
@@ -189,7 +189,7 @@ namespace WinFormsApp1
             Controls.Add(label3);
             Controls.Add(pictureBox1);
             Controls.Add(panel1);
-            Font = new Font("Montserrat", 40F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
+            Font = new Font("Microsoft Sans Serif", 40F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
             KeyPreview = true;
             MaximumSize = new Size(1920, 1080);
             MinimumSize = new Size(640, 360);
@@ -197,7 +197,6 @@ namespace WinFormsApp1
             Text = "Login";
             FormClosed += LoginForm_FormClosed;
             Load += Form1_Load;
-            KeyDown += Form1_KeyDown;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
