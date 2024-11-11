@@ -52,7 +52,7 @@ namespace WinFormsApp1
             btnHome.FlatAppearance.MouseDownBackColor = Color.DarkGray;
             btnHome.FlatAppearance.MouseOverBackColor = Color.LightGray;
             btnHome.FlatStyle = FlatStyle.Flat;
-            btnHome.Font = new Font("Montserrat", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnHome.Font = new Font("Microsoft Sans Serif", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnHome.Location = new Point(51, 0);
             btnHome.Name = "btnHome";
             btnHome.Size = new Size(209, 86);
@@ -64,10 +64,10 @@ namespace WinFormsApp1
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
             label1.Location = new Point(225, 20);
             label1.Name = "label1";
-            label1.Size = new Size(83, 44);
+            label1.Size = new Size(85, 37);
             label1.TabIndex = 1;
             label1.Text = "   |   ";
             // 
@@ -81,7 +81,7 @@ namespace WinFormsApp1
             btnCart.FlatAppearance.MouseDownBackColor = Color.DarkGray;
             btnCart.FlatAppearance.MouseOverBackColor = Color.LightGray;
             btnCart.FlatStyle = FlatStyle.Flat;
-            btnCart.Font = new Font("Montserrat", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCart.Font = new Font("Microsoft Sans Serif", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCart.Location = new Point(266, 0);
             btnCart.Name = "btnCart";
             btnCart.Size = new Size(150, 86);
@@ -93,10 +93,10 @@ namespace WinFormsApp1
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
+            label2.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
             label2.Location = new Point(379, 20);
             label2.Name = "label2";
-            label2.Size = new Size(83, 44);
+            label2.Size = new Size(85, 37);
             label2.TabIndex = 3;
             label2.Text = "   |   ";
             // 
@@ -110,7 +110,7 @@ namespace WinFormsApp1
             btnChat.FlatAppearance.MouseDownBackColor = Color.DarkGray;
             btnChat.FlatAppearance.MouseOverBackColor = Color.LightGray;
             btnChat.FlatStyle = FlatStyle.Flat;
-            btnChat.Font = new Font("Montserrat", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnChat.Font = new Font("Microsoft Sans Serif", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnChat.Location = new Point(422, 0);
             btnChat.Name = "btnChat";
             btnChat.Size = new Size(156, 86);
@@ -122,10 +122,10 @@ namespace WinFormsApp1
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
+            label3.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
             label3.Location = new Point(543, 20);
             label3.Name = "label3";
-            label3.Size = new Size(83, 44);
+            label3.Size = new Size(85, 37);
             label3.TabIndex = 5;
             label3.Text = "   |   ";
             // 
@@ -139,7 +139,7 @@ namespace WinFormsApp1
             btnAccount.FlatAppearance.MouseDownBackColor = Color.DarkGray;
             btnAccount.FlatAppearance.MouseOverBackColor = Color.LightGray;
             btnAccount.FlatStyle = FlatStyle.Flat;
-            btnAccount.Font = new Font("Montserrat", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAccount.Font = new Font("Microsoft Sans Serif", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAccount.Location = new Point(585, 0);
             btnAccount.Name = "btnAccount";
             btnAccount.Size = new Size(215, 86);
@@ -163,6 +163,7 @@ namespace WinFormsApp1
             homeUserControl1.Name = "homeUserControl1";
             homeUserControl1.Size = new Size(1902, 947);
             homeUserControl1.TabIndex = 8;
+            homeUserControl1.Load += homeUserControl1_Load;
             // 
             // cartUserControl1
             // 

@@ -107,5 +107,10 @@ namespace WinFormsApp1
         {
             Application.Exit();
         }
+
+        private void homeUserControl1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

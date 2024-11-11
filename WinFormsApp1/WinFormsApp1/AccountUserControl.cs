@@ -16,7 +16,13 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
-
+        public void LoadUserData(string name, string email, string phone, string address)
+        {
+            lblNama.Text = name;
+            lblEmail.Text = email;
+            lblNoHP.Text = phone;
+            lblAlamat.Text = address;
+        }
         private void AccountUserControl_Load(object sender, EventArgs e)
         {
 
@@ -30,13 +36,7 @@ namespace WinFormsApp1
             btnPlus2.Region = new Region(buttonPath);
         }
 
-        private void btnPlus1_Paint(object sender, PaintEventArgs e)
-        {
-            System.Drawing.Drawing2D.GraphicsPath buttonPath = new();
-            // Membuat button berbentuk lingkaran
-            buttonPath.AddEllipse(0, 0, btnPlus1.Width, btnPlus1.Height);
-            btnPlus1.Region = new Region(buttonPath);
-        }
+        
 
         private void btnPlus1_Click(object sender, EventArgs e)
         {
@@ -49,6 +49,26 @@ namespace WinFormsApp1
             LoginForm loginForm = new();
             loginForm.Show();
             this.Hide(); // Menyembunyikan form login setelah berhasil login
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            EditAkunUserControl editForm = new EditAkunUserControl(lblNama.Text, lblEmail.Text, lblNoHP.Text, lblAlamat.Text);
+            editForm.UserDataUpdated += OnUserDataUpdated; // Subscribe event
+            this.Parent.Controls.Add(editForm);
+            this.Hide();
+        }
+
+        // Event handler untuk update data
+        private void OnUserDataUpdated(object sender, UserDataEventArgs e)
+        {
+            LoadUserData(e.Name, e.Email, e.Phone, e.Address);
+            this.Show();
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

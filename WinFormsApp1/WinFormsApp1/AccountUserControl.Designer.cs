@@ -34,24 +34,23 @@
             btnChat = new Button();
             panel1 = new Panel();
             label4 = new Label();
-            label2 = new Label();
+            lblNama = new Label();
             panel2 = new Panel();
             label3 = new Label();
-            label5 = new Label();
+            lblEmail = new Label();
             panel3 = new Panel();
             label6 = new Label();
-            label7 = new Label();
+            lblNoHP = new Label();
             panel4 = new Panel();
             label8 = new Label();
-            label9 = new Label();
+            lblAlamat = new Label();
             label10 = new Label();
             label11 = new Label();
             label12 = new Label();
             label13 = new Label();
-            label14 = new Label();
             label15 = new Label();
-            btnPlus1 = new Button();
             btnPlus2 = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -61,7 +60,7 @@
             // 
             // label1
             // 
-            label1.Font = new Font("Montserrat Medium", 64F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 64F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
             label1.Location = new Point(857, 0);
             label1.Name = "label1";
             label1.Size = new Size(245, 75);
@@ -84,52 +83,51 @@
             btnChat.Cursor = Cursors.Hand;
             btnChat.FlatAppearance.BorderSize = 0;
             btnChat.FlatStyle = FlatStyle.Flat;
-            btnChat.Font = new Font("Montserrat Medium", 20F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
+            btnChat.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
             btnChat.ForeColor = Color.Gray;
             btnChat.Location = new Point(742, 273);
             btnChat.Margin = new Padding(0);
             btnChat.Name = "btnChat";
             btnChat.Size = new Size(482, 38);
             btnChat.TabIndex = 7;
-            btnChat.Text = "Change photo";
             btnChat.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
             panel1.BackColor = Color.Transparent;
             panel1.Controls.Add(label4);
-            panel1.Controls.Add(label2);
+            panel1.Controls.Add(lblNama);
             panel1.Location = new Point(95, 362);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1462, 47);
+            panel1.Size = new Size(1462, 60);
             panel1.TabIndex = 9;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Montserrat Light", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
+            label4.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
             label4.Location = new Point(1455, 75);
             label4.Name = "label4";
-            label4.Size = new Size(68, 33);
+            label4.Size = new Size(76, 29);
             label4.TabIndex = 8;
             label4.Text = "16.35";
             // 
-            // label2
+            // lblNama
             // 
-            label2.Font = new Font("Montserrat", 28F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label2.ForeColor = Color.FromArgb(7, 79, 84);
-            label2.Location = new Point(55, 5);
-            label2.Name = "label2";
-            label2.Size = new Size(1392, 36);
-            label2.TabIndex = 6;
-            label2.Text = "Steven";
+            lblNama.Font = new Font("Microsoft Sans Serif", 28F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
+            lblNama.ForeColor = Color.FromArgb(7, 79, 84);
+            lblNama.Location = new Point(55, 12);
+            lblNama.Name = "lblNama";
+            lblNama.Size = new Size(1392, 36);
+            lblNama.TabIndex = 6;
+            lblNama.Text = "Steven";
             // 
             // panel2
             // 
             panel2.BackColor = Color.Transparent;
             panel2.Controls.Add(label3);
-            panel2.Controls.Add(label5);
-            panel2.Location = new Point(95, 461);
+            panel2.Controls.Add(lblEmail);
+            panel2.Location = new Point(95, 482);
             panel2.Name = "panel2";
             panel2.Size = new Size(1462, 60);
             panel2.TabIndex = 10;
@@ -137,29 +135,29 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Montserrat Light", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
+            label3.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
             label3.Location = new Point(1455, 75);
             label3.Name = "label3";
-            label3.Size = new Size(68, 33);
+            label3.Size = new Size(76, 29);
             label3.TabIndex = 8;
             label3.Text = "16.35";
             // 
-            // label5
+            // lblEmail
             // 
-            label5.Font = new Font("Montserrat", 28F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label5.ForeColor = Color.FromArgb(7, 79, 84);
-            label5.Location = new Point(55, 6);
-            label5.Name = "label5";
-            label5.Size = new Size(1392, 45);
-            label5.TabIndex = 6;
-            label5.Text = "kaitokudokk@gmail.com";
+            lblEmail.Font = new Font("Microsoft Sans Serif", 28F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
+            lblEmail.ForeColor = Color.FromArgb(7, 79, 84);
+            lblEmail.Location = new Point(55, 10);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(1392, 45);
+            lblEmail.TabIndex = 6;
+            lblEmail.Text = "kaitokudokk@gmail.com";
             // 
             // panel3
             // 
             panel3.BackColor = Color.Transparent;
             panel3.Controls.Add(label6);
-            panel3.Controls.Add(label7);
-            panel3.Location = new Point(95, 573);
+            panel3.Controls.Add(lblNoHP);
+            panel3.Location = new Point(95, 595);
             panel3.Name = "panel3";
             panel3.Size = new Size(1462, 60);
             panel3.TabIndex = 11;
@@ -167,56 +165,56 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Montserrat Light", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
+            label6.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
             label6.Location = new Point(1455, 75);
             label6.Name = "label6";
-            label6.Size = new Size(68, 33);
+            label6.Size = new Size(76, 29);
             label6.TabIndex = 8;
             label6.Text = "16.35";
             // 
-            // label7
+            // lblNoHP
             // 
-            label7.Font = new Font("Montserrat", 28F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label7.ForeColor = Color.FromArgb(7, 79, 84);
-            label7.Location = new Point(55, 6);
-            label7.Name = "label7";
-            label7.Size = new Size(1392, 45);
-            label7.TabIndex = 6;
-            label7.Text = "+6282212345871";
+            lblNoHP.Font = new Font("Microsoft Sans Serif", 28F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
+            lblNoHP.ForeColor = Color.FromArgb(7, 79, 84);
+            lblNoHP.Location = new Point(55, 6);
+            lblNoHP.Name = "lblNoHP";
+            lblNoHP.Size = new Size(1392, 45);
+            lblNoHP.TabIndex = 6;
+            lblNoHP.Text = "+6282212345871";
             // 
             // panel4
             // 
             panel4.BackColor = Color.Transparent;
             panel4.Controls.Add(label8);
-            panel4.Controls.Add(label9);
-            panel4.Location = new Point(95, 685);
+            panel4.Controls.Add(lblAlamat);
+            panel4.Location = new Point(95, 707);
             panel4.Name = "panel4";
-            panel4.Size = new Size(1462, 53);
+            panel4.Size = new Size(1462, 60);
             panel4.TabIndex = 12;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Font = new Font("Montserrat Light", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
+            label8.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
             label8.Location = new Point(1455, 75);
             label8.Name = "label8";
-            label8.Size = new Size(68, 33);
+            label8.Size = new Size(76, 29);
             label8.TabIndex = 8;
             label8.Text = "16.35";
             // 
-            // label9
+            // lblAlamat
             // 
-            label9.Font = new Font("Montserrat", 28F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label9.ForeColor = Color.FromArgb(7, 79, 84);
-            label9.Location = new Point(55, 6);
-            label9.Name = "label9";
-            label9.Size = new Size(1392, 45);
-            label9.TabIndex = 6;
-            label9.Text = "Jalan Kaliurang KM 5 Pogung Baru E/17A, Sinduadi, Mlati, Sleman, DI Yogyakarta, 55284";
+            lblAlamat.Font = new Font("Microsoft Sans Serif", 28F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
+            lblAlamat.ForeColor = Color.FromArgb(7, 79, 84);
+            lblAlamat.Location = new Point(55, 11);
+            lblAlamat.Name = "lblAlamat";
+            lblAlamat.Size = new Size(1392, 45);
+            lblAlamat.TabIndex = 6;
+            lblAlamat.Text = "Jalan Kaliurang KM 5 Pogung Baru E/17A, Sinduadi, Mlati, Sleman, DI Yogyakarta, 55284";
             // 
             // label10
             // 
-            label10.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel);
+            label10.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel);
             label10.Location = new Point(95, 310);
             label10.Name = "label10";
             label10.Size = new Size(280, 50);
@@ -225,8 +223,8 @@
             // 
             // label11
             // 
-            label11.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel);
-            label11.Location = new Point(95, 409);
+            label11.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel);
+            label11.Location = new Point(95, 431);
             label11.Name = "label11";
             label11.Size = new Size(280, 50);
             label11.TabIndex = 20;
@@ -234,8 +232,8 @@
             // 
             // label12
             // 
-            label12.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel);
-            label12.Location = new Point(95, 521);
+            label12.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel);
+            label12.Location = new Point(95, 542);
             label12.Name = "label12";
             label12.Size = new Size(280, 50);
             label12.TabIndex = 21;
@@ -243,48 +241,22 @@
             // 
             // label13
             // 
-            label13.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel);
-            label13.Location = new Point(95, 633);
+            label13.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel);
+            label13.Location = new Point(95, 655);
             label13.Name = "label13";
             label13.Size = new Size(280, 50);
             label13.TabIndex = 22;
             label13.Text = "Alamat";
             // 
-            // label14
-            // 
-            label14.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel);
-            label14.Location = new Point(185, 778);
-            label14.Name = "label14";
-            label14.Size = new Size(304, 50);
-            label14.TabIndex = 23;
-            label14.Text = "Proses Jual-Beli";
-            // 
             // label15
             // 
-            label15.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel);
-            label15.Location = new Point(185, 843);
+            label15.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel);
+            label15.Location = new Point(182, 819);
             label15.Name = "label15";
             label15.Size = new Size(304, 50);
             label15.TabIndex = 24;
             label15.Text = "Log out";
-            // 
-            // btnPlus1
-            // 
-            btnPlus1.BackColor = Color.FromArgb(238, 239, 244);
-            btnPlus1.BackgroundImage = (Image)resources.GetObject("btnPlus1.BackgroundImage");
-            btnPlus1.BackgroundImageLayout = ImageLayout.Center;
-            btnPlus1.Cursor = Cursors.Hand;
-            btnPlus1.FlatAppearance.BorderSize = 0;
-            btnPlus1.FlatStyle = FlatStyle.Flat;
-            btnPlus1.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
-            btnPlus1.Location = new Point(118, 780);
-            btnPlus1.Margin = new Padding(0);
-            btnPlus1.Name = "btnPlus1";
-            btnPlus1.Size = new Size(50, 50);
-            btnPlus1.TabIndex = 25;
-            btnPlus1.UseVisualStyleBackColor = false;
-            btnPlus1.Click += btnPlus1_Click;
-            btnPlus1.Paint += btnPlus1_Paint;
+            label15.Click += label15_Click;
             // 
             // btnPlus2
             // 
@@ -294,8 +266,8 @@
             btnPlus2.Cursor = Cursors.Hand;
             btnPlus2.FlatAppearance.BorderSize = 0;
             btnPlus2.FlatStyle = FlatStyle.Flat;
-            btnPlus2.Font = new Font("Montserrat Medium", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
-            btnPlus2.Location = new Point(111, 843);
+            btnPlus2.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
+            btnPlus2.Location = new Point(108, 819);
             btnPlus2.Margin = new Padding(0);
             btnPlus2.Name = "btnPlus2";
             btnPlus2.Size = new Size(69, 52);
@@ -304,12 +276,23 @@
             btnPlus2.Click += btnPlus2_Click;
             btnPlus2.Paint += btnPlus2_Paint;
             // 
+            // button1
+            // 
+            button1.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(937, 280);
+            button1.Name = "button1";
+            button1.Size = new Size(77, 31);
+            button1.TabIndex = 38;
+            button1.Text = "Edit";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // AccountUserControl
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(button1);
             Controls.Add(label15);
-            Controls.Add(label14);
             Controls.Add(label13);
             Controls.Add(label12);
             Controls.Add(label11);
@@ -321,7 +304,6 @@
             Controls.Add(btnChat);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
-            Controls.Add(btnPlus1);
             Controls.Add(btnPlus2);
             Name = "AccountUserControl";
             Size = new Size(1902, 947);
@@ -345,23 +327,23 @@
         private Button btnChat;
         private Panel panel1;
         private Label label4;
-        private Label label2;
+        private Label lblNama;
         private Panel panel2;
         private Label label3;
-        private Label label5;
+        private Label lblEmail;
         private Panel panel3;
         private Label label6;
-        private Label label7;
+        private Label lblNoHP;
         private Panel panel4;
         private Label label8;
-        private Label label9;
+        private Label lblAlamat;
+        private PictureBox pictureBox5;
         private Label label10;
         private Label label11;
         private Label label12;
         private Label label13;
-        private Label label14;
         private Label label15;
-        private Button btnPlus1;
         private Button btnPlus2;
+        private Button button1;
     }
 }
