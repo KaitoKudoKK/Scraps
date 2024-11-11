@@ -16,6 +16,7 @@ namespace WinFormsApp1
         private string connstring = "Host=localhost;Port=5432;Username=postgres;Password=lisha;Database=scraps";
         private static NpgsqlCommand cmd;
 
+
         public class Buyer
         {
             public int BuyerID { get; set; }
