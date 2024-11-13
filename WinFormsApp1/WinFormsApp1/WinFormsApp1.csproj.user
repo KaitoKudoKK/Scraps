@@ -19,8 +19,13 @@
     <Compile Update="HomeUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="register.cs">
+    <Compile Update="RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="AccountUserControl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

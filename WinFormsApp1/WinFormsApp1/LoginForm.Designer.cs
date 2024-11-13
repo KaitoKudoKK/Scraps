@@ -38,10 +38,10 @@ namespace WinFormsApp1
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            tbUsername = new TextBox();
             tbEmail = new TextBox();
             tbPassword = new TextBox();
             btnLogin = new Button();
+            tbUsername = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -96,11 +96,11 @@ namespace WinFormsApp1
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 78F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
+            label3.Font = new Font("Montserrat", 78F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
             label3.ForeColor = Color.FromArgb(7, 79, 84);
             label3.Location = new Point(1307, 129);
             label3.Name = "label3";
-            label3.Size = new Size(259, 89);
+            label3.Size = new Size(299, 108);
             label3.TabIndex = 2;
             label3.Text = "Log In";
             // 
@@ -134,15 +134,9 @@ namespace WinFormsApp1
             label6.TabIndex = 5;
             label6.Text = "Password : ";
             // 
-            // tbUsername
-            // 
-            tbUsername.Location = new Point(1344, 352);
-            tbUsername.Name = "tbUsername";
-            tbUsername.Size = new Size(502, 53);
-            tbUsername.TabIndex = 6;
-            // 
             // tbEmail
             // 
+            tbEmail.BorderStyle = BorderStyle.FixedSingle;
             tbEmail.Location = new Point(1344, 420);
             tbEmail.Name = "tbEmail";
             tbEmail.Size = new Size(502, 53);
@@ -150,6 +144,7 @@ namespace WinFormsApp1
             // 
             // tbPassword
             // 
+            tbPassword.BorderStyle = BorderStyle.FixedSingle;
             tbPassword.Location = new Point(1344, 484);
             tbPassword.Name = "tbPassword";
             tbPassword.Size = new Size(502, 53);
@@ -170,19 +165,27 @@ namespace WinFormsApp1
             btnLogin.UseVisualStyleBackColor = false;
             btnLogin.Click += btnLogin_Click;
             // 
+            // tbUsername
+            // 
+            tbUsername.BorderStyle = BorderStyle.FixedSingle;
+            tbUsername.Location = new Point(1344, 352);
+            tbUsername.Name = "tbUsername";
+            tbUsername.Size = new Size(502, 53);
+            tbUsername.TabIndex = 6;
+            // 
             // LoginForm
             // 
             AcceptButton = btnLogin;
-            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleDimensions = new SizeF(120F, 120F);
             AutoScaleMode = AutoScaleMode.Dpi;
             AutoScroll = true;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            ClientSize = new Size(1370, 749);
+            ClientSize = new Size(1902, 1033);
+            Controls.Add(tbUsername);
             Controls.Add(btnLogin);
             Controls.Add(tbPassword);
             Controls.Add(tbEmail);
-            Controls.Add(tbUsername);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -197,6 +200,7 @@ namespace WinFormsApp1
             Text = "Login";
             FormClosed += LoginForm_FormClosed;
             Load += Form1_Load;
+            KeyDown += LoginForm_KeyDown;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -212,10 +216,10 @@ namespace WinFormsApp1
         private Label label4;
         private Label label5;
         private Label label6;
-        private TextBox tbUsername;
         private TextBox tbEmail;
         private TextBox tbPassword;
         private Button btnLogin;
+        private TextBox tbUsername;
     }
 }
 #endregion
