@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -45,6 +46,10 @@
             lblLogin = new Label();
             rbBuyer = new RadioButton();
             rbSeller = new RadioButton();
+            panel1 = new Panel();
+            pictureBox1 = new PictureBox();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -109,9 +114,9 @@
             // tbUsername
             // 
             tbUsername.BorderStyle = BorderStyle.FixedSingle;
+            tbUsername.Font = new Font("Montserrat", 35F, FontStyle.Regular, GraphicsUnit.Pixel);
             tbUsername.Location = new Point(375, 343);
             tbUsername.Margin = new Padding(3, 4, 3, 4);
-            tbUsername.Multiline = true;
             tbUsername.Name = "tbUsername";
             tbUsername.Size = new Size(508, 50);
             tbUsername.TabIndex = 6;
@@ -119,9 +124,9 @@
             // tbEmail
             // 
             tbEmail.BorderStyle = BorderStyle.FixedSingle;
+            tbEmail.Font = new Font("Montserrat", 35F, FontStyle.Regular, GraphicsUnit.Pixel);
             tbEmail.Location = new Point(375, 418);
             tbEmail.Margin = new Padding(3, 4, 3, 4);
-            tbEmail.Multiline = true;
             tbEmail.Name = "tbEmail";
             tbEmail.Size = new Size(508, 50);
             tbEmail.TabIndex = 7;
@@ -129,9 +134,9 @@
             // tbPhone
             // 
             tbPhone.BorderStyle = BorderStyle.FixedSingle;
+            tbPhone.Font = new Font("Montserrat", 35F, FontStyle.Regular, GraphicsUnit.Pixel);
             tbPhone.Location = new Point(375, 499);
             tbPhone.Margin = new Padding(3, 4, 3, 4);
-            tbPhone.Multiline = true;
             tbPhone.Name = "tbPhone";
             tbPhone.Size = new Size(508, 50);
             tbPhone.TabIndex = 8;
@@ -139,9 +144,9 @@
             // tbAddress
             // 
             tbAddress.BorderStyle = BorderStyle.FixedSingle;
+            tbAddress.Font = new Font("Montserrat", 35F, FontStyle.Regular, GraphicsUnit.Pixel);
             tbAddress.Location = new Point(375, 574);
             tbAddress.Margin = new Padding(3, 4, 3, 4);
-            tbAddress.Multiline = true;
             tbAddress.Name = "tbAddress";
             tbAddress.Size = new Size(508, 50);
             tbAddress.TabIndex = 9;
@@ -149,9 +154,9 @@
             // tbPassword
             // 
             tbPassword.BorderStyle = BorderStyle.FixedSingle;
+            tbPassword.Font = new Font("Montserrat", 35F, FontStyle.Regular, GraphicsUnit.Pixel);
             tbPassword.Location = new Point(375, 649);
             tbPassword.Margin = new Padding(3, 4, 3, 4);
-            tbPassword.Multiline = true;
             tbPassword.Name = "tbPassword";
             tbPassword.Size = new Size(508, 50);
             tbPassword.TabIndex = 10;
@@ -177,7 +182,7 @@
             btnRegister.Location = new Point(481, 826);
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(295, 80);
-            btnRegister.TabIndex = 13;
+            btnRegister.TabIndex = 14;
             btnRegister.Text = "Register";
             btnRegister.UseVisualStyleBackColor = false;
             // 
@@ -199,7 +204,7 @@
             lblLogin.Location = new Point(688, 776);
             lblLogin.Name = "lblLogin";
             lblLogin.Size = new Size(93, 33);
-            lblLogin.TabIndex = 15;
+            lblLogin.TabIndex = 13;
             lblLogin.Text = "Log in";
             lblLogin.Click += lblLogin_Click;
             lblLogin.MouseEnter += lblLogin_MouseEnter;
@@ -212,7 +217,7 @@
             rbBuyer.Location = new Point(370, 718);
             rbBuyer.Name = "rbBuyer";
             rbBuyer.Size = new Size(107, 37);
-            rbBuyer.TabIndex = 16;
+            rbBuyer.TabIndex = 11;
             rbBuyer.TabStop = true;
             rbBuyer.Text = "Buyer";
             rbBuyer.UseVisualStyleBackColor = true;
@@ -224,16 +229,36 @@
             rbSeller.Location = new Point(616, 718);
             rbSeller.Name = "rbSeller";
             rbSeller.Size = new Size(101, 37);
-            rbSeller.TabIndex = 17;
+            rbSeller.TabIndex = 12;
             rbSeller.TabStop = true;
             rbSeller.Text = "Seller";
             rbSeller.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(7, 79, 84);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Dock = DockStyle.Right;
+            panel1.Location = new Point(1159, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(743, 1033);
+            panel1.TabIndex = 18;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(92, 388);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(591, 676);
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // RegisterForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(panel1);
             Controls.Add(rbSeller);
             Controls.Add(rbBuyer);
             Controls.Add(lblLogin);
@@ -251,12 +276,15 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            KeyPreview = true;
             Margin = new Padding(3, 4, 3, 4);
             MaximumSize = new Size(1920, 1080);
             MinimumSize = new Size(640, 360);
             Name = "RegisterForm";
             Text = "register";
             KeyDown += RegisterForm_KeyDown;
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -280,5 +308,7 @@
         private Label lblLogin;
         private RadioButton rbBuyer;
         private RadioButton rbSeller;
+        private Panel panel1;
+        private PictureBox pictureBox1;
     }
 }
