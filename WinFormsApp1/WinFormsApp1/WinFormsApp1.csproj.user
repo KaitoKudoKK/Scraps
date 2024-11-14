@@ -40,6 +40,9 @@
     <Compile Update="SellerForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="TransHistoryUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="AccountUserControl.resx">
