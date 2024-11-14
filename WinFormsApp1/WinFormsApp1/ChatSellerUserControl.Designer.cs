@@ -285,6 +285,7 @@
             Controls.Add(label1);
             Name = "ChatSellerUserControl";
             Size = new Size(1902, 908);
+            Load += ChatSellerUserControl_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();

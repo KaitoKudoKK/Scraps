@@ -77,5 +77,19 @@ namespace WinFormsApp1
                 }
             }
         }
+
+        private void AddProductUserControl_Load(object sender, EventArgs e)
+        {
+            textBox1.BackColor = Color.FromArgb(128, 7, 79, 84);
+            textBox2.BackColor = Color.FromArgb(128, 7, 79, 84);
+            textBox4.BackColor = Color.FromArgb(128, 7, 79, 84);
+            textBox5.BackColor = Color.FromArgb(128, 7, 79, 84);
+            panel1.BackColor = Color.FromArgb(128, 7, 79, 84);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

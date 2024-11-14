@@ -60,5 +60,10 @@ namespace WinFormsApp1
             addProductUserControl1.Show();
             addProductUserControl1.BringToFront();
         }
+
+        private void btnAccount_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -52,6 +52,9 @@
             panel2 = new Panel();
             label15 = new Label();
             lblTotal = new Label();
+            label11 = new Label();
+            radioButton1 = new RadioButton();
+            radioButton2 = new RadioButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
@@ -201,7 +204,7 @@
             button1.Cursor = Cursors.Hand;
             button1.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(746, 663);
+            button1.Location = new Point(1181, 608);
             button1.Name = "button1";
             button1.Size = new Size(295, 80);
             button1.TabIndex = 19;
@@ -252,12 +255,13 @@
             // 
             label14.AutoEllipsis = true;
             label14.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label14.Location = new Point(279, 695);
+            label14.Location = new Point(365, 695);
             label14.Name = "label14";
             label14.RightToLeft = RightToLeft.Yes;
             label14.Size = new Size(146, 33);
             label14.TabIndex = 24;
             label14.Text = "Rp0";
+            label14.TextAlign = ContentAlignment.TopRight;
             // 
             // panel2
             // 
@@ -288,10 +292,48 @@
             lblTotal.TabIndex = 26;
             lblTotal.Text = "Rp920.000";
             // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
+            label11.Location = new Point(692, 608);
+            label11.Name = "label11";
+            label11.Size = new Size(312, 37);
+            label11.TabIndex = 27;
+            label11.Text = "Metode Pembayaran";
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            radioButton1.Location = new Point(693, 654);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(139, 33);
+            radioButton1.TabIndex = 28;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "Bank BRI ";
+            radioButton1.UseVisualStyleBackColor = true;
+            radioButton1.CheckedChanged += radioButton1_CheckedChanged;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            radioButton2.Location = new Point(692, 693);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(139, 33);
+            radioButton2.TabIndex = 29;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "Bank BRI ";
+            radioButton2.UseVisualStyleBackColor = true;
+            // 
             // CartUserControl
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(radioButton2);
+            Controls.Add(radioButton1);
+            Controls.Add(label11);
             Controls.Add(lblTotal);
             Controls.Add(label15);
             Controls.Add(panel2);
@@ -351,5 +393,8 @@
         private Panel panel2;
         private Label label15;
         private Label lblTotal;
+        private Label label11;
+        private RadioButton radioButton1;
+        private RadioButton radioButton2;
     }
 }

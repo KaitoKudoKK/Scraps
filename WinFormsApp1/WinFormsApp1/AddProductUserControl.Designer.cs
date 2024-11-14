@@ -34,6 +34,7 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
+
             tbNamaProduk = new TextBox();
             tbUkuranProduk = new TextBox();
             tbDurasiPakaiProduk = new TextBox();
