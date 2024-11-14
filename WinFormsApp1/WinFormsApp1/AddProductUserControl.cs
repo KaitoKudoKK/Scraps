@@ -1,55 +1,81 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using Npgsql;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace WinFormsApp1
 {
     public partial class AddProductUserControl : UserControl
     {
-        public AddProductUserControl()
+        private string sellerID;
+
+        // Constructor with sellerID parameter
+        public AddProductUserControl(string sellerID)
         {
             InitializeComponent();
+            this.sellerID = sellerID;  // Store the sellerID as a string
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pbProductImage_Click(object sender, EventArgs e)
         {
-
+            // Open the file dialog to select an image
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files|.jpg;.jpeg;*.png;";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Display the selected image in the PictureBox
+                string filePath = openFileDialog.FileName;
+                pbProductImage.Image = Image.FromFile(filePath);
+            }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnAddProduct_Click(object sender, EventArgs e)
         {
+            string namaProduk = tbNamaProduk.Text;
+            string ukuran = tbUkuranProduk.Text;
+            string durasiPakai = tbDurasiPakaiProduk.Text;
+            string kondisi = tbKondisiProduk.Text;
+            decimal harga = Convert.ToDecimal(tbHargaProduk.Text);
 
-        }
+            byte[] imageBytes = null;
+            if (pbProductImage.Image != null)
+            {
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    pbProductImage.Image.Save(ms, pbProductImage.Image.RawFormat);
+                    imageBytes = ms.ToArray();
+                }
+            }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
+            using (NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=lisha;Database=scraps"))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "INSERT INTO product (product_name, product_size, product_duration, product_condition, product_price, product_image, sellerid) " +
+                                   "VALUES (@namaProduk, @ukuran, @durasiPakai, @kondisi, @harga, @imageBytes, @sellerID)";
 
-        }
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("namaProduk", namaProduk);
+                        cmd.Parameters.AddWithValue("ukuran", ukuran);
+                        cmd.Parameters.AddWithValue("durasiPakai", durasiPakai);
+                        cmd.Parameters.AddWithValue("kondisi", kondisi);
+                        cmd.Parameters.AddWithValue("harga", harga);
+                        cmd.Parameters.AddWithValue("imageBytes", imageBytes ?? (object)DBNull.Value); // If no image, save NULL
+                        cmd.Parameters.AddWithValue("sellerID", sellerID);  // Use the sellerID from the logged-in user
 
-        private void label5_Click(object sender, EventArgs e)
-        {
+                        cmd.ExecuteNonQuery();
+                    }
 
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
+                    MessageBox.Show("Product successfully added!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
         }
 
         private void AddProductUserControl_Load(object sender, EventArgs e)

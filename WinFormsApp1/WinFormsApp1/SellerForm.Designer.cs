@@ -154,6 +154,7 @@
             label4.TabIndex = 17;
             label4.Text = "   |   ";
             // 
+
             // btnAdd
             // 
             btnAdd.BackColor = Color.White;
@@ -171,6 +172,24 @@
             btnAdd.TabIndex = 16;
             btnAdd.Text = "Add Product";
             btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += btnAdd_Click;
+            // 
+            // HomeSellerUserControl
+            // 
+            HomeSellerUserControl.Dock = DockStyle.Fill;
+            HomeSellerUserControl.Location = new Point(0, 86);
+            HomeSellerUserControl.Name = "HomeSellerUserControl";
+            HomeSellerUserControl.Size = new Size(1902, 947);
+            HomeSellerUserControl.TabIndex = 16;
+            // 
+            // addProductUserControl1
+            // 
+            addProductUserControl1.Dock = DockStyle.Fill;
+            addProductUserControl1.ForeColor = Color.Black;
+            addProductUserControl1.Location = new Point(0, 0);
+            addProductUserControl1.Name = "addProductUserControl1";
+            addProductUserControl1.Size = new Size(1902, 1033);
+            addProductUserControl1.TabIndex = 17;
             // 
             // HomeSellerUserControl
             // 
@@ -206,6 +225,7 @@
             ClientSize = new Size(1902, 1033);
             Controls.Add(HomeSellerUserControl);
             Controls.Add(panel1);
+            Controls.Add(addProductUserControl1);
             Name = "SellerForm";
             Text = "SellerForm";
             Load += SellerForm_Load;
@@ -227,5 +247,6 @@
         private Button button1;
         private Label label4;
         private Button btnAccount;
+
     }
 }

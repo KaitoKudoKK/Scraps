@@ -157,5 +157,10 @@ namespace WinFormsApp1
                 lbl.Font = new Font(lbl.Font, FontStyle.Underline | FontStyle.Bold);
             }
         }
+
+        private void RegisterForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

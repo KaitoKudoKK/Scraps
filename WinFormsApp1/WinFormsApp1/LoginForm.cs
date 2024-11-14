@@ -13,6 +13,8 @@ namespace WinFormsApp1
 
         private NpgsqlConnection conn;
         private string connstring = "Host=localhost;Port=5432;Username=postgres;Password=lisha;Database=scraps";
+        public static string currentSellerID = ""; // Store the seller ID as a string, empty means no seller logged in.
+        public static string currentBuyerID = ""; // Store the buyer ID as a string, empty means no buyer logged in.
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
@@ -31,21 +33,24 @@ namespace WinFormsApp1
                 return;
             }
 
-            bool isBuyer = CheckUserRole(username, email, password, "buyer");
-            bool isSeller = CheckUserRole(username, email, password, "seller");
+            // Check if the user is a buyer or a seller
+            string sellerID = CheckUserRoleAndGetID(username, email, password, "seller");
+            string buyerID = CheckUserRoleAndGetID(username, email, password, "buyer");
 
-            if (isBuyer)
+            if (!string.IsNullOrEmpty(sellerID))  // Login as seller
             {
-                MessageBox.Show("Login Berhasil sebagai Buyer");
-                BuyerForm buyerForm = new BuyerForm(); // Form untuk Buyer
-                buyerForm.Show();
-                this.Hide();
-            }
-            else if (isSeller)
-            {
+                currentSellerID = sellerID; // Store the seller ID globally as a string
                 MessageBox.Show("Login Berhasil sebagai Seller");
                 SellerForm sellerForm = new SellerForm(); // Form untuk Seller
                 sellerForm.Show();
+                this.Hide();
+            }
+            else if (!string.IsNullOrEmpty(buyerID))  // Login as buyer
+            {
+                currentBuyerID = buyerID; // Store the buyer ID globally as a string
+                MessageBox.Show("Login Berhasil sebagai Buyer");
+                BuyerForm buyerForm = new BuyerForm(); // Form untuk Buyer
+                buyerForm.Show();
                 this.Hide();
             }
             else
@@ -54,14 +59,16 @@ namespace WinFormsApp1
             }
         }
 
-        private bool CheckUserRole(string username, string email, string password, string role)
+        // Modify this function to return the ID (either seller_id or buyer_id) as string
+        private string CheckUserRoleAndGetID(string username, string email, string password, string role)
         {
-            bool userExists = false;
+            string userID = "";
 
             try
             {
                 conn.Open();
-                string query = $"SELECT COUNT(*) FROM {role} WHERE {role}_username = @username AND {role}_email = @email AND {role}_password = @password";
+                // Select either seller_id or buyer_id based on role
+                string query = $"SELECT {role}id FROM {role} WHERE {role}_username = @username AND {role}_email = @email AND {role}_password = @password";
 
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
@@ -69,7 +76,12 @@ namespace WinFormsApp1
                     cmd.Parameters.AddWithValue("email", email);
                     cmd.Parameters.AddWithValue("password", password);
 
-                    userExists = Convert.ToInt32(cmd.ExecuteScalar()) > 0;
+                    // Execute the query and retrieve the ID
+                    object result = cmd.ExecuteScalar();
+                    if (result != null)
+                    {
+                        userID = result.ToString();
+                    }
                 }
             }
             catch (Exception ex)
@@ -81,7 +93,7 @@ namespace WinFormsApp1
                 conn.Close();
             }
 
-            return userExists;
+            return userID; // Return the userID (seller_id or buyer_id) as a string
         }
 
         private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
