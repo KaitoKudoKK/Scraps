@@ -69,12 +69,13 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(880, 96);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(192, 168);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click_1;
             // 
             // btnChat
             // 
@@ -121,6 +122,7 @@
             lblNama.Size = new Size(1392, 36);
             lblNama.TabIndex = 6;
             lblNama.Text = "Steven";
+            lblNama.Click += lblNama_Click;
             // 
             // panel2
             // 
@@ -323,7 +325,6 @@
         #endregion
 
         private Label label1;
-        private PictureBox pictureBox1;
         private Button btnChat;
         private Panel panel1;
         private Label label4;
@@ -345,5 +346,6 @@
         private Label label15;
         private Button btnPlus2;
         private Button button1;
+        public PictureBox pictureBox1;
     }
 }

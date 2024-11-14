@@ -40,6 +40,7 @@ namespace WinFormsApp1
             string durasiPakai = tbDurasiPakaiProduk.Text;
             string kondisi = tbKondisiProduk.Text;
             decimal harga = Convert.ToDecimal(tbHargaProduk.Text);
+            string sellerID = 
 
             // Convert the image in PictureBox to a byte array
             byte[] imageBytes = null;
@@ -53,6 +54,7 @@ namespace WinFormsApp1
             }
 
             // Save the product details to the database
+
             using (NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=lisha;Database=scraps"))
             {
                 conn.Open();
@@ -72,6 +74,7 @@ namespace WinFormsApp1
                         // Execute the query to insert the product data into the database
                         cmd.ExecuteNonQuery();
                     }
+
 
                     // Notify the user that the product was successfully added
                     MessageBox.Show("Product successfully added!");

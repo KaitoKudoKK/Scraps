@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace WinFormsApp1
 {
@@ -16,12 +17,22 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
-        public void LoadUserData(string name, string email, string phone, string address)
+        public void LoadUserData(string name, string email, string phone, string address, string imageLocation = "")
         {
             lblNama.Text = name;
             lblEmail.Text = email;
             lblNoHP.Text = phone;
             lblAlamat.Text = address;
+
+            if (!string.IsNullOrEmpty(imageLocation) && System.IO.File.Exists(imageLocation))
+            {
+                pictureBox1.ImageLocation = imageLocation;
+                pictureBox1.Load(); // Muat ulang gambar secara eksplisit
+            }
+            else
+            {
+                pictureBox1.Image = null; // Kosongkan jika tidak ada jalur yang valid
+            }
         }
         private void AccountUserControl_Load(object sender, EventArgs e)
         {
@@ -36,7 +47,7 @@ namespace WinFormsApp1
             btnPlus2.Region = new Region(buttonPath);
         }
 
-        
+
 
         private void btnPlus1_Click(object sender, EventArgs e)
         {
@@ -53,7 +64,7 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            EditAkunUserControl editForm = new EditAkunUserControl(lblNama.Text, lblEmail.Text, lblNoHP.Text, lblAlamat.Text);
+            EditAkunUserControl editForm = new EditAkunUserControl(lblNama.Text, lblEmail.Text, lblNoHP.Text, lblAlamat.Text, pictureBox1.ImageLocation);
             editForm.UserDataUpdated += OnUserDataUpdated; // Subscribe event
             this.Parent.Controls.Add(editForm);
             this.Hide();
@@ -62,11 +73,34 @@ namespace WinFormsApp1
         // Event handler untuk update data
         private void OnUserDataUpdated(object sender, UserDataEventArgs e)
         {
-            LoadUserData(e.Name, e.Email, e.Phone, e.Address);
+            LoadUserData(e.Name, e.Email, e.Phone, e.Address, e.ImageLocation);
             this.Show();
         }
 
         private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            // Buka EditAkunUserControl untuk mengubah gambar
+            EditAkunUserControl editForm = new EditAkunUserControl(lblNama.Text, lblEmail.Text, lblNoHP.Text, lblAlamat.Text, pictureBox1.ImageLocation);
+
+            // Subscribe ke event untuk mendapatkan data terbaru
+            editForm.UserDataUpdated += OnUserDataUpdated;
+
+            this.Parent.Controls.Add(editForm);
+            this.Hide(); // Sembunyikan AccountUserControl sementara
+            editForm.Show(); // Tampilkan EditAkunUserControl untuk edit gambar
+        }
+
+        private void lblNama_Click(object sender, EventArgs e)
         {
 
         }
