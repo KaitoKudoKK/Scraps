@@ -14,15 +14,14 @@ namespace WinFormsApp1
         public AddProductUserControl(string sellerID)
         {
             InitializeComponent();
-            this.sellerID = sellerID;  // Store the sellerID
+            this.sellerID = sellerID;  // Store the sellerID as a string
         }
 
-        // This event is triggered when the PictureBox is clicked to select an image
         private void pbProductImage_Click(object sender, EventArgs e)
         {
             // Open the file dialog to select an image
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;";
+            openFileDialog.Filter = "Image Files|.jpg;.jpeg;*.png;";
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 // Display the selected image in the PictureBox
@@ -31,18 +30,14 @@ namespace WinFormsApp1
             }
         }
 
-        // This event is triggered when the "Add Product" button is clicked
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
-            // Retrieve the product information from the textboxes
             string namaProduk = tbNamaProduk.Text;
             string ukuran = tbUkuranProduk.Text;
             string durasiPakai = tbDurasiPakaiProduk.Text;
             string kondisi = tbKondisiProduk.Text;
             decimal harga = Convert.ToDecimal(tbHargaProduk.Text);
-            string sellerID = 
 
-            // Convert the image in PictureBox to a byte array
             byte[] imageBytes = null;
             if (pbProductImage.Image != null)
             {
@@ -53,35 +48,31 @@ namespace WinFormsApp1
                 }
             }
 
-            // Save the product details to the database
-
             using (NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=lisha;Database=scraps"))
             {
-                conn.Open();
-                string query = "INSERT INTO product (product_name, product_size, product_duration, product_condition, product_price, product_image, sellerid) " +
-                               "VALUES (@namaProduk, @ukuran, @durasiPakai, @kondisi, @harga, @imageBytes,)";
-
-                using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
+                try
                 {
-                    // Menambahkan parameter untuk mencegah SQL Injection
-                    cmd.Parameters.AddWithValue("namaProduk", namaProduk);
-                    cmd.Parameters.AddWithValue("ukuran", ukuran);
-                    cmd.Parameters.AddWithValue("durasiPakai", durasiPakai);
-                    cmd.Parameters.AddWithValue("kondisi", kondisi);
-                    cmd.Parameters.AddWithValue("harga", harga);
-                    cmd.Parameters.AddWithValue("imageBytes", imageBytes ?? (object)DBNull.Value); // Jika gambar tidak ada, simpan NULL
+                    conn.Open();
+                    string query = "INSERT INTO product (product_name, product_size, product_duration, product_condition, product_price, product_image, sellerid) " +
+                                   "VALUES (@namaProduk, @ukuran, @durasiPakai, @kondisi, @harga, @imageBytes, @sellerID)";
 
-                        // Execute the query to insert the product data into the database
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("namaProduk", namaProduk);
+                        cmd.Parameters.AddWithValue("ukuran", ukuran);
+                        cmd.Parameters.AddWithValue("durasiPakai", durasiPakai);
+                        cmd.Parameters.AddWithValue("kondisi", kondisi);
+                        cmd.Parameters.AddWithValue("harga", harga);
+                        cmd.Parameters.AddWithValue("imageBytes", imageBytes ?? (object)DBNull.Value); // If no image, save NULL
+                        cmd.Parameters.AddWithValue("sellerID", sellerID);  // Use the sellerID from the logged-in user
+
                         cmd.ExecuteNonQuery();
                     }
 
-
-                    // Notify the user that the product was successfully added
                     MessageBox.Show("Product successfully added!");
                 }
                 catch (Exception ex)
                 {
-                    // If an error occurs, display an error message
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
