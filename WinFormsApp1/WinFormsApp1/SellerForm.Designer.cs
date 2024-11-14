@@ -29,14 +29,16 @@
         private void InitializeComponent()
         {
             btnMyProduct = new Button();
-            btnAccount = new Button();
             btnChat = new Button();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
             panel1 = new Panel();
-            HomeSellerUserControl = new HomeSellerUserControl();
+            button1 = new Button();
+            label4 = new Label();
             btnAdd = new Button();
+            HomeSellerUserControl = new HomeSellerUserControl();
+            btnAccount = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -58,24 +60,6 @@
             btnMyProduct.Text = "My Product";
             btnMyProduct.UseVisualStyleBackColor = false;
             btnMyProduct.Click += btnMyProduct_Click;
-            // 
-            // btnAccount
-            // 
-            btnAccount.BackColor = Color.White;
-            btnAccount.BackgroundImageLayout = ImageLayout.None;
-            btnAccount.Cursor = Cursors.Hand;
-            btnAccount.FlatAppearance.BorderColor = Color.White;
-            btnAccount.FlatAppearance.BorderSize = 0;
-            btnAccount.FlatAppearance.MouseDownBackColor = Color.DarkGray;
-            btnAccount.FlatAppearance.MouseOverBackColor = Color.LightGray;
-            btnAccount.FlatStyle = FlatStyle.Flat;
-            btnAccount.Font = new Font("Microsoft Sans Serif", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAccount.Location = new Point(636, 0);
-            btnAccount.Name = "btnAccount";
-            btnAccount.Size = new Size(215, 86);
-            btnAccount.TabIndex = 14;
-            btnAccount.Text = "Account";
-            btnAccount.UseVisualStyleBackColor = false;
             // 
             // btnChat
             // 
@@ -127,6 +111,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(button1);
             panel1.Controls.Add(btnAdd);
             panel1.Controls.Add(btnMyProduct);
             panel1.Controls.Add(btnChat);
@@ -134,19 +119,40 @@
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label3);
+            panel1.Controls.Add(label4);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(1902, 86);
             panel1.TabIndex = 15;
             // 
-            // HomeSellerUserControl
+            // button1
             // 
-            HomeSellerUserControl.Location = new Point(5, 88);
-            HomeSellerUserControl.Name = "HomeSellerUserControl";
-            HomeSellerUserControl.Size = new Size(1897, 945);
-            HomeSellerUserControl.TabIndex = 16;
-            HomeSellerUserControl.Load += homeSellerUserControl1_Load;
+            button1.BackColor = Color.White;
+            button1.BackgroundImageLayout = ImageLayout.None;
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderColor = Color.White;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseDownBackColor = Color.DarkGray;
+            button1.FlatAppearance.MouseOverBackColor = Color.LightGray;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Microsoft Sans Serif", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(868, 0);
+            button1.Name = "button1";
+            button1.Size = new Size(344, 86);
+            button1.TabIndex = 17;
+            button1.Text = "Transaction History";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
+            label4.Location = new Point(819, 25);
+            label4.Name = "label4";
+            label4.Size = new Size(85, 37);
+            label4.TabIndex = 17;
+            label4.Text = "   |   ";
             // 
             // btnAdd
             // 
@@ -166,6 +172,33 @@
             btnAdd.Text = "Add Product";
             btnAdd.UseVisualStyleBackColor = false;
             // 
+            // HomeSellerUserControl
+            // 
+            HomeSellerUserControl.Location = new Point(5, 88);
+            HomeSellerUserControl.Name = "HomeSellerUserControl";
+            HomeSellerUserControl.Size = new Size(1897, 945);
+            HomeSellerUserControl.TabIndex = 16;
+            HomeSellerUserControl.Load += homeSellerUserControl1_Load;
+            // 
+            // btnAccount
+            // 
+            btnAccount.BackColor = Color.White;
+            btnAccount.BackgroundImageLayout = ImageLayout.None;
+            btnAccount.Cursor = Cursors.Hand;
+            btnAccount.FlatAppearance.BorderColor = Color.White;
+            btnAccount.FlatAppearance.BorderSize = 0;
+            btnAccount.FlatAppearance.MouseDownBackColor = Color.DarkGray;
+            btnAccount.FlatAppearance.MouseOverBackColor = Color.LightGray;
+            btnAccount.FlatStyle = FlatStyle.Flat;
+            btnAccount.Font = new Font("Microsoft Sans Serif", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAccount.Location = new Point(636, 0);
+            btnAccount.Name = "btnAccount";
+            btnAccount.Size = new Size(215, 86);
+            btnAccount.TabIndex = 14;
+            btnAccount.Text = "Account";
+            btnAccount.UseVisualStyleBackColor = false;
+            btnAccount.Click += btnAccount_Click;
+            // 
             // SellerForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -184,7 +217,6 @@
         #endregion
 
         private Button btnMyProduct;
-        private Button btnAccount;
         private Button btnChat;
         private Label label3;
         private Label label2;
@@ -192,5 +224,8 @@
         private Panel panel1;
         private HomeSellerUserControl HomeSellerUserControl;
         private Button btnAdd;
+        private Button button1;
+        private Label label4;
+        private Button btnAccount;
     }
 }

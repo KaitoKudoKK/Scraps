@@ -40,5 +40,10 @@ namespace WinFormsApp1
             pbStar10.BackColor = Color.FromArgb(0, 0, 0, 0);
             pbStar11.BackColor = Color.FromArgb(0, 0, 0, 0);
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

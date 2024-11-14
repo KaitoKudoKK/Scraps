@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            button1 = new Button();
+            btnChat = new Button();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -41,41 +41,45 @@
             textBox3 = new TextBox();
             textBox4 = new TextBox();
             textBox5 = new TextBox();
-            button2 = new Button();
             label7 = new Label();
+            button1 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.Controls.Add(btnChat);
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(button1);
             panel1.ForeColor = Color.DarkCyan;
             panel1.Location = new Point(60, 137);
             panel1.Name = "panel1";
             panel1.Size = new Size(418, 602);
             panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
             // 
-            // button1
+            // btnChat
             // 
-            button1.BackColor = Color.LightGray;
-            button1.DialogResult = DialogResult.TryAgain;
-            button1.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.DarkCyan;
-            button1.Location = new Point(176, 203);
-            button1.Name = "button1";
-            button1.Size = new Size(59, 124);
-            button1.TabIndex = 0;
-            button1.Text = "+";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click_1;
+            btnChat.BackColor = Color.Transparent;
+            btnChat.BackgroundImageLayout = ImageLayout.None;
+            btnChat.Cursor = Cursors.Hand;
+            btnChat.FlatAppearance.BorderSize = 0;
+            btnChat.FlatStyle = FlatStyle.Flat;
+            btnChat.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnChat.ForeColor = Color.DarkCyan;
+            btnChat.Location = new Point(128, 234);
+            btnChat.Margin = new Padding(0);
+            btnChat.Name = "btnChat";
+            btnChat.Size = new Size(138, 125);
+            btnChat.TabIndex = 41;
+            btnChat.Text = "+";
+            btnChat.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.DarkCyan;
-            label1.Location = new Point(115, 379);
+            label1.Location = new Point(101, 374);
             label1.Name = "label1";
             label1.Size = new Size(193, 39);
             label1.TabIndex = 1;
@@ -181,16 +185,6 @@
             textBox5.Size = new Size(862, 59);
             textBox5.TabIndex = 10;
             // 
-            // button2
-            // 
-            button2.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(782, 670);
-            button2.Name = "button2";
-            button2.Size = new Size(147, 69);
-            button2.TabIndex = 11;
-            button2.Text = "Add";
-            button2.UseVisualStyleBackColor = true;
-            // 
             // label7
             // 
             label7.AutoSize = true;
@@ -201,12 +195,29 @@
             label7.TabIndex = 12;
             label7.Text = "Add Product";
             // 
+            // button1
+            // 
+            button1.BackColor = Color.DarkCyan;
+            button1.BackgroundImageLayout = ImageLayout.None;
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Microsoft Sans Serif", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(783, 667);
+            button1.Margin = new Padding(0);
+            button1.Name = "button1";
+            button1.Size = new Size(138, 56);
+            button1.TabIndex = 42;
+            button1.Text = "Add";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // AddProductUserControl
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(button1);
             Controls.Add(label7);
-            Controls.Add(button2);
             Controls.Add(textBox5);
             Controls.Add(textBox4);
             Controls.Add(textBox3);
@@ -221,6 +232,7 @@
             ForeColor = Color.Black;
             Name = "AddProductUserControl";
             Size = new Size(1902, 908);
+            Load += AddProductUserControl_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -231,7 +243,6 @@
 
         private Panel panel1;
         private Label label1;
-        private Button button1;
         private Label label2;
         private Label label3;
         private Label label4;
@@ -242,7 +253,8 @@
         private TextBox textBox3;
         private TextBox textBox4;
         private TextBox textBox5;
-        private Button button2;
         private Label label7;
+        private Button btnChat;
+        private Button button1;
     }
 }
