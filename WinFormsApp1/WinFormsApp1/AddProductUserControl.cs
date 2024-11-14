@@ -1,38 +1,40 @@
 ﻿using Npgsql;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace WinFormsApp1
 {
     public partial class AddProductUserControl : UserControl
     {
-        public AddProductUserControl()
+        private string sellerID;
+
+        // Constructor with sellerID parameter
+        public AddProductUserControl(string sellerID)
         {
             InitializeComponent();
+            this.sellerID = sellerID;  // Store the sellerID
         }
 
+        // This event is triggered when the PictureBox is clicked to select an image
         private void pbProductImage_Click(object sender, EventArgs e)
         {
-            // Membuka dialog untuk memilih gambar
+            // Open the file dialog to select an image
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;";
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                // Menampilkan gambar yang dipilih di PictureBox
+                // Display the selected image in the PictureBox
                 string filePath = openFileDialog.FileName;
                 pbProductImage.Image = Image.FromFile(filePath);
             }
         }
 
+        // This event is triggered when the "Add Product" button is clicked
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
+            // Retrieve the product information from the textboxes
             string namaProduk = tbNamaProduk.Text;
             string ukuran = tbUkuranProduk.Text;
             string durasiPakai = tbDurasiPakaiProduk.Text;
@@ -40,7 +42,7 @@ namespace WinFormsApp1
             decimal harga = Convert.ToDecimal(tbHargaProduk.Text);
             string sellerID = 
 
-            // Convert image in PictureBox to byte array
+            // Convert the image in PictureBox to a byte array
             byte[] imageBytes = null;
             if (pbProductImage.Image != null)
             {
@@ -51,7 +53,8 @@ namespace WinFormsApp1
                 }
             }
 
-            // Save data to the database
+            // Save the product details to the database
+
             using (NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=lisha;Database=scraps"))
             {
                 conn.Open();
@@ -68,9 +71,19 @@ namespace WinFormsApp1
                     cmd.Parameters.AddWithValue("harga", harga);
                     cmd.Parameters.AddWithValue("imageBytes", imageBytes ?? (object)DBNull.Value); // Jika gambar tidak ada, simpan NULL
 
-                    cmd.ExecuteNonQuery(); // Eksekusi perintah SQL untuk memasukkan data
+                        // Execute the query to insert the product data into the database
+                        cmd.ExecuteNonQuery();
+                    }
+
+
+                    // Notify the user that the product was successfully added
+                    MessageBox.Show("Product successfully added!");
                 }
-                MessageBox.Show("Product successfully added!");
+                catch (Exception ex)
+                {
+                    // If an error occurs, display an error message
+                    MessageBox.Show("Error: " + ex.Message);
+                }
             }
         }
     }
