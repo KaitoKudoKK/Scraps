@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="AccountSellerUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="AccountUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="AddProductUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="CartUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ChatSellerUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="ChatUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="EditAkunSellerUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="EditAkunUserControl1.cs">

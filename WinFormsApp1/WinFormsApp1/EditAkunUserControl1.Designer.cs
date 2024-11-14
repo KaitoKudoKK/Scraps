@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditAkunUserControl));
             button1 = new Button();
             label13 = new Label();
             label12 = new Label();
@@ -46,13 +45,13 @@
             label4 = new Label();
             label2 = new Label();
             btnChat = new Button();
-            pictureBox1 = new PictureBox();
+            image1 = new PictureBox();
             textBox1 = new TextBox();
             txtNoHP = new TextBox();
             panel4.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)image1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -116,6 +115,7 @@
             // 
             // txtAlamat
             // 
+            txtAlamat.BorderStyle = BorderStyle.None;
             txtAlamat.Font = new Font("Microsoft Sans Serif", 28F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtAlamat.Location = new Point(0, 0);
             txtAlamat.Multiline = true;
@@ -147,11 +147,12 @@
             // 
             // txtEmail
             // 
+            txtEmail.BorderStyle = BorderStyle.None;
             txtEmail.Font = new Font("Microsoft Sans Serif", 28F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtEmail.Location = new Point(-3, 0);
             txtEmail.Multiline = true;
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(1462, 60);
+            txtEmail.Size = new Size(1465, 60);
             txtEmail.TabIndex = 10;
             // 
             // label3
@@ -187,6 +188,7 @@
             // 
             // txtName
             // 
+            txtName.BorderStyle = BorderStyle.None;
             txtName.Font = new Font("Microsoft Sans Serif", 28F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtName.Location = new Point(0, 0);
             txtName.Multiline = true;
@@ -228,16 +230,18 @@
             btnChat.Name = "btnChat";
             btnChat.Size = new Size(482, 38);
             btnChat.TabIndex = 40;
+            btnChat.Text = "Upload Image";
             btnChat.UseVisualStyleBackColor = false;
+            btnChat.Click += btnChat_Click_3;
             // 
-            // pictureBox1
+            // image1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1006, 63);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(192, 168);
-            pictureBox1.TabIndex = 39;
-            pictureBox1.TabStop = false;
+            image1.Location = new Point(1006, 63);
+            image1.Name = "image1";
+            image1.Size = new Size(192, 168);
+            image1.SizeMode = PictureBoxSizeMode.Zoom;
+            image1.TabIndex = 39;
+            image1.TabStop = false;
             // 
             // textBox1
             // 
@@ -248,6 +252,7 @@
             // 
             // txtNoHP
             // 
+            txtNoHP.BorderStyle = BorderStyle.None;
             txtNoHP.Font = new Font("Microsoft Sans Serif", 28F, FontStyle.Regular, GraphicsUnit.Pixel);
             txtNoHP.Location = new Point(221, 559);
             txtNoHP.Multiline = true;
@@ -255,7 +260,7 @@
             txtNoHP.Size = new Size(1462, 60);
             txtNoHP.TabIndex = 11;
             // 
-            // AkunuserControl
+            // EditAkunUserControl
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -270,8 +275,8 @@
             Controls.Add(panel2);
             Controls.Add(panel1);
             Controls.Add(btnChat);
-            Controls.Add(pictureBox1);
-            Name = "AkunuserControl";
+            Controls.Add(image1);
+            Name = "EditAkunUserControl";
             Size = new Size(1904, 947);
             Load += AkunuserControl_Load;
             panel4.ResumeLayout(false);
@@ -280,7 +285,7 @@
             panel2.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)image1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -304,7 +309,7 @@
         private Label label5;
         private TextBox txtName;
         private Button btnChat;
-        private PictureBox pictureBox1;
+        private PictureBox image1;
         private TextBox textBox1;
         private TextBox txtAlamat;
         private TextBox txtEmail;
