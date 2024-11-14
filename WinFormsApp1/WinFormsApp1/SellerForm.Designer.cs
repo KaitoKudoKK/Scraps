@@ -38,6 +38,7 @@
             label4 = new Label();
             btnAdd = new Button();
             HomeSellerUserControl = new HomeSellerUserControl();
+            addProductUserControl1 = new AddProductUserControl(LoginForm.currentSellerID);
             btnAccount = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -197,7 +198,6 @@
             HomeSellerUserControl.Name = "HomeSellerUserControl";
             HomeSellerUserControl.Size = new Size(1897, 945);
             HomeSellerUserControl.TabIndex = 16;
-            HomeSellerUserControl.Load += homeSellerUserControl1_Load;
             // 
             // btnAccount
             // 
@@ -243,6 +243,7 @@
         private Label label1;
         private Panel panel1;
         private HomeSellerUserControl HomeSellerUserControl;
+        private AddProductUserControl addProductUserControl1;
         private Button btnAdd;
         private Button button1;
         private Label label4;
