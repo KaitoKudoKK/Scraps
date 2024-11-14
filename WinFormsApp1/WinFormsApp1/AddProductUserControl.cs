@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,39 +18,59 @@ namespace WinFormsApp1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pbProductImage_Click(object sender, EventArgs e)
         {
-
+            // Membuka dialog untuk memilih gambar
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;";
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Menampilkan gambar yang dipilih di PictureBox
+                string filePath = openFileDialog.FileName;
+                pbProductImage.Image = Image.FromFile(filePath);
+            }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnAddProduct_Click(object sender, EventArgs e)
         {
+            string namaProduk = tbNamaProduk.Text;
+            string ukuran = tbUkuranProduk.Text;
+            string durasiPakai = tbDurasiPakaiProduk.Text;
+            string kondisi = tbKondisiProduk.Text;
+            decimal harga = Convert.ToDecimal(tbHargaProduk.Text);
 
-        }
+            // Convert image in PictureBox to byte array
+            byte[] imageBytes = null;
+            if (pbProductImage.Image != null)
+            {
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    pbProductImage.Image.Save(ms, pbProductImage.Image.RawFormat);
+                    imageBytes = ms.ToArray();
+                }
+            }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
+            // Save data to the database
+            using (NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=qwerty123;Database=scraps"))
+            {
+                conn.Open();
+                string query = "INSERT INTO products (product_name, ukuran, durasi_pakai, kondisi, harga, image_data) " +
+                               "VALUES (@product_name, @ukuran, @durasi_pakai, @kondisi, @harga, @image_data)";
 
-        }
+                using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
+                {
+                    // Menambahkan parameter untuk mencegah SQL Injection
+                    cmd.Parameters.AddWithValue("product_name", namaProduk);
+                    cmd.Parameters.AddWithValue("ukuran", ukuran);
+                    cmd.Parameters.AddWithValue("durasi_pakai", durasiPakai);
+                    cmd.Parameters.AddWithValue("kondisi", kondisi);
+                    cmd.Parameters.AddWithValue("harga", harga);
+                    cmd.Parameters.AddWithValue("image_data", imageBytes ?? (object)DBNull.Value); // Jika gambar tidak ada, simpan NULL
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
+                    cmd.ExecuteNonQuery(); // Eksekusi perintah SQL untuk memasukkan data
+                }
+                MessageBox.Show("Product successfully added!");
+            }
         }
     }
 }
