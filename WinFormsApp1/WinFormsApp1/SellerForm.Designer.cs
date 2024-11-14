@@ -37,7 +37,7 @@
             panel1 = new Panel();
             btnAdd = new Button();
             HomeSellerUserControl = new HomeSellerUserControl();
-            addProductUserControl1 = new AddProductUserControl();
+            addProductUserControl1 = new AddProductUserControl(LoginForm.currentSellerID);
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -167,7 +167,6 @@
             HomeSellerUserControl.Name = "HomeSellerUserControl";
             HomeSellerUserControl.Size = new Size(1902, 947);
             HomeSellerUserControl.TabIndex = 16;
-            HomeSellerUserControl.Load += homeSellerUserControl1_Load;
             // 
             // addProductUserControl1
             // 

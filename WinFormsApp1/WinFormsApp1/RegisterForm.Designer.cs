@@ -282,6 +282,7 @@
             MinimumSize = new Size(562, 280);
             Name = "RegisterForm";
             Text = "register";
+            FormClosed += RegisterForm_FormClosed;
             KeyDown += RegisterForm_KeyDown;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
