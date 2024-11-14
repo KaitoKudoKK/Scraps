@@ -13,7 +13,7 @@ namespace WinFormsApp1
         }
 
         private NpgsqlConnection conn;
-        private string connstring = "Host=localhost;Port=5432;Username=postgres;Password=lisha;Database=scraps";
+        private string connstring = "Host=localhost;Port=5432;Username=postgres;Password=qwerty123;Database=scraps";
         private static NpgsqlCommand cmd;
 
 
@@ -42,7 +42,7 @@ namespace WinFormsApp1
                     connection.Open();
 
                     // Query untuk memverifikasi pengguna di database
-                    string query = "SELECT * FROM buyers WHERE loginusername = @username AND loginemail = @email AND password = @password";
+                    string query = "SELECT * FROM buyer WHERE buyer_username = @username AND buyer_email = @email AND buyer_password = @password";
                     using (var cmd = new NpgsqlCommand(query, connection))
                     {
                         // Tambahkan parameter
@@ -80,7 +80,7 @@ namespace WinFormsApp1
                 {
                     connection.Open();
 
-                    string insertQuery = "INSERT INTO buyers (loginusername, loginemail, password, address, phonenumber) VALUES (@username, @email, @password, @address, @phone)";
+                    string insertQuery = "INSERT INTO buyer (buyer_username, buyer_email, buyer_password, buyer_address, buyer_phone) VALUES (@username, @email, @password, @address, @phone)";
                     using (var cmd = new NpgsqlCommand(insertQuery, connection))
                     {
                         cmd.Parameters.AddWithValue("username", LoginUsername);
@@ -134,6 +134,27 @@ namespace WinFormsApp1
         private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void LoginForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+            if (e.KeyCode == Keys.F11)
+            {
+                if (this.WindowState == FormWindowState.Maximized)
+                {
+                    this.WindowState = FormWindowState.Normal;
+                    this.FormBorderStyle = FormBorderStyle.Sizable;
+                }
+                else
+                {
+                    this.WindowState = FormWindowState.Maximized;
+                    this.FormBorderStyle = FormBorderStyle.None;
+                }
+            }
         }
     }
 }
