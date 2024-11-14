@@ -75,36 +75,40 @@
             // pbStar11
             // 
             pbStar11.Image = (Image)resources.GetObject("pbStar11.Image");
-            pbStar11.Location = new Point(370, 611);
+            pbStar11.Location = new Point(324, 458);
+            pbStar11.Margin = new Padding(3, 2, 3, 2);
             pbStar11.Name = "pbStar11";
-            pbStar11.Size = new Size(37, 32);
+            pbStar11.Size = new Size(32, 24);
             pbStar11.TabIndex = 9;
             pbStar11.TabStop = false;
             // 
             // pbStar10
             // 
             pbStar10.Image = (Image)resources.GetObject("pbStar10.Image");
-            pbStar10.Location = new Point(333, 611);
+            pbStar10.Location = new Point(291, 458);
+            pbStar10.Margin = new Padding(3, 2, 3, 2);
             pbStar10.Name = "pbStar10";
-            pbStar10.Size = new Size(37, 32);
+            pbStar10.Size = new Size(32, 24);
             pbStar10.TabIndex = 8;
             pbStar10.TabStop = false;
             // 
             // pbStar9
             // 
             pbStar9.Image = (Image)resources.GetObject("pbStar9.Image");
-            pbStar9.Location = new Point(296, 611);
+            pbStar9.Location = new Point(259, 458);
+            pbStar9.Margin = new Padding(3, 2, 3, 2);
             pbStar9.Name = "pbStar9";
-            pbStar9.Size = new Size(37, 32);
+            pbStar9.Size = new Size(32, 24);
             pbStar9.TabIndex = 7;
             pbStar9.TabStop = false;
             // 
             // pbStar8
             // 
             pbStar8.Image = (Image)resources.GetObject("pbStar8.Image");
-            pbStar8.Location = new Point(259, 611);
+            pbStar8.Location = new Point(227, 458);
+            pbStar8.Margin = new Padding(3, 2, 3, 2);
             pbStar8.Name = "pbStar8";
-            pbStar8.Size = new Size(37, 32);
+            pbStar8.Size = new Size(32, 24);
             pbStar8.TabIndex = 6;
             pbStar8.TabStop = false;
             // 
@@ -112,19 +116,19 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label6.Location = new Point(28, 413);
+            label6.Location = new Point(24, 310);
             label6.Name = "label6";
-            label6.Size = new Size(267, 145);
+            label6.Size = new Size(246, 145);
             label6.TabIndex = 5;
             label6.Text = "Harga : Rp5.000.000\r\nUkuran : 80cm x 50cm\r\nBahan : -\r\nDurasi Pakai : 2 Bulan\r\nKondisi : Baik";
             // 
             // label7
             // 
             label7.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
-            label7.Location = new Point(16, 19);
+            label7.Location = new Point(14, 14);
             label7.Margin = new Padding(0);
             label7.Name = "label7";
-            label7.Size = new Size(217, 66);
+            label7.Size = new Size(190, 50);
             label7.TabIndex = 3;
             label7.Text = "Televisi";
             // 
@@ -138,35 +142,39 @@
             panel3.Controls.Add(label6);
             panel3.Controls.Add(pictureBox10);
             panel3.Controls.Add(label7);
-            panel3.Location = new Point(1276, 186);
+            panel3.Location = new Point(1116, 140);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(484, 671);
+            panel3.Size = new Size(424, 503);
             panel3.TabIndex = 13;
             // 
             // pictureBox10
             // 
             pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(0, 104);
+            pictureBox10.Location = new Point(0, 78);
+            pictureBox10.Margin = new Padding(3, 2, 3, 2);
             pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(484, 280);
+            pictureBox10.Size = new Size(424, 210);
             pictureBox10.TabIndex = 4;
             pictureBox10.TabStop = false;
             // 
             // pbStar7
             // 
             pbStar7.Image = (Image)resources.GetObject("pbStar7.Image");
-            pbStar7.Location = new Point(333, 611);
+            pbStar7.Location = new Point(291, 458);
+            pbStar7.Margin = new Padding(3, 2, 3, 2);
             pbStar7.Name = "pbStar7";
-            pbStar7.Size = new Size(37, 32);
+            pbStar7.Size = new Size(32, 24);
             pbStar7.TabIndex = 8;
             pbStar7.TabStop = false;
             // 
             // pbStar6
             // 
             pbStar6.Image = (Image)resources.GetObject("pbStar6.Image");
-            pbStar6.Location = new Point(296, 611);
+            pbStar6.Location = new Point(259, 458);
+            pbStar6.Margin = new Padding(3, 2, 3, 2);
             pbStar6.Name = "pbStar6";
-            pbStar6.Size = new Size(37, 32);
+            pbStar6.Size = new Size(32, 24);
             pbStar6.TabIndex = 7;
             pbStar6.TabStop = false;
             // 
@@ -174,7 +182,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 64F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
-            label1.Location = new Point(142, 51);
+            label1.Location = new Point(124, 38);
             label1.Name = "label1";
             label1.Size = new Size(366, 73);
             label1.TabIndex = 12;
@@ -183,19 +191,20 @@
             // label2
             // 
             label2.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
-            label2.Location = new Point(16, 19);
+            label2.Location = new Point(14, 14);
             label2.Margin = new Padding(0);
             label2.Name = "label2";
-            label2.Size = new Size(128, 66);
+            label2.Size = new Size(112, 50);
             label2.TabIndex = 3;
             label2.Text = "Laci";
             // 
             // pbStar5
             // 
             pbStar5.Image = (Image)resources.GetObject("pbStar5.Image");
-            pbStar5.Location = new Point(259, 611);
+            pbStar5.Location = new Point(227, 458);
+            pbStar5.Margin = new Padding(3, 2, 3, 2);
             pbStar5.Name = "pbStar5";
-            pbStar5.Size = new Size(37, 32);
+            pbStar5.Size = new Size(32, 24);
             pbStar5.TabIndex = 6;
             pbStar5.TabStop = false;
             // 
@@ -203,64 +212,69 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label4.Location = new Point(28, 413);
+            label4.Location = new Point(24, 310);
             label4.Name = "label4";
-            label4.Size = new Size(281, 145);
+            label4.Size = new Size(259, 145);
             label4.TabIndex = 5;
             label4.Text = "Harga : Rp750.000\r\nUkuran : 150cm x 65cm\r\nBahan : Polyester\r\nDurasi Pakai : 3 Bulan\r\nKondisi : Cukup Baik";
             // 
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(0, 104);
+            pictureBox6.Location = new Point(0, 78);
+            pictureBox6.Margin = new Padding(3, 2, 3, 2);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(484, 280);
+            pictureBox6.Size = new Size(424, 210);
             pictureBox6.TabIndex = 4;
             pictureBox6.TabStop = false;
             // 
             // label5
             // 
             label5.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
-            label5.Location = new Point(16, 19);
+            label5.Location = new Point(14, 14);
             label5.Margin = new Padding(0);
             label5.Name = "label5";
-            label5.Size = new Size(144, 66);
+            label5.Size = new Size(126, 50);
             label5.TabIndex = 3;
             label5.Text = "Sofa";
             // 
             // pbStar4
             // 
             pbStar4.Image = (Image)resources.GetObject("pbStar4.Image");
-            pbStar4.Location = new Point(370, 611);
+            pbStar4.Location = new Point(324, 458);
+            pbStar4.Margin = new Padding(3, 2, 3, 2);
             pbStar4.Name = "pbStar4";
-            pbStar4.Size = new Size(37, 32);
+            pbStar4.Size = new Size(32, 24);
             pbStar4.TabIndex = 9;
             pbStar4.TabStop = false;
             // 
             // pbStar3
             // 
             pbStar3.Image = (Image)resources.GetObject("pbStar3.Image");
-            pbStar3.Location = new Point(333, 611);
+            pbStar3.Location = new Point(291, 458);
+            pbStar3.Margin = new Padding(3, 2, 3, 2);
             pbStar3.Name = "pbStar3";
-            pbStar3.Size = new Size(37, 32);
+            pbStar3.Size = new Size(32, 24);
             pbStar3.TabIndex = 8;
             pbStar3.TabStop = false;
             // 
             // pbStar2
             // 
             pbStar2.Image = (Image)resources.GetObject("pbStar2.Image");
-            pbStar2.Location = new Point(296, 611);
+            pbStar2.Location = new Point(259, 458);
+            pbStar2.Margin = new Padding(3, 2, 3, 2);
             pbStar2.Name = "pbStar2";
-            pbStar2.Size = new Size(37, 32);
+            pbStar2.Size = new Size(32, 24);
             pbStar2.TabIndex = 7;
             pbStar2.TabStop = false;
             // 
             // pbStar1
             // 
             pbStar1.Image = (Image)resources.GetObject("pbStar1.Image");
-            pbStar1.Location = new Point(259, 611);
+            pbStar1.Location = new Point(227, 458);
+            pbStar1.Margin = new Padding(3, 2, 3, 2);
             pbStar1.Name = "pbStar1";
-            pbStar1.Size = new Size(37, 32);
+            pbStar1.Size = new Size(32, 24);
             pbStar1.TabIndex = 6;
             pbStar1.TabStop = false;
             // 
@@ -268,18 +282,19 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label3.Location = new Point(28, 413);
+            label3.Location = new Point(24, 310);
             label3.Name = "label3";
-            label3.Size = new Size(267, 145);
+            label3.Size = new Size(246, 145);
             label3.TabIndex = 5;
             label3.Text = "Harga : Rp170.000\r\nUkuran : 30cm x 42cm\r\nBahan : Kayu\r\nDurasi Pakai : 6 Bulan\r\nKondisi : Baik";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 104);
+            pictureBox1.Location = new Point(0, 78);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(484, 280);
+            pictureBox1.Size = new Size(424, 210);
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
@@ -292,9 +307,10 @@
             panel2.Controls.Add(label4);
             panel2.Controls.Add(pictureBox6);
             panel2.Controls.Add(label5);
-            panel2.Location = new Point(718, 186);
+            panel2.Location = new Point(628, 140);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(484, 671);
+            panel2.Size = new Size(424, 503);
             panel2.TabIndex = 14;
             // 
             // panel1
@@ -307,21 +323,23 @@
             panel1.Controls.Add(label3);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label2);
-            panel1.Location = new Point(160, 186);
+            panel1.Location = new Point(140, 140);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(484, 671);
+            panel1.Size = new Size(424, 503);
             panel1.TabIndex = 11;
             // 
             // HomeSellerUserControl
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel3);
             Controls.Add(label1);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "HomeSellerUserControl";
-            Size = new Size(1902, 908);
+            Size = new Size(1664, 681);
             Load += HomeSellerUserControl_Load;
             ((System.ComponentModel.ISupportInitialize)pbStar11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbStar10).EndInit();

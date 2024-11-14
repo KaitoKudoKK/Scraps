@@ -199,8 +199,7 @@ namespace WinFormsApp1
             Name = "LoginForm";
             Text = "Login";
             FormClosed += LoginForm_FormClosed;
-            Load += Form1_Load;
-            KeyDown += LoginForm_KeyDown;
+            Load += LoginForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
