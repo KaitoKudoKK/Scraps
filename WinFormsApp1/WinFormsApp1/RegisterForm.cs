@@ -157,5 +157,5 @@ namespace WinFormsApp1
                 lbl.Font = new Font(lbl.Font, FontStyle.Underline | FontStyle.Bold);
             }
         }
-    }
+     }
 }

@@ -38,6 +38,7 @@ namespace WinFormsApp1
             string durasiPakai = tbDurasiPakaiProduk.Text;
             string kondisi = tbKondisiProduk.Text;
             decimal harga = Convert.ToDecimal(tbHargaProduk.Text);
+            string sellerID = 
 
             // Convert image in PictureBox to byte array
             byte[] imageBytes = null;
@@ -51,21 +52,21 @@ namespace WinFormsApp1
             }
 
             // Save data to the database
-            using (NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=qwerty123;Database=scraps"))
+            using (NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=lisha;Database=scraps"))
             {
                 conn.Open();
-                string query = "INSERT INTO products (product_name, ukuran, durasi_pakai, kondisi, harga, image_data) " +
-                               "VALUES (@product_name, @ukuran, @durasi_pakai, @kondisi, @harga, @image_data)";
+                string query = "INSERT INTO product (product_name, product_size, product_duration, product_condition, product_price, product_image, sellerid) " +
+                               "VALUES (@namaProduk, @ukuran, @durasiPakai, @kondisi, @harga, @imageBytes,)";
 
                 using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
                 {
                     // Menambahkan parameter untuk mencegah SQL Injection
-                    cmd.Parameters.AddWithValue("product_name", namaProduk);
+                    cmd.Parameters.AddWithValue("namaProduk", namaProduk);
                     cmd.Parameters.AddWithValue("ukuran", ukuran);
-                    cmd.Parameters.AddWithValue("durasi_pakai", durasiPakai);
+                    cmd.Parameters.AddWithValue("durasiPakai", durasiPakai);
                     cmd.Parameters.AddWithValue("kondisi", kondisi);
                     cmd.Parameters.AddWithValue("harga", harga);
-                    cmd.Parameters.AddWithValue("image_data", imageBytes ?? (object)DBNull.Value); // Jika gambar tidak ada, simpan NULL
+                    cmd.Parameters.AddWithValue("imageBytes", imageBytes ?? (object)DBNull.Value); // Jika gambar tidak ada, simpan NULL
 
                     cmd.ExecuteNonQuery(); // Eksekusi perintah SQL untuk memasukkan data
                 }
