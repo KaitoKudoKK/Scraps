@@ -35,8 +35,9 @@
             label2 = new Label();
             label1 = new Label();
             panel1 = new Panel();
-            HomeSellerUserControl = new HomeSellerUserControl();
             btnAdd = new Button();
+            HomeSellerUserControl = new HomeSellerUserControl();
+            addProductUserControl1 = new AddProductUserControl();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -140,14 +141,6 @@
             panel1.Size = new Size(1902, 86);
             panel1.TabIndex = 15;
             // 
-            // HomeSellerUserControl
-            // 
-            HomeSellerUserControl.Location = new Point(5, 88);
-            HomeSellerUserControl.Name = "HomeSellerUserControl";
-            HomeSellerUserControl.Size = new Size(1897, 945);
-            HomeSellerUserControl.TabIndex = 16;
-            HomeSellerUserControl.Load += homeSellerUserControl1_Load;
-            // 
             // btnAdd
             // 
             btnAdd.BackColor = Color.White;
@@ -165,6 +158,25 @@
             btnAdd.TabIndex = 16;
             btnAdd.Text = "Add Product";
             btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += btnAdd_Click;
+            // 
+            // HomeSellerUserControl
+            // 
+            HomeSellerUserControl.Dock = DockStyle.Fill;
+            HomeSellerUserControl.Location = new Point(0, 86);
+            HomeSellerUserControl.Name = "HomeSellerUserControl";
+            HomeSellerUserControl.Size = new Size(1902, 947);
+            HomeSellerUserControl.TabIndex = 16;
+            HomeSellerUserControl.Load += homeSellerUserControl1_Load;
+            // 
+            // addProductUserControl1
+            // 
+            addProductUserControl1.Dock = DockStyle.Fill;
+            addProductUserControl1.ForeColor = Color.Black;
+            addProductUserControl1.Location = new Point(0, 0);
+            addProductUserControl1.Name = "addProductUserControl1";
+            addProductUserControl1.Size = new Size(1902, 1033);
+            addProductUserControl1.TabIndex = 17;
             // 
             // SellerForm
             // 
@@ -173,6 +185,7 @@
             ClientSize = new Size(1902, 1033);
             Controls.Add(HomeSellerUserControl);
             Controls.Add(panel1);
+            Controls.Add(addProductUserControl1);
             Name = "SellerForm";
             Text = "SellerForm";
             Load += SellerForm_Load;
@@ -192,5 +205,6 @@
         private Panel panel1;
         private HomeSellerUserControl HomeSellerUserControl;
         private Button btnAdd;
+        private AddProductUserControl addProductUserControl1;
     }
 }
