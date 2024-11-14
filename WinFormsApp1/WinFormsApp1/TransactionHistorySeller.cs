@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WinFormsApp1
 {
-    public partial class PesananMasukcs : UserControl
+    public partial class TransactionHistorySeller : UserControl
     {
-        public PesananMasukcs()
+        public TransactionHistorySeller()
         {
             InitializeComponent();
         }

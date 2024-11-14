@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace WinFormsApp1
 {
-    public partial class TransactionHistory : UserControl
+    public partial class TransactionHistoryBuyer : UserControl
     {
-        public TransactionHistory()
+        public TransactionHistoryBuyer()
         {
             InitializeComponent();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -40,6 +40,9 @@ namespace WinFormsApp1
             cartUserControl1 = new CartUserControl();
             chatUserControl1 = new ChatUserControl();
             accountUserControl1 = new AccountUserControl();
+            button1 = new Button();
+            label4 = new Label();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // btnHome
@@ -150,6 +153,8 @@ namespace WinFormsApp1
             // 
             // panel1
             // 
+            panel1.Controls.Add(button1);
+            panel1.Controls.Add(label4);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
@@ -189,6 +194,34 @@ namespace WinFormsApp1
             accountUserControl1.Size = new Size(1902, 1033);
             accountUserControl1.TabIndex = 10;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.White;
+            button1.BackgroundImageLayout = ImageLayout.None;
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderColor = Color.White;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseDownBackColor = Color.DarkGray;
+            button1.FlatAppearance.MouseOverBackColor = Color.LightGray;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Microsoft Sans Serif", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(809, -1);
+            button1.Name = "button1";
+            button1.Size = new Size(326, 86);
+            button1.TabIndex = 12;
+            button1.Text = "Transaction History";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
+            label4.Location = new Point(767, 19);
+            label4.Name = "label4";
+            label4.Size = new Size(85, 37);
+            label4.TabIndex = 11;
+            label4.Text = "   |   ";
+            // 
             // BuyerForm
             // 
             AutoScaleDimensions = new SizeF(120F, 120F);
@@ -215,6 +248,8 @@ namespace WinFormsApp1
             FormClosed += BuyerForm_FormClosed;
             Load += BuyerForm_Load;
             KeyDown += BuyerForm_KeyDown;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -233,5 +268,7 @@ namespace WinFormsApp1
         private CartUserControl cartUserControl1;
         private ChatUserControl chatUserControl1;
         private AccountUserControl accountUserControl1;
+        private Button button1;
+        private Label label4;
     }
 }

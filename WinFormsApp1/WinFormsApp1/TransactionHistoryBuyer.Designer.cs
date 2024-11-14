@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1
 {
-    partial class PesananMasukcs
+    partial class TransactionHistoryBuyer
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,11 +30,11 @@
         {
             SuspendLayout();
             // 
-            // PesananMasukcs
+            // TransactionHistoryBuyer
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            Name = "PesananMasukcs";
+            Name = "TransactionHistoryBuyer";
             Size = new Size(1902, 908);
             ResumeLayout(false);
         }
