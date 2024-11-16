@@ -32,6 +32,8 @@
             button1 = new Button();
             label1 = new Label();
             panel1 = new Panel();
+            beingProcessedUserControl2 = new BeingProcessedUserControl();
+            completedBuyercs3 = new CompletedBuyercs();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -78,11 +80,29 @@
             panel1.Size = new Size(1902, 238);
             panel1.TabIndex = 17;
             // 
+            // beingProcessedUserControl2
+            // 
+            beingProcessedUserControl2.Dock = DockStyle.Fill;
+            beingProcessedUserControl2.Location = new Point(0, 238);
+            beingProcessedUserControl2.Name = "beingProcessedUserControl2";
+            beingProcessedUserControl2.Size = new Size(1902, 670);
+            beingProcessedUserControl2.TabIndex = 18;
+            // 
+            // completedBuyercs3
+            // 
+            completedBuyercs3.Dock = DockStyle.Fill;
+            completedBuyercs3.Location = new Point(0, 0);
+            completedBuyercs3.Name = "completedBuyercs3";
+            completedBuyercs3.Size = new Size(1902, 908);
+            completedBuyercs3.TabIndex = 19;
+            // 
             // TransactionHistoryBuyer
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(beingProcessedUserControl2);
             Controls.Add(panel1);
+            Controls.Add(completedBuyercs3);
             Name = "TransactionHistoryBuyer";
             Size = new Size(1902, 908);
             Load += TransactionHistoryBuyer_Load;
@@ -100,5 +120,7 @@
         private BeingProcessedUserControl beingProcessedUserControl1;
         private CompletedBuyercs completedBuyercs1;
         private CompletedBuyercs completedBuyercs2;
+        private BeingProcessedUserControl beingProcessedUserControl2;
+        private CompletedBuyercs completedBuyercs3;
     }
 }

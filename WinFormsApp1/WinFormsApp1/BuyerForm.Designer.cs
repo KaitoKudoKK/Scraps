@@ -38,6 +38,7 @@ namespace WinFormsApp1
             panel1 = new Panel();
             btnTransaction = new Button();
             label4 = new Label();
+            transactionHistoryBuyer1 = new TransactionHistoryBuyer();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -186,12 +187,21 @@ namespace WinFormsApp1
             label4.TabIndex = 11;
             label4.Text = "   |   ";
             // 
+            // transactionHistoryBuyer1
+            // 
+            transactionHistoryBuyer1.Dock = DockStyle.Fill;
+            transactionHistoryBuyer1.Location = new Point(0, 86);
+            transactionHistoryBuyer1.Name = "transactionHistoryBuyer1";
+            transactionHistoryBuyer1.Size = new Size(1902, 947);
+            transactionHistoryBuyer1.TabIndex = 8;
+            // 
             // BuyerForm
             // 
             AutoScaleDimensions = new SizeF(120F, 120F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.White;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(transactionHistoryBuyer1);
             Controls.Add(btnHome);
             Controls.Add(btnAccount);
             Controls.Add(btnChat);
@@ -230,5 +240,6 @@ namespace WinFormsApp1
         private AccountUserControl accountUserControl1;
         private Button btnTransaction;
         private Label label4;
+        private TransactionHistoryBuyer transactionHistoryBuyer1;
     }
 }

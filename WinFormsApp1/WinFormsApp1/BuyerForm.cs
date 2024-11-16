@@ -115,17 +115,17 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            btnAccount.Font = new Font(btnAccount.Font.FontFamily, btnAccount.Font.Size, FontStyle.Regular);
             btnHome.Font = new Font(btnHome.Font.FontFamily, btnHome.Font.Size, FontStyle.Regular);
             btnCart.Font = new Font(btnCart.Font.FontFamily, btnCart.Font.Size, FontStyle.Regular);
             btnChat.Font = new Font(btnChat.Font.FontFamily, btnChat.Font.Size, FontStyle.Regular);
-            btnAccount.Font = new Font(btnAccount.Font.FontFamily, btnAccount.Font.Size, btnAccount.Font.Style | FontStyle.Bold);
-            btnTransaction.Font= new Font(btnTransaction.Font.FontFamily, btnTransaction.Font.Size, btnTransaction.Font.Style | FontStyle.Bold);
+            btnTransaction.Font = new Font(btnTransaction.Font.FontFamily, btnTransaction.Font.Size, btnTransaction.Font.Style | FontStyle.Bold);
             homeUserControl1.Hide();
             cartUserControl1.Hide();
             chatUserControl1.Hide();
-            accountUserControl1.Hide();
-
-            TransactionHistoryBuyer1.BringToFront();
+            accountUserControl1.Show();
+            transactionHistoryBuyer1.Show();
+            transactionHistoryBuyer1.BringToFront();
         }
     }
 }
