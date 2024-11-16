@@ -40,6 +40,9 @@
     <Compile Update="PesananSelesai.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ProductCardUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -50,6 +53,9 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="TransactionHistorySeller.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="TransHistoryUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
