@@ -35,11 +35,10 @@
             label1 = new Label();
             panel1 = new Panel();
             button1 = new Button();
-            label4 = new Label();
             btnAdd = new Button();
-            HomeSellerUserControl = new HomeSellerUserControl();
-            addProductUserControl1 = new AddProductUserControl(LoginForm.currentSellerID);
             btnAccount = new Button();
+            label4 = new Label();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -145,17 +144,6 @@
             button1.Text = "Transaction History";
             button1.UseVisualStyleBackColor = false;
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
-            label4.Location = new Point(819, 25);
-            label4.Name = "label4";
-            label4.Size = new Size(85, 37);
-            label4.TabIndex = 17;
-            label4.Text = "   |   ";
-            // 
-
             // btnAdd
             // 
             btnAdd.BackColor = Color.White;
@@ -174,30 +162,6 @@
             btnAdd.Text = "Add Product";
             btnAdd.UseVisualStyleBackColor = false;
             btnAdd.Click += btnAdd_Click;
-            // 
-            // HomeSellerUserControl
-            // 
-            HomeSellerUserControl.Dock = DockStyle.Fill;
-            HomeSellerUserControl.Location = new Point(0, 86);
-            HomeSellerUserControl.Name = "HomeSellerUserControl";
-            HomeSellerUserControl.Size = new Size(1902, 947);
-            HomeSellerUserControl.TabIndex = 16;
-            // 
-            // addProductUserControl1
-            // 
-            addProductUserControl1.Dock = DockStyle.Fill;
-            addProductUserControl1.ForeColor = Color.Black;
-            addProductUserControl1.Location = new Point(0, 0);
-            addProductUserControl1.Name = "addProductUserControl1";
-            addProductUserControl1.Size = new Size(1902, 1033);
-            addProductUserControl1.TabIndex = 17;
-            // 
-            // HomeSellerUserControl
-            // 
-            HomeSellerUserControl.Location = new Point(5, 88);
-            HomeSellerUserControl.Name = "HomeSellerUserControl";
-            HomeSellerUserControl.Size = new Size(1897, 945);
-            HomeSellerUserControl.TabIndex = 16;
             // 
             // btnAccount
             // 
@@ -218,14 +182,22 @@
             btnAccount.UseVisualStyleBackColor = false;
             btnAccount.Click += btnAccount_Click;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
+            label4.Location = new Point(819, 25);
+            label4.Name = "label4";
+            label4.Size = new Size(85, 37);
+            label4.TabIndex = 17;
+            label4.Text = "   |   ";
+            // 
             // SellerForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1902, 1033);
-            Controls.Add(HomeSellerUserControl);
             Controls.Add(panel1);
-            Controls.Add(addProductUserControl1);
             Name = "SellerForm";
             Text = "SellerForm";
             Load += SellerForm_Load;
@@ -248,6 +220,6 @@
         private Button button1;
         private Label label4;
         private Button btnAccount;
-
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

@@ -34,6 +34,7 @@ namespace WinFormsApp1
             button2 = new Button();
             panel1 = new Panel();
             pesananMasuk1 = new PesananMasuk();
+            pesananSelesai1 = new PesananSelesai();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -56,6 +57,7 @@ namespace WinFormsApp1
             button1.TabIndex = 14;
             button1.Text = "Order Received";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
             // 
             // button2
             // 
@@ -66,6 +68,7 @@ namespace WinFormsApp1
             button2.TabIndex = 15;
             button2.Text = "Completed";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click_1;
             // 
             // panel1
             // 
@@ -80,10 +83,19 @@ namespace WinFormsApp1
             // 
             // pesananMasuk1
             // 
-            pesananMasuk1.Location = new Point(3, 239);
+            pesananMasuk1.Dock = DockStyle.Fill;
+            pesananMasuk1.Location = new Point(0, 238);
             pesananMasuk1.Name = "pesananMasuk1";
-            pesananMasuk1.Size = new Size(1899, 666);
+            pesananMasuk1.Size = new Size(1902, 670);
             pesananMasuk1.TabIndex = 17;
+            // 
+            // pesananSelesai1
+            // 
+            pesananSelesai1.Dock = DockStyle.Fill;
+            pesananSelesai1.Location = new Point(0, 0);
+            pesananSelesai1.Name = "pesananSelesai1";
+            pesananSelesai1.Size = new Size(1902, 908);
+            pesananSelesai1.TabIndex = 16;
             // 
             // TransactionHistorySeller
             // 
@@ -91,6 +103,7 @@ namespace WinFormsApp1
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(pesananMasuk1);
             Controls.Add(panel1);
+            Controls.Add(pesananSelesai1);
             Name = "TransactionHistorySeller";
             Size = new Size(1902, 908);
             panel1.ResumeLayout(false);
@@ -114,5 +127,6 @@ namespace WinFormsApp1
         private EventHandler button2_Click;
         private PaintEventHandler panel1_Paint;
         private EventHandler pesananMasuk1_Load;
+        private PesananSelesai pesananSelesai1;
     }
 }
