@@ -248,6 +248,6 @@
         private Button button1;
         private Label label4;
         private Button btnAccount;
-
+        private AccountSellerUserControl AccountSellerUserControl;
     }
 }

@@ -6,9 +6,14 @@ namespace WinFormsApp1
 {
     public partial class SellerForm : Form
     {
+        private AccountSellerUserControl accountSellerUserControl;
         public SellerForm()
         {
             InitializeComponent();
+            accountSellerUserControl = new AccountSellerUserControl();
+            accountSellerUserControl.Hide(); // Sembunyikan UserControl di awal
+            accountSellerUserControl.Dock = DockStyle.Fill; // Atur agar UserControl menyesuaikan ukuran
+            this.Controls.Add(accountSellerUserControl);
         }
 
         private void SellerForm_Load(object sender, EventArgs e)
@@ -49,21 +54,42 @@ namespace WinFormsApp1
         // Click event for "Add Product" button
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            // Change font style for selected button
+            // Pastikan addProductUserControl1 sudah diinisialisasi
+            if (addProductUserControl1 == null)
+            {
+                MessageBox.Show("AddProductUserControl belum diinisialisasi.",
+                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Ubah gaya font tombol
             btnMyProduct.Font = new Font(btnMyProduct.Font.FontFamily, btnMyProduct.Font.Size, FontStyle.Regular);
             btnAdd.Font = new Font(btnAdd.Font.FontFamily, btnAdd.Font.Size, FontStyle.Bold);
             btnChat.Font = new Font(btnChat.Font.FontFamily, btnChat.Font.Size, FontStyle.Regular);
             btnAccount.Font = new Font(btnAccount.Font.FontFamily, btnAccount.Font.Size, FontStyle.Regular);
 
-            // Hide home screen and other user controls, show "Add Product" user control
+            // Tampilkan AddProductUserControl
             HomeSellerUserControl.Hide();
+            accountSellerUserControl.Hide();
             addProductUserControl1.Show();
             addProductUserControl1.BringToFront();
         }
 
+
         private void btnAccount_Click(object sender, EventArgs e)
         {
+            if (accountSellerUserControl == null)
+            {
+                MessageBox.Show("AccountSellerUserControl belum diinisialisasi. Pastikan inisialisasi dilakukan dengan benar.",
+                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
+            // Jika sudah diinisialisasi, lakukan operasi
+            HomeSellerUserControl.Hide();
+            accountSellerUserControl.Show();
+            accountSellerUserControl.BringToFront();
         }
+
     }
 }

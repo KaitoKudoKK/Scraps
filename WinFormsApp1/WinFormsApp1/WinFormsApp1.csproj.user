@@ -52,6 +52,9 @@
     <Compile Update="TransactionHistorySeller.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="TransHistoryUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="AccountUserControl.resx">
