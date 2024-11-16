@@ -36,11 +36,7 @@ namespace WinFormsApp1
             label3 = new Label();
             btnAccount = new Button();
             panel1 = new Panel();
-            homeUserControl1 = new HomeUserControl();
-            cartUserControl1 = new CartUserControl();
-            chatUserControl1 = new ChatUserControl();
-            accountUserControl1 = new AccountUserControl();
-            button1 = new Button();
+            btnTransaction = new Button();
             label4 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -153,7 +149,7 @@ namespace WinFormsApp1
             // 
             // panel1
             // 
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(btnTransaction);
             panel1.Controls.Add(label4);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -161,56 +157,24 @@ namespace WinFormsApp1
             panel1.Size = new Size(1902, 86);
             panel1.TabIndex = 7;
             // 
-            // homeUserControl1
+            // btnTransaction
             // 
-            homeUserControl1.Dock = DockStyle.Fill;
-            homeUserControl1.Location = new Point(0, 86);
-            homeUserControl1.Name = "homeUserControl1";
-            homeUserControl1.Size = new Size(1902, 947);
-            homeUserControl1.TabIndex = 8;
-            homeUserControl1.Load += homeUserControl1_Load;
-            // 
-            // cartUserControl1
-            // 
-            cartUserControl1.Dock = DockStyle.Fill;
-            cartUserControl1.Location = new Point(0, 0);
-            cartUserControl1.Name = "cartUserControl1";
-            cartUserControl1.Size = new Size(1902, 1033);
-            cartUserControl1.TabIndex = 0;
-            // 
-            // chatUserControl1
-            // 
-            chatUserControl1.Dock = DockStyle.Fill;
-            chatUserControl1.Location = new Point(0, 0);
-            chatUserControl1.Name = "chatUserControl1";
-            chatUserControl1.Size = new Size(1902, 1033);
-            chatUserControl1.TabIndex = 9;
-            // 
-            // accountUserControl1
-            // 
-            accountUserControl1.Dock = DockStyle.Fill;
-            accountUserControl1.Location = new Point(0, 0);
-            accountUserControl1.Name = "accountUserControl1";
-            accountUserControl1.Size = new Size(1902, 1033);
-            accountUserControl1.TabIndex = 10;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.White;
-            button1.BackgroundImageLayout = ImageLayout.None;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderColor = Color.White;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = Color.DarkGray;
-            button1.FlatAppearance.MouseOverBackColor = Color.LightGray;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Microsoft Sans Serif", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(809, -1);
-            button1.Name = "button1";
-            button1.Size = new Size(326, 86);
-            button1.TabIndex = 12;
-            button1.Text = "Transaction History";
-            button1.UseVisualStyleBackColor = false;
+            btnTransaction.BackColor = Color.White;
+            btnTransaction.BackgroundImageLayout = ImageLayout.None;
+            btnTransaction.Cursor = Cursors.Hand;
+            btnTransaction.FlatAppearance.BorderColor = Color.White;
+            btnTransaction.FlatAppearance.BorderSize = 0;
+            btnTransaction.FlatAppearance.MouseDownBackColor = Color.DarkGray;
+            btnTransaction.FlatAppearance.MouseOverBackColor = Color.LightGray;
+            btnTransaction.FlatStyle = FlatStyle.Flat;
+            btnTransaction.Font = new Font("Microsoft Sans Serif", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTransaction.Location = new Point(809, -1);
+            btnTransaction.Name = "btnTransaction";
+            btnTransaction.Size = new Size(326, 86);
+            btnTransaction.TabIndex = 12;
+            btnTransaction.Text = "Transaction History";
+            btnTransaction.UseVisualStyleBackColor = false;
+            btnTransaction.Click += button1_Click;
             // 
             // label4
             // 
@@ -235,16 +199,12 @@ namespace WinFormsApp1
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(homeUserControl1);
             Controls.Add(panel1);
-            Controls.Add(cartUserControl1);
-            Controls.Add(chatUserControl1);
-            Controls.Add(accountUserControl1);
             KeyPreview = true;
             MaximumSize = new Size(1920, 1080);
             MinimumSize = new Size(640, 360);
             Name = "BuyerForm";
-            Text = "BuyerForm";
+            Text = "USer";
             FormClosed += BuyerForm_FormClosed;
             Load += BuyerForm_Load;
             KeyDown += BuyerForm_KeyDown;
@@ -268,7 +228,7 @@ namespace WinFormsApp1
         private CartUserControl cartUserControl1;
         private ChatUserControl chatUserControl1;
         private AccountUserControl accountUserControl1;
-        private Button button1;
+        private Button btnTransaction;
         private Label label4;
     }
 }
