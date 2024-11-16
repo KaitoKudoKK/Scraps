@@ -46,6 +46,9 @@
     <Compile Update="PesananSelesai.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="ProductCardUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
