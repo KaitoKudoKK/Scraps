@@ -82,6 +82,7 @@
             btnChat.TabIndex = 12;
             btnChat.Text = "Chat";
             btnChat.UseVisualStyleBackColor = false;
+            btnChat.Click += btnChat_Click;
             // 
             // label3
             // 
@@ -147,7 +148,7 @@
             btnTransaction.TabIndex = 17;
             btnTransaction.Text = "Transaction History";
             btnTransaction.UseVisualStyleBackColor = false;
-            btnTransaction.Click += button1_Click;
+            btnTransaction.Click += btnTransaction_Click;
             // 
             // btnAdd
             // 
@@ -212,7 +213,6 @@
             chatSellerUserControl1.Name = "chatSellerUserControl1";
             chatSellerUserControl1.Size = new Size(1902, 1033);
             chatSellerUserControl1.TabIndex = 17;
-            chatSellerUserControl1.Load += chatSellerUserControl1_Load;
             // 
             // accountSellerUserControl1
             // 
@@ -242,6 +242,7 @@
             Controls.Add(chatSellerUserControl1);
             Name = "SellerForm";
             Text = "SellerForm";
+            FormClosed += SellerForm_FormClosed;
             Load += SellerForm_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

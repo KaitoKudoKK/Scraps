@@ -27,12 +27,13 @@ namespace WinFormsApp1
 
         private void LoadProductsFromDatabase()
         {
-            using (NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=lisha;Database=scraps"))
+            using (NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=qwerty123;Database=scraps"))
             {
                 try
                 {
+                    productCardUserControl1.Hide();
                     conn.Open();
-                    string query = "SELECT p.product_name, p.product_size, p.product_duration, p.product_condition, p.product_price, p.product_image, s.seller_name " +
+                    string query = "SELECT p.product_name, p.product_size, p.product_duration, p.product_condition, p.product_price, p.product_image, s.seller_username " +
                                    "FROM product p " +
                                    "JOIN seller s ON p.sellerid = s.sellerid";
 
@@ -50,7 +51,7 @@ namespace WinFormsApp1
                             byte[] imageBytes = reader.IsDBNull(reader.GetOrdinal("product_image")) ? null : (byte[])reader["product_image"];
                             Image productImage = imageBytes != null ? Image.FromStream(new System.IO.MemoryStream(imageBytes)) : null;
 
-                            string sellerName = reader["seller_name"].ToString();
+                            string sellerName = reader["seller_username"].ToString();
 
                             // Buat instance ProductCardUserControl
                             ProductCardUserControl productCard = new ProductCardUserControl();
@@ -66,21 +67,6 @@ namespace WinFormsApp1
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
-        }
-
-        private void btnPlus1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Barang ditambahkan ke cart!");
-        }
-
-        private void btnPlus2_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Barang ditambahkan ke cart!");
-        }
-
-        private void btnPlus3_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Barang ditambahkan ke cart!");
         }
     }
 }
