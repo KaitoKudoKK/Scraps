@@ -41,6 +41,11 @@ namespace WinFormsApp1
             btnAdd.Region = new Region(buttonPath);
         }
 
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Barang ditambahkan ke cart!");
+        }
+
         // Property for product name
         public string ProductName
         {
