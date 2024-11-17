@@ -25,6 +25,9 @@
     <Compile Update="EditAkunUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="EditAkunUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="HomeSellerUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
