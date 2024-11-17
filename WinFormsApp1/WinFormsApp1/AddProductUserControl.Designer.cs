@@ -34,7 +34,6 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-
             tbNamaProduk = new TextBox();
             tbUkuranProduk = new TextBox();
             tbDurasiPakaiProduk = new TextBox();
@@ -165,6 +164,7 @@
             pbProductImage.Margin = new Padding(0);
             pbProductImage.Name = "pbProductImage";
             pbProductImage.Size = new Size(442, 472);
+            pbProductImage.SizeMode = PictureBoxSizeMode.StretchImage;
             pbProductImage.TabIndex = 13;
             pbProductImage.TabStop = false;
             pbProductImage.Click += pbProductImage_Click;

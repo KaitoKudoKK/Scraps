@@ -64,6 +64,7 @@
             btnAdd.TabIndex = 3;
             btnAdd.Text = "+";
             btnAdd.UseVisualStyleBackColor = false;
+            btnAdd.Click += btnAdd_Click;
             btnAdd.Paint += btnAdd_Paint;
             // 
             // lblProductDetails
@@ -90,6 +91,7 @@
             pictureBoxProduct.Location = new Point(0, 104);
             pictureBoxProduct.Name = "pictureBoxProduct";
             pictureBoxProduct.Size = new Size(484, 280);
+            pictureBoxProduct.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxProduct.TabIndex = 10;
             pictureBoxProduct.TabStop = false;
             // 
@@ -102,6 +104,7 @@
             Size = new Size(484, 671);
             Load += ProductCardUserControl_Load;
             panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBoxProduct).EndInit();
             ResumeLayout(false);
         }

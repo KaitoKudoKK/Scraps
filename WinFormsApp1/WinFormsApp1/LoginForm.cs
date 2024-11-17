@@ -12,7 +12,7 @@ namespace WinFormsApp1
         }
 
         private NpgsqlConnection conn;
-        private string connstring = "Host=localhost;Port=5432;Username=postgres;Password=lisha;Database=scraps";
+        private string connstring = "Host=localhost;Port=5432;Username=postgres;Password=qwerty123;Database=scraps";
         public static string currentSellerID = ""; // Store the seller ID as a string, empty means no seller logged in.
         public static string currentBuyerID = ""; // Store the buyer ID as a string, empty means no buyer logged in.
 
