@@ -79,6 +79,7 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1902, 238);
             panel1.TabIndex = 17;
+            panel1.Paint += panel1_Paint_1;
             // 
             // beingProcessedUserControl2
             // 
@@ -120,7 +121,7 @@
         private BeingProcessedUserControl beingProcessedUserControl1;
         private CompletedBuyercs completedBuyercs1;
         private CompletedBuyercs completedBuyercs2;
-        private BeingProcessedUserControl beingProcessedUserControl2;
-        private CompletedBuyercs completedBuyercs3;
+        public BeingProcessedUserControl beingProcessedUserControl2;
+        public CompletedBuyercs completedBuyercs3;
     }
 }

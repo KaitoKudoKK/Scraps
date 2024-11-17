@@ -34,33 +34,45 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            completedBuyercs1.Hide();
-            beingProcessedUserControl1.Show();
-            beingProcessedUserControl1.BringToFront();
-            button1.BackColor = Color.Teal; // Ganti dengan warna yang sesuai
-            button1.ForeColor = Color.White;
+            // Tampilkan UserControl terkait dan bawa ke depan
+            completedBuyercs3.Hide();
+            beingProcessedUserControl2.Show();
+            beingProcessedUserControl2.BringToFront();
 
-            // Mengembalikan warna tombol Completed ke default
+            // Ubah warna dan teks button1 (tombol aktif)
+            button1.BackColor = Color.FromArgb(7, 79, 84); // Warna aktif
+            button1.ForeColor = Color.White; // Teks tombol aktif
+
+            // Kembalikan warna default button2 (tombol tidak aktif)
             button2.BackColor = SystemColors.Control; // Warna default
-            button2.ForeColor = Color.Black;
+            button2.ForeColor = SystemColors.ControlText; // Teks default
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            beingProcessedUserControl1.Hide();
-            completedBuyercs1.Show();
-            completedBuyercs1.BringToFront();
-            button1.BackColor = Color.Teal; // Ganti dengan warna yang sesuai
-            button1.ForeColor = Color.White;
+            // Tampilkan UserControl terkait dan bawa ke depan
+            beingProcessedUserControl2.Hide();
+            completedBuyercs3.Show();
+            completedBuyercs3.BringToFront();
 
-            // Mengembalikan warna tombol Completed ke default
-            button2.BackColor = SystemColors.Control; // Warna default
-            button2.ForeColor = Color.Black;
+            // Ubah warna dan teks button2 (tombol aktif)
+            button2.BackColor = Color.FromArgb(7, 79, 84); // Warna aktif
+            button2.ForeColor = Color.White; // Teks tombol aktif
+
+            // Kembalikan warna default button1 (tombol tidak aktif)
+            button1.BackColor = SystemColors.Control; // Warna default
+            button1.ForeColor = SystemColors.ControlText; // Teks default
         }
+
 
         private void TransactionHistoryBuyer_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+            
         }
     }
 }

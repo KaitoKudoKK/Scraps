@@ -195,6 +195,7 @@
             txtName.Name = "txtName";
             txtName.Size = new Size(1462, 60);
             txtName.TabIndex = 9;
+            txtName.TextChanged += txtName_TextChanged;
             // 
             // label4
             // 

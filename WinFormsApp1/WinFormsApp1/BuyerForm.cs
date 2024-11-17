@@ -123,9 +123,24 @@ namespace WinFormsApp1
             homeUserControl1.Hide();
             cartUserControl1.Hide();
             chatUserControl1.Hide();
-            accountUserControl1.Show();
+            accountUserControl1.Hide();
             transactionHistoryBuyer1.Show();
             transactionHistoryBuyer1.BringToFront();
+        }
+
+        private void transactionHistoryBuyer1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void homeUserControl1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void completedBuyercs1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
