@@ -34,11 +34,15 @@
             label2 = new Label();
             label1 = new Label();
             panel1 = new Panel();
-            button1 = new Button();
+            btnTransaction = new Button();
             btnAdd = new Button();
             btnAccount = new Button();
             label4 = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            homeSellerUserControl1 = new HomeSellerUserControl();
+            chatSellerUserControl1 = new ChatSellerUserControl();
+            accountSellerUserControl1 = new AccountSellerUserControl();
+            transactionHistorySeller1 = new TransactionHistorySeller();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -111,7 +115,7 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(btnTransaction);
             panel1.Controls.Add(btnAdd);
             panel1.Controls.Add(btnMyProduct);
             panel1.Controls.Add(btnChat);
@@ -126,23 +130,24 @@
             panel1.Size = new Size(1902, 86);
             panel1.TabIndex = 15;
             // 
-            // button1
+            // btnTransaction
             // 
-            button1.BackColor = Color.White;
-            button1.BackgroundImageLayout = ImageLayout.None;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderColor = Color.White;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = Color.DarkGray;
-            button1.FlatAppearance.MouseOverBackColor = Color.LightGray;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Microsoft Sans Serif", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(868, 0);
-            button1.Name = "button1";
-            button1.Size = new Size(344, 86);
-            button1.TabIndex = 17;
-            button1.Text = "Transaction History";
-            button1.UseVisualStyleBackColor = false;
+            btnTransaction.BackColor = Color.White;
+            btnTransaction.BackgroundImageLayout = ImageLayout.None;
+            btnTransaction.Cursor = Cursors.Hand;
+            btnTransaction.FlatAppearance.BorderColor = Color.White;
+            btnTransaction.FlatAppearance.BorderSize = 0;
+            btnTransaction.FlatAppearance.MouseDownBackColor = Color.DarkGray;
+            btnTransaction.FlatAppearance.MouseOverBackColor = Color.LightGray;
+            btnTransaction.FlatStyle = FlatStyle.Flat;
+            btnTransaction.Font = new Font("Microsoft Sans Serif", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnTransaction.Location = new Point(868, 0);
+            btnTransaction.Name = "btnTransaction";
+            btnTransaction.Size = new Size(344, 86);
+            btnTransaction.TabIndex = 17;
+            btnTransaction.Text = "Transaction History";
+            btnTransaction.UseVisualStyleBackColor = false;
+            btnTransaction.Click += button1_Click;
             // 
             // btnAdd
             // 
@@ -192,12 +197,49 @@
             label4.TabIndex = 17;
             label4.Text = "   |   ";
             // 
+            // homeSellerUserControl1
+            // 
+            homeSellerUserControl1.Dock = DockStyle.Fill;
+            homeSellerUserControl1.Location = new Point(0, 86);
+            homeSellerUserControl1.Name = "homeSellerUserControl1";
+            homeSellerUserControl1.Size = new Size(1902, 947);
+            homeSellerUserControl1.TabIndex = 16;
+            // 
+            // chatSellerUserControl1
+            // 
+            chatSellerUserControl1.Dock = DockStyle.Fill;
+            chatSellerUserControl1.Location = new Point(0, 0);
+            chatSellerUserControl1.Name = "chatSellerUserControl1";
+            chatSellerUserControl1.Size = new Size(1902, 1033);
+            chatSellerUserControl1.TabIndex = 17;
+            chatSellerUserControl1.Load += chatSellerUserControl1_Load;
+            // 
+            // accountSellerUserControl1
+            // 
+            accountSellerUserControl1.Dock = DockStyle.Fill;
+            accountSellerUserControl1.Location = new Point(0, 0);
+            accountSellerUserControl1.Name = "accountSellerUserControl1";
+            accountSellerUserControl1.Size = new Size(1902, 1033);
+            accountSellerUserControl1.TabIndex = 18;
+            // 
+            // transactionHistorySeller1
+            // 
+            transactionHistorySeller1.Dock = DockStyle.Fill;
+            transactionHistorySeller1.Location = new Point(0, 0);
+            transactionHistorySeller1.Name = "transactionHistorySeller1";
+            transactionHistorySeller1.Size = new Size(1902, 1033);
+            transactionHistorySeller1.TabIndex = 19;
+            // 
             // SellerForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(homeSellerUserControl1);
             Controls.Add(panel1);
+            Controls.Add(transactionHistorySeller1);
+            Controls.Add(accountSellerUserControl1);
+            Controls.Add(chatSellerUserControl1);
             Name = "SellerForm";
             Text = "SellerForm";
             Load += SellerForm_Load;
@@ -217,9 +259,13 @@
         private HomeSellerUserControl HomeSellerUserControl;
         private AddProductUserControl addProductUserControl1;
         private Button btnAdd;
-        private Button button1;
+        private Button btnTransaction;
         private Label label4;
         private Button btnAccount;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private HomeSellerUserControl homeSellerUserControl1;
+        private ChatSellerUserControl chatSellerUserControl1;
+        private AccountSellerUserControl accountSellerUserControl1;
+        private TransactionHistorySeller transactionHistorySeller1;
     }
 }

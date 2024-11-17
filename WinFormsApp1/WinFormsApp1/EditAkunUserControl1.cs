@@ -115,7 +115,7 @@ namespace WinFormsApp1
         }
 
         private void btnChat_Click_3(object sender, EventArgs e)
-         {
+        {
             try
             {
                 // Membuat dan mengatur OpenFileDialog
@@ -138,6 +138,11 @@ namespace WinFormsApp1
                 // Menampilkan pesan error jika ada kesalahan
                 MessageBox.Show("An Error Occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

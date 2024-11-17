@@ -39,6 +39,10 @@ namespace WinFormsApp1
             btnTransaction = new Button();
             label4 = new Label();
             transactionHistoryBuyer1 = new TransactionHistoryBuyer();
+            homeUserControl1 = new HomeUserControl();
+            cartUserControl1 = new CartUserControl();
+            chatUserControl1 = new ChatUserControl();
+            accountUserControl1 = new AccountUserControl();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -194,6 +198,39 @@ namespace WinFormsApp1
             transactionHistoryBuyer1.Name = "transactionHistoryBuyer1";
             transactionHistoryBuyer1.Size = new Size(1902, 947);
             transactionHistoryBuyer1.TabIndex = 8;
+            transactionHistoryBuyer1.Load += transactionHistoryBuyer1_Load;
+            // 
+            // homeUserControl1
+            // 
+            homeUserControl1.Dock = DockStyle.Fill;
+            homeUserControl1.Location = new Point(0, 86);
+            homeUserControl1.Name = "homeUserControl1";
+            homeUserControl1.Size = new Size(1902, 947);
+            homeUserControl1.TabIndex = 9;
+            // 
+            // cartUserControl1
+            // 
+            cartUserControl1.Dock = DockStyle.Fill;
+            cartUserControl1.Location = new Point(0, 0);
+            cartUserControl1.Name = "cartUserControl1";
+            cartUserControl1.Size = new Size(1902, 1033);
+            cartUserControl1.TabIndex = 10;
+            // 
+            // chatUserControl1
+            // 
+            chatUserControl1.Dock = DockStyle.Fill;
+            chatUserControl1.Location = new Point(0, 0);
+            chatUserControl1.Name = "chatUserControl1";
+            chatUserControl1.Size = new Size(1902, 1033);
+            chatUserControl1.TabIndex = 11;
+            // 
+            // accountUserControl1
+            // 
+            accountUserControl1.Dock = DockStyle.Fill;
+            accountUserControl1.Location = new Point(0, 0);
+            accountUserControl1.Name = "accountUserControl1";
+            accountUserControl1.Size = new Size(1902, 1033);
+            accountUserControl1.TabIndex = 12;
             // 
             // BuyerForm
             // 
@@ -201,6 +238,7 @@ namespace WinFormsApp1
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.White;
             ClientSize = new Size(1902, 1033);
+            Controls.Add(homeUserControl1);
             Controls.Add(transactionHistoryBuyer1);
             Controls.Add(btnHome);
             Controls.Add(btnAccount);
@@ -210,6 +248,9 @@ namespace WinFormsApp1
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(panel1);
+            Controls.Add(accountUserControl1);
+            Controls.Add(chatUserControl1);
+            Controls.Add(cartUserControl1);
             KeyPreview = true;
             MaximumSize = new Size(1920, 1080);
             MinimumSize = new Size(640, 360);

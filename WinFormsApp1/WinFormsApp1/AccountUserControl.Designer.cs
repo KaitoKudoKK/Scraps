@@ -69,6 +69,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             pictureBox1.Location = new Point(880, 96);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(192, 168);
@@ -291,6 +292,7 @@
             // 
             // AccountUserControl
             // 
+            AllowDrop = true;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(button1);
