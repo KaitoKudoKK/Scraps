@@ -44,7 +44,7 @@
             panel1.Controls.Add(lblProductDetails);
             panel1.Controls.Add(lblProductName);
             panel1.Controls.Add(pictureBoxProduct);
-            panel1.Location = new Point(0, 0);
+            panel1.Location = new Point(8, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(484, 671);
             panel1.TabIndex = 1;
@@ -101,7 +101,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(panel1);
             Name = "ProductCardUserControl";
-            Size = new Size(526, 671);
+            Size = new Size(514, 671);
             Load += ProductCardUserControl_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBoxProduct).EndInit();

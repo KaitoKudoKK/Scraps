@@ -1,72 +1,146 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace WinFormsApp1
 {
     public partial class CartUserControl : UserControl
     {
-        // Contoh data harga produk
-        private decimal[] productPrices = { 170000m, 750000m }; // Harga produk
-        private NumericUpDown[] quantityControls; // Array untuk menyimpan kontrol kuantitas
+        private static Dictionary<int, Image> imageCache = new Dictionary<int, Image>();
+
+        private List<(string productName, double productPrice, Image productImage)> LoadCart(string buyerId)
+        {
+            var cartItems = new List<(string productName, double productPrice, Image productImage)>();
+
+            try
+            {
+                using (NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=qwerty123;Database=scraps"))
+                {
+                    conn.Open();
+                    var query = @"
+                        SELECT P.ProductID, P.ProductName, P.ProductPrice, P.ProductImage
+                        FROM Cart C
+                        INNER JOIN Product P ON C.ProductID = P.ProductID
+                        WHERE C.BuyerID = @BuyerID";
+
+                    using (var command = new NpgsqlCommand(query, conn))
+                    {
+                        command.Parameters.AddWithValue("@BuyerID", buyerId);
+                        using (var reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                var productId = reader["ProductID"].ToString();
+                                var productName = reader["ProductName"].ToString();
+                                var productPrice = Convert.ToDouble(reader["ProductPrice"]);
+
+                                Image productImage = GetProductImageFromCache(productId);
+                                if (productImage == null)
+                                {
+                                    byte[] imageBytes = reader["ProductImage"] as byte[];
+                                    if (imageBytes != null)
+                                    {
+                                        using (var ms = new MemoryStream(imageBytes))
+                                        {
+                                            productImage = Image.FromStream(ms);
+                                        }
+                                        CacheProductImage(productId, productImage);
+                                    }
+                                }
+
+                                cartItems.Add((productName, productPrice, productImage));
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+
+            return cartItems;
+        }
+
+        private Image GetProductImageFromCache(string productId)
+        {
+            int id = int.Parse(productId);
+            return imageCache.ContainsKey(id) ? imageCache[id] : null;
+        }
+
+        private void CacheProductImage(string productId, Image productImage)
+        {
+            int id = int.Parse(productId);
+            if (!imageCache.ContainsKey(id))
+            {
+                imageCache.Add(id, productImage);
+            }
+        }
+
+        public FlowLayoutPanel CartContainer { get; private set; }
 
         public CartUserControl()
         {
             InitializeComponent();
-
-            // Menginisialisasi kontrol kuantitas untuk menghitung subtotal secara dinamis
-            quantityControls = new NumericUpDown[] { numericUpDown1, numericUpDown2 };
-            foreach (var control in quantityControls)
+            CartContainer = new FlowLayoutPanel
             {
-                control.ValueChanged += numericUpDown1_ValueChanged; // Menambahkan event handler
-            }
-
-            UpdateTotals(); // Mengupdate total pada awalnya
+                Dock = DockStyle.Fill,
+                AutoScroll = true,
+                FlowDirection = FlowDirection.TopDown,
+                WrapContents = false
+            };
+            this.Controls.Add(CartContainer);
         }
 
-
-        private void CartUserControl_Load(object sender, EventArgs e)
+        public void AddProductToCart(string buyerId, string productId, string productName, Image productImage, double productPrice)
         {
+            var productInCart = new ProductInCartUserControl();
+            productInCart.LoadProduct(productName, productPrice, productImage);
+            CartContainer.Controls.Add(productInCart);
 
+            SaveToDatabase(buyerId, productId, productName, productPrice, productImage);
         }
-        private void UpdateTotals()
-        {
-            decimal subtotal = 0;
 
-            // Menghitung subtotal berdasarkan kuantitas dan harga produk
-            for (int i = 0; i < productPrices.Length; i++)
+        private void SaveToDatabase(string buyerId, string productId, string productName, double productPrice, Image productImage)
+        {
+            try
             {
-                subtotal += productPrices[i] * quantityControls[i].Value;
+                using (NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=qwerty123;Database=scraps"))
+                {
+                    conn.Open();
+
+                    byte[] imageBytes = null;
+                    if (productImage != null)
+                    {
+                        using (var ms = new MemoryStream())
+                        {
+                            productImage.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                            imageBytes = ms.ToArray();
+                        }
+                    }
+
+                    var query = @"
+                        INSERT INTO Cart (BuyerID, ProductID, ProductName, ProductPrice, ProductImage)
+                        VALUES (@BuyerID, @ProductID, @ProductName, @ProductPrice, @ProductImage)";
+
+                    using (var command = new NpgsqlCommand(query, conn))
+                    {
+                        command.Parameters.AddWithValue("@BuyerID", buyerId);
+                        command.Parameters.AddWithValue("@ProductID", productId);
+                        command.Parameters.AddWithValue("@ProductName", productName);
+                        command.Parameters.AddWithValue("@ProductPrice", productPrice);
+                        command.Parameters.AddWithValue("@ProductImage", imageBytes ?? (object)DBNull.Value);
+                        command.ExecuteNonQuery();
+                    }
+                }
             }
-
-            // Menampilkan subtotal
-            lblSubtotal.Text = "Rp" + subtotal.ToString("N0");
-
-            // Menampilkan total (misalnya, termasuk biaya pengiriman jika ada)
-            decimal biayaPengiriman = 0; // Ubah sesuai kebutuhan jika ada biaya
-            lblTotal.Text = "Rp" + (subtotal + biayaPengiriman).ToString("N0");
-        }
-
-
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-            UpdateTotals(); // Mengupdate total setiap kali nilai kuantitas diubah
-        }
-
-        private void lblSubtotal_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error while saving to database: {ex.Message}");
+            }
         }
     }
 }

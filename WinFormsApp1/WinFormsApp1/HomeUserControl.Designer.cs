@@ -46,10 +46,11 @@
             // 
             // flowLayoutPanelProducts
             // 
+            flowLayoutPanelProducts.AutoScroll = true;
             flowLayoutPanelProducts.Controls.Add(productCardUserControl1);
             flowLayoutPanelProducts.Location = new Point(142, 135);
             flowLayoutPanelProducts.Name = "flowLayoutPanelProducts";
-            flowLayoutPanelProducts.Size = new Size(1600, 677);
+            flowLayoutPanelProducts.Size = new Size(1687, 677);
             flowLayoutPanelProducts.TabIndex = 11;
             // 
             // productCardUserControl1
