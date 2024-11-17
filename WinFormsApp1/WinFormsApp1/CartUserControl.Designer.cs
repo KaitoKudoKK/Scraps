@@ -28,20 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CartUserControl));
             label1 = new Label();
             label3 = new Label();
             label2 = new Label();
             label4 = new Label();
             label5 = new Label();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            label6 = new Label();
-            numericUpDown1 = new NumericUpDown();
-            label7 = new Label();
-            numericUpDown2 = new NumericUpDown();
-            label8 = new Label();
-            label9 = new Label();
             label10 = new Label();
             button1 = new Button();
             lblSubtotal = new Label();
@@ -55,10 +46,9 @@
             label11 = new Label();
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            productInCartUserControl1 = new ProductInCartUserControl();
+            flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
@@ -111,83 +101,6 @@
             label5.TabIndex = 9;
             label5.Text = "Subtotal";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(95, 179);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(202, 181);
-            pictureBox1.TabIndex = 10;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(95, 366);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(202, 181);
-            pictureBox2.TabIndex = 11;
-            pictureBox2.TabStop = false;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label6.Location = new Point(431, 251);
-            label6.Name = "label6";
-            label6.Size = new Size(136, 29);
-            label6.TabIndex = 12;
-            label6.Text = "Rp170.000";
-            // 
-            // numericUpDown1
-            // 
-            numericUpDown1.Location = new Point(785, 257);
-            numericUpDown1.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(47, 27);
-            numericUpDown1.TabIndex = 13;
-            numericUpDown1.Value = new decimal(new int[] { 1, 0, 0, 0 });
-            numericUpDown1.ValueChanged += numericUpDown1_ValueChanged;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label7.Location = new Point(431, 444);
-            label7.Name = "label7";
-            label7.Size = new Size(136, 29);
-            label7.TabIndex = 14;
-            label7.Text = "Rp750.000";
-            // 
-            // numericUpDown2
-            // 
-            numericUpDown2.Location = new Point(785, 444);
-            numericUpDown2.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
-            numericUpDown2.Name = "numericUpDown2";
-            numericUpDown2.Size = new Size(47, 27);
-            numericUpDown2.TabIndex = 15;
-            numericUpDown2.Value = new decimal(new int[] { 1, 0, 0, 0 });
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label8.Location = new Point(1015, 248);
-            label8.Name = "label8";
-            label8.Size = new Size(136, 29);
-            label8.TabIndex = 16;
-            label8.Text = "Rp170.000";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label9.Location = new Point(1015, 444);
-            label9.Name = "label9";
-            label9.Size = new Size(136, 29);
-            label9.TabIndex = 17;
-            label9.Text = "Rp750.000";
-            // 
             // label10
             // 
             label10.AutoSize = true;
@@ -221,7 +134,6 @@
             lblSubtotal.Size = new Size(343, 33);
             lblSubtotal.TabIndex = 20;
             lblSubtotal.Text = "Rp920.000";
-            lblSubtotal.Click += lblSubtotal_Click;
             // 
             // label12
             // 
@@ -313,7 +225,6 @@
             radioButton1.TabStop = true;
             radioButton1.Text = "Bank BRI ";
             radioButton1.UseVisualStyleBackColor = true;
-            radioButton1.CheckedChanged += radioButton1_CheckedChanged;
             // 
             // radioButton2
             // 
@@ -326,6 +237,26 @@
             radioButton2.TabStop = true;
             radioButton2.Text = "Bank BRI ";
             radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.Controls.Add(productInCartUserControl1);
+            flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
+            flowLayoutPanel1.Location = new Point(95, 179);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(1065, 368);
+            flowLayoutPanel1.TabIndex = 30;
+            flowLayoutPanel1.WrapContents = false;
+            // 
+            // productInCartUserControl1
+            // 
+            productInCartUserControl1.Location = new Point(3, 3);
+            productInCartUserControl1.Name = "productInCartUserControl1";
+            productInCartUserControl1.ProductImage = null;
+            productInCartUserControl1.ProductPrice = new double();
+            productInCartUserControl1.Quantity = 1;
+            productInCartUserControl1.Size = new Size(1056, 200);
+            productInCartUserControl1.TabIndex = 0;
             // 
             // CartUserControl
             // 
@@ -344,26 +275,15 @@
             Controls.Add(lblSubtotal);
             Controls.Add(button1);
             Controls.Add(label10);
-            Controls.Add(label9);
-            Controls.Add(label8);
-            Controls.Add(numericUpDown2);
-            Controls.Add(label7);
-            Controls.Add(numericUpDown1);
-            Controls.Add(label6);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label2);
             Controls.Add(label3);
             Controls.Add(label1);
+            Controls.Add(flowLayoutPanel1);
             Name = "CartUserControl";
             Size = new Size(1902, 908);
-            Load += CartUserControl_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
+            flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -375,14 +295,6 @@
         private Label label2;
         private Label label4;
         private Label label5;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private Label label6;
-        private NumericUpDown numericUpDown1;
-        private Label label7;
-        private NumericUpDown numericUpDown2;
-        private Label label8;
-        private Label label9;
         private Label label10;
         private Button button1;
         private Label lblSubtotal;
@@ -396,5 +308,7 @@
         private Label label11;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private ProductInCartUserControl productInCartUserControl1;
     }
 }

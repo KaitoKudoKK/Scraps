@@ -33,7 +33,7 @@ namespace WinFormsApp1
                 {
                     productCardUserControl1.Hide();
                     conn.Open();
-                    string query = "SELECT p.product_name, p.product_size, p.product_duration, p.product_condition, p.product_price, p.product_image, s.seller_username " +
+                    string query = "SELECT p.productid, p.product_name, p.product_size, p.product_duration, p.product_condition, p.product_price, p.product_image, s.seller_username " +
                                    "FROM product p " +
                                    "JOIN seller s ON p.sellerid = s.sellerid";
 
@@ -42,6 +42,7 @@ namespace WinFormsApp1
                     {
                         while (reader.Read())
                         {
+                            string productId = reader["productid"].ToString();
                             string productName = reader["product_name"].ToString();
                             string productSize = reader["product_size"].ToString();
                             string productDuration = reader["product_duration"].ToString();
@@ -55,7 +56,8 @@ namespace WinFormsApp1
 
                             // Buat instance ProductCardUserControl
                             ProductCardUserControl productCard = new ProductCardUserControl();
-                            productCard.LoadProductData(productName, productImage, (decimal)productPrice, productSize, productDuration, productCondition, sellerName);
+                            productCard.LoadProductData(productId, productName, productImage, productPrice, productSize, productDuration, productCondition, sellerName);
+
 
                             // Tambahkan ke layout panel atau container lain di form
                             flowLayoutPanelProducts.Controls.Add(productCard); // Pastikan flowLayoutPanelProducts ada di form

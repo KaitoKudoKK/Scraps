@@ -258,7 +258,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1199, 562);
+            ClientSize = new Size(1920, 1080);
             Controls.Add(panel1);
             Controls.Add(rbSeller);
             Controls.Add(rbBuyer);
@@ -278,7 +278,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             KeyPreview = true;
-            MaximumSize = new Size(1682, 820);
+            MaximumSize = new Size(1920, 1080);
             MinimumSize = new Size(562, 280);
             Name = "RegisterForm";
             Text = "register";
