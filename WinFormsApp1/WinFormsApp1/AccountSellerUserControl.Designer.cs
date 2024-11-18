@@ -61,9 +61,10 @@
             // button1
             // 
             button1.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(1062, 299);
+            button1.Location = new Point(929, 224);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(77, 31);
+            button1.Size = new Size(67, 23);
             button1.TabIndex = 52;
             button1.Text = "Edit";
             button1.UseVisualStyleBackColor = true;
@@ -72,45 +73,45 @@
             // label15
             // 
             label15.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel);
-            label15.Location = new Point(307, 838);
+            label15.Location = new Point(269, 628);
             label15.Name = "label15";
-            label15.Size = new Size(304, 50);
+            label15.Size = new Size(266, 38);
             label15.TabIndex = 50;
             label15.Text = "Log out";
             // 
             // label13
             // 
             label13.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel);
-            label13.Location = new Point(220, 674);
+            label13.Location = new Point(192, 506);
             label13.Name = "label13";
-            label13.Size = new Size(280, 50);
+            label13.Size = new Size(245, 38);
             label13.TabIndex = 49;
             label13.Text = "Alamat";
             // 
             // label12
             // 
             label12.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel);
-            label12.Location = new Point(220, 561);
+            label12.Location = new Point(192, 421);
             label12.Name = "label12";
-            label12.Size = new Size(280, 50);
+            label12.Size = new Size(245, 38);
             label12.TabIndex = 48;
             label12.Text = "Nomor HP";
             // 
             // label11
             // 
             label11.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel);
-            label11.Location = new Point(220, 450);
+            label11.Location = new Point(192, 338);
             label11.Name = "label11";
-            label11.Size = new Size(280, 50);
+            label11.Size = new Size(245, 38);
             label11.TabIndex = 47;
             label11.Text = "Email";
             // 
             // label10
             // 
             label10.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel);
-            label10.Location = new Point(220, 329);
+            label10.Location = new Point(192, 247);
             label10.Name = "label10";
-            label10.Size = new Size(280, 50);
+            label10.Size = new Size(245, 38);
             label10.TabIndex = 46;
             label10.Text = "Nama";
             // 
@@ -118,9 +119,9 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label8.Location = new Point(1455, 75);
+            label8.Location = new Point(1273, 56);
             label8.Name = "label8";
-            label8.Size = new Size(76, 29);
+            label8.Size = new Size(71, 29);
             label8.TabIndex = 8;
             label8.Text = "16.35";
             // 
@@ -128,9 +129,9 @@
             // 
             lblAlamat.Font = new Font("Microsoft Sans Serif", 28F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
             lblAlamat.ForeColor = Color.FromArgb(7, 79, 84);
-            lblAlamat.Location = new Point(55, 11);
+            lblAlamat.Location = new Point(48, 8);
             lblAlamat.Name = "lblAlamat";
-            lblAlamat.Size = new Size(1392, 45);
+            lblAlamat.Size = new Size(1218, 34);
             lblAlamat.TabIndex = 6;
             lblAlamat.Text = "Jalan Kaliurang KM 5 Pogung Baru E/17A, Sinduadi, Mlati, Sleman, DI Yogyakarta, 55284";
             // 
@@ -139,9 +140,10 @@
             panel4.BackColor = Color.Transparent;
             panel4.Controls.Add(label8);
             panel4.Controls.Add(lblAlamat);
-            panel4.Location = new Point(220, 726);
+            panel4.Location = new Point(192, 544);
+            panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(1462, 60);
+            panel4.Size = new Size(1279, 45);
             panel4.TabIndex = 45;
             // 
             // btnPlus2
@@ -153,10 +155,10 @@
             btnPlus2.FlatAppearance.BorderSize = 0;
             btnPlus2.FlatStyle = FlatStyle.Flat;
             btnPlus2.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
-            btnPlus2.Location = new Point(233, 838);
+            btnPlus2.Location = new Point(204, 628);
             btnPlus2.Margin = new Padding(0);
             btnPlus2.Name = "btnPlus2";
-            btnPlus2.Size = new Size(69, 52);
+            btnPlus2.Size = new Size(60, 39);
             btnPlus2.TabIndex = 51;
             btnPlus2.UseVisualStyleBackColor = false;
             btnPlus2.Click += btnPlus2_Click;
@@ -165,9 +167,9 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label6.Location = new Point(1455, 75);
+            label6.Location = new Point(1273, 56);
             label6.Name = "label6";
-            label6.Size = new Size(76, 29);
+            label6.Size = new Size(71, 29);
             label6.TabIndex = 8;
             label6.Text = "16.35";
             // 
@@ -175,9 +177,9 @@
             // 
             lblNoHP.Font = new Font("Microsoft Sans Serif", 28F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
             lblNoHP.ForeColor = Color.FromArgb(7, 79, 84);
-            lblNoHP.Location = new Point(55, 6);
+            lblNoHP.Location = new Point(48, 4);
             lblNoHP.Name = "lblNoHP";
-            lblNoHP.Size = new Size(1392, 45);
+            lblNoHP.Size = new Size(1218, 34);
             lblNoHP.TabIndex = 6;
             lblNoHP.Text = "+6282212345871";
             // 
@@ -185,9 +187,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label3.Location = new Point(1455, 75);
+            label3.Location = new Point(1273, 56);
             label3.Name = "label3";
-            label3.Size = new Size(76, 29);
+            label3.Size = new Size(71, 29);
             label3.TabIndex = 8;
             label3.Text = "16.35";
             // 
@@ -195,9 +197,9 @@
             // 
             lblEmail.Font = new Font("Microsoft Sans Serif", 28F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
             lblEmail.ForeColor = Color.FromArgb(7, 79, 84);
-            lblEmail.Location = new Point(55, 10);
+            lblEmail.Location = new Point(48, 8);
             lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(1392, 45);
+            lblEmail.Size = new Size(1218, 34);
             lblEmail.TabIndex = 6;
             lblEmail.Text = "kaitokudokk@gmail.com";
             // 
@@ -206,18 +208,19 @@
             panel2.BackColor = Color.Transparent;
             panel2.Controls.Add(label3);
             panel2.Controls.Add(lblEmail);
-            panel2.Location = new Point(220, 501);
+            panel2.Location = new Point(192, 376);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1462, 60);
+            panel2.Size = new Size(1279, 45);
             panel2.TabIndex = 43;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label4.Location = new Point(1455, 75);
+            label4.Location = new Point(1273, 56);
             label4.Name = "label4";
-            label4.Size = new Size(76, 29);
+            label4.Size = new Size(71, 29);
             label4.TabIndex = 8;
             label4.Text = "16.35";
             // 
@@ -225,9 +228,9 @@
             // 
             lblNama.Font = new Font("Microsoft Sans Serif", 28F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
             lblNama.ForeColor = Color.FromArgb(7, 79, 84);
-            lblNama.Location = new Point(55, 12);
+            lblNama.Location = new Point(48, 9);
             lblNama.Name = "lblNama";
-            lblNama.Size = new Size(1392, 36);
+            lblNama.Size = new Size(1218, 27);
             lblNama.TabIndex = 6;
             lblNama.Text = "Steven";
             // 
@@ -236,9 +239,10 @@
             panel3.BackColor = Color.Transparent;
             panel3.Controls.Add(label6);
             panel3.Controls.Add(lblNoHP);
-            panel3.Location = new Point(220, 614);
+            panel3.Location = new Point(192, 460);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1462, 60);
+            panel3.Size = new Size(1279, 45);
             panel3.TabIndex = 44;
             // 
             // panel1
@@ -246,9 +250,10 @@
             panel1.BackColor = Color.Transparent;
             panel1.Controls.Add(label4);
             panel1.Controls.Add(lblNama);
-            panel1.Location = new Point(220, 381);
+            panel1.Location = new Point(192, 286);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1462, 60);
+            panel1.Size = new Size(1279, 45);
             panel1.TabIndex = 42;
             // 
             // btnChat
@@ -260,34 +265,35 @@
             btnChat.FlatStyle = FlatStyle.Flat;
             btnChat.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
             btnChat.ForeColor = Color.Gray;
-            btnChat.Location = new Point(867, 292);
+            btnChat.Location = new Point(759, 219);
             btnChat.Margin = new Padding(0);
             btnChat.Name = "btnChat";
-            btnChat.Size = new Size(482, 38);
+            btnChat.Size = new Size(422, 28);
             btnChat.TabIndex = 41;
             btnChat.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(1005, 115);
+            pictureBox1.Location = new Point(879, 86);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(192, 168);
+            pictureBox1.Size = new Size(168, 126);
             pictureBox1.TabIndex = 40;
             pictureBox1.TabStop = false;
             // 
             // label1
             // 
             label1.Font = new Font("Microsoft Sans Serif", 64F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
-            label1.Location = new Point(982, 19);
+            label1.Location = new Point(859, 14);
             label1.Name = "label1";
-            label1.Size = new Size(245, 75);
+            label1.Size = new Size(214, 56);
             label1.TabIndex = 39;
             label1.Text = "Profile";
             // 
             // AccountSellerUserControl
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             Controls.Add(button1);
             Controls.Add(label15);
@@ -303,6 +309,7 @@
             Controls.Add(btnChat);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "AccountSellerUserControl";
             Size = new Size(1902, 908);
             Load += AccountSellerUserControl_Load;

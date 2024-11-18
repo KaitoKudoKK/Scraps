@@ -1,5 +1,6 @@
 using Npgsql;
 using System;
+using System.Configuration;
 using System.Windows.Forms;
 
 namespace WinFormsApp1
@@ -12,7 +13,7 @@ namespace WinFormsApp1
         }
 
         private NpgsqlConnection conn;
-        private string connstring = "Host=localhost;Port=5432;Username=postgres;Password=qwerty123;Database=scraps";
+        private string connstring = ConfigurationManager.ConnectionStrings["AivenScrapsDB"].ConnectionString;
         public static string currentSellerID = ""; // Store the seller ID as a string, empty means no seller logged in.
         public static string currentBuyerID = ""; // Store the buyer ID as a string, empty means no buyer logged in.
 

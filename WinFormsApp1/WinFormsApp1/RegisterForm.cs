@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace WinFormsApp1
     public partial class RegisterForm : Form
     {
         private NpgsqlConnection conn;
-        private string connstring = "Host=localhost;Port=5432;Username=postgres;Password=qwerty123;Database=scraps";
+        private string connstring = ConfigurationManager.ConnectionStrings["AivenScrapsDB"].ConnectionString;
         private NpgsqlCommand cmd;
         private string sql = null;
 

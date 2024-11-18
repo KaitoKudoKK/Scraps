@@ -16,7 +16,7 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             EditAkunSellerUserControl editForm = new EditAkunSellerUserControl(lblNama.Text, lblEmail.Text, lblNoHP.Text, lblAlamat.Text, pictureBox1.ImageLocation);
@@ -52,7 +52,7 @@ namespace WinFormsApp1
             // Buka LoginForm dan tutup BuyerForm
             LoginForm loginForm = new();
             loginForm.Show();
-            this.Hide(); // Menyembunyikan form login setelah berhasil login
+            this.ParentForm.Hide();
         }
 
         private void AccountSellerUserControl_Load(object sender, EventArgs e)

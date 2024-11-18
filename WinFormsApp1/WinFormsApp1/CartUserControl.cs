@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
@@ -17,7 +18,7 @@ namespace WinFormsApp1
 
             try
             {
-                using (NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=qwerty123;Database=scraps"))
+                using (NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["AivenScrapsDB"].ConnectionString))
                 {
                     conn.Open();
                     var query = @"
@@ -108,7 +109,7 @@ namespace WinFormsApp1
         {
             try
             {
-                using (NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=qwerty123;Database=scraps"))
+                using (NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["AivenScrapsDB"].ConnectionString))
                 {
                     conn.Open();
 
