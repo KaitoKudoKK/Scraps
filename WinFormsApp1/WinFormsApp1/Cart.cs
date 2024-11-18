@@ -58,7 +58,7 @@ namespace WinFormsApp1
                 cartHistory.Add(this);
                 
                 // Mengosongkan Cart setelah dibayar
-                ProductIDs.Clear();
+                ProductIDs.Clear(); 
                 Console.WriteLine($"Cart {CartID} has been paid for by Buyer {BuyerID}.");
             }
             else

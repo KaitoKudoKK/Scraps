@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,69 +17,58 @@ namespace WinFormsApp1
         public HomeUserControl()
         {
             InitializeComponent();
+            LoadProductsFromDatabase();
         }
 
         private void HomeUserControl_Load(object sender, EventArgs e)
         {
-            panel1.BackColor = Color.FromArgb(128, 7, 79, 84);
-            panel2.BackColor = Color.FromArgb(128, 7, 79, 84);
-            panel3.BackColor = Color.FromArgb(128, 7, 79, 84);
-            label2.BackColor = Color.FromArgb(0, 0, 0, 0);
-            label3.BackColor = Color.FromArgb(0, 0, 0, 0);
-            label4.BackColor = Color.FromArgb(0, 0, 0, 0);
-            label5.BackColor = Color.FromArgb(0, 0, 0, 0);
-            label6.BackColor = Color.FromArgb(0, 0, 0, 0);
-            label7.BackColor = Color.FromArgb(0, 0, 0, 0);
-            pbStar1.BackColor = Color.FromArgb(0, 0, 0, 0);
-            pbStar2.BackColor = Color.FromArgb(0, 0, 0, 0);
-            pbStar3.BackColor = Color.FromArgb(0, 0, 0, 0);
-            pbStar4.BackColor = Color.FromArgb(0, 0, 0, 0);
-            pbStar5.BackColor = Color.FromArgb(0, 0, 0, 0);
-            pbStar6.BackColor = Color.FromArgb(0, 0, 0, 0);
-            pbStar7.BackColor = Color.FromArgb(0, 0, 0, 0);
-            pbStar8.BackColor = Color.FromArgb(0, 0, 0, 0);
-            pbStar9.BackColor = Color.FromArgb(0, 0, 0, 0);
-            pbStar10.BackColor = Color.FromArgb(0, 0, 0, 0);
-            pbStar11.BackColor = Color.FromArgb(0, 0, 0, 0);
+           
         }
 
-        private void btnPlus1_Paint(object sender, PaintEventArgs e)
+        private void LoadProductsFromDatabase()
         {
-            System.Drawing.Drawing2D.GraphicsPath buttonPath = new System.Drawing.Drawing2D.GraphicsPath();
-            // Membuat button berbentuk lingkaran
-            buttonPath.AddEllipse(0, 0, btnPlus1.Width, btnPlus1.Height);
-            btnPlus1.Region = new Region(buttonPath);
-        }
+            using (NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=qwerty123;Database=scraps"))
+            {
+                try
+                {
+                    productCardUserControl1.Hide();
+                    conn.Open();
+                    string query = "SELECT p.productid, p.product_name, p.product_size, p.product_duration, p.product_condition, p.product_price, p.product_image, s.seller_username " +
+                                   "FROM product p " +
+                                   "JOIN seller s ON p.sellerid = s.sellerid";
 
-        private void btnPlus2_Paint(object sender, PaintEventArgs e)
-        {
-            System.Drawing.Drawing2D.GraphicsPath buttonPath = new System.Drawing.Drawing2D.GraphicsPath();
-            // Membuat button berbentuk lingkaran
-            buttonPath.AddEllipse(0, 0, btnPlus2.Width, btnPlus2.Height);
-            btnPlus2.Region = new Region(buttonPath);
-        }
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
+                    using (NpgsqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            string productId = reader["productid"].ToString();
+                            string productName = reader["product_name"].ToString();
+                            string productSize = reader["product_size"].ToString();
+                            string productDuration = reader["product_duration"].ToString();
+                            string productCondition = reader["product_condition"].ToString();
+                            double productPrice = reader.GetDouble(reader.GetOrdinal("product_price"));
 
-        private void btnPlus3_Paint(object sender, PaintEventArgs e)
-        {
-            System.Drawing.Drawing2D.GraphicsPath buttonPath = new System.Drawing.Drawing2D.GraphicsPath();
-            // Membuat button berbentuk lingkaran
-            buttonPath.AddEllipse(0, 0, btnPlus3.Width, btnPlus3.Height);
-            btnPlus3.Region = new Region(buttonPath);
-        }
+                            byte[] imageBytes = reader.IsDBNull(reader.GetOrdinal("product_image")) ? null : (byte[])reader["product_image"];
+                            Image productImage = imageBytes != null ? Image.FromStream(new System.IO.MemoryStream(imageBytes)) : null;
 
-        private void btnPlus1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Barang ditambahkan ke cart!");
-        }
+                            string sellerName = reader["seller_username"].ToString();
 
-        private void btnPlus2_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Barang ditambahkan ke cart!");
-        }
+                            // Buat instance ProductCardUserControl
+                            ProductCardUserControl productCard = new ProductCardUserControl();
+                            productCard.LoadProductData(productId, productName, productImage, productPrice, productSize, productDuration, productCondition, sellerName);
 
-        private void btnPlus3_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Barang ditambahkan ke cart!");
+
+                            // Tambahkan ke layout panel atau container lain di form
+                            flowLayoutPanelProducts.Controls.Add(productCard); // Pastikan flowLayoutPanelProducts ada di form
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+            }
         }
     }
 }

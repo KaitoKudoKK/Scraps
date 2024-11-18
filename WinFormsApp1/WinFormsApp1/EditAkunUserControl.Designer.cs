@@ -302,8 +302,6 @@
         private Label label10;
         private Panel panel4;
         private Label label8;
-      
-     
         private Panel panel2;
         private Label label3;
         private Label label5;

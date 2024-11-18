@@ -38,11 +38,11 @@
             btnAdd = new Button();
             btnAccount = new Button();
             label4 = new Label();
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             homeSellerUserControl1 = new HomeSellerUserControl();
             chatSellerUserControl1 = new ChatSellerUserControl();
             accountSellerUserControl1 = new AccountSellerUserControl();
             transactionHistorySeller1 = new TransactionHistorySeller();
+            addProductUserControl1 = new AddProductUserControl(LoginForm.currentSellerID);
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -82,6 +82,7 @@
             btnChat.TabIndex = 12;
             btnChat.Text = "Chat";
             btnChat.UseVisualStyleBackColor = false;
+            btnChat.Click += btnChat_Click;
             // 
             // label3
             // 
@@ -147,7 +148,7 @@
             btnTransaction.TabIndex = 17;
             btnTransaction.Text = "Transaction History";
             btnTransaction.UseVisualStyleBackColor = false;
-            btnTransaction.Click += button1_Click;
+            btnTransaction.Click += btnTransaction_Click;
             // 
             // btnAdd
             // 
@@ -208,27 +209,35 @@
             // chatSellerUserControl1
             // 
             chatSellerUserControl1.Dock = DockStyle.Fill;
-            chatSellerUserControl1.Location = new Point(0, 0);
+            chatSellerUserControl1.Location = new Point(0, 86);
             chatSellerUserControl1.Name = "chatSellerUserControl1";
-            chatSellerUserControl1.Size = new Size(1902, 1033);
+            chatSellerUserControl1.Size = new Size(1902, 947);
             chatSellerUserControl1.TabIndex = 17;
-            chatSellerUserControl1.Load += chatSellerUserControl1_Load;
             // 
             // accountSellerUserControl1
             // 
             accountSellerUserControl1.Dock = DockStyle.Fill;
-            accountSellerUserControl1.Location = new Point(0, 0);
+            accountSellerUserControl1.Location = new Point(0, 86);
             accountSellerUserControl1.Name = "accountSellerUserControl1";
-            accountSellerUserControl1.Size = new Size(1902, 1033);
+            accountSellerUserControl1.Size = new Size(1902, 947);
             accountSellerUserControl1.TabIndex = 18;
             // 
             // transactionHistorySeller1
             // 
             transactionHistorySeller1.Dock = DockStyle.Fill;
-            transactionHistorySeller1.Location = new Point(0, 0);
+            transactionHistorySeller1.Location = new Point(0, 86);
             transactionHistorySeller1.Name = "transactionHistorySeller1";
-            transactionHistorySeller1.Size = new Size(1902, 1033);
+            transactionHistorySeller1.Size = new Size(1902, 947);
             transactionHistorySeller1.TabIndex = 19;
+            // 
+            // addProductUserControl1
+            // 
+            addProductUserControl1.Dock = DockStyle.Fill;
+            addProductUserControl1.ForeColor = Color.Black;
+            addProductUserControl1.Location = new Point(0, 0);
+            addProductUserControl1.Name = "addProductUserControl1";
+            addProductUserControl1.Size = new Size(1902, 1033);
+            addProductUserControl1.TabIndex = 17;
             // 
             // SellerForm
             // 
@@ -236,12 +245,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1902, 1033);
             Controls.Add(homeSellerUserControl1);
-            Controls.Add(panel1);
             Controls.Add(transactionHistorySeller1);
             Controls.Add(accountSellerUserControl1);
             Controls.Add(chatSellerUserControl1);
+            Controls.Add(addProductUserControl1);
+            Controls.Add(panel1);
             Name = "SellerForm";
             Text = "SellerForm";
+            FormClosed += SellerForm_FormClosed;
             Load += SellerForm_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -256,16 +267,14 @@
         private Label label2;
         private Label label1;
         private Panel panel1;
-        private HomeSellerUserControl HomeSellerUserControl;
-        private AddProductUserControl addProductUserControl1;
         private Button btnAdd;
         private Button btnTransaction;
         private Label label4;
         private Button btnAccount;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private HomeSellerUserControl homeSellerUserControl1;
         private ChatSellerUserControl chatSellerUserControl1;
         private AccountSellerUserControl accountSellerUserControl1;
         private TransactionHistorySeller transactionHistorySeller1;
+        private AddProductUserControl addProductUserControl1;
     }
 }

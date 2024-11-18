@@ -36,7 +36,16 @@ namespace WinFormsApp1
             string ukuran = tbUkuranProduk.Text;
             string durasiPakai = tbDurasiPakaiProduk.Text;
             string kondisi = tbKondisiProduk.Text;
-            decimal harga = Convert.ToDecimal(tbHargaProduk.Text);
+            decimal harga;
+
+            // Validate if all required fields are filled and price is valid
+            if (string.IsNullOrWhiteSpace(namaProduk) || string.IsNullOrWhiteSpace(ukuran) ||
+                string.IsNullOrWhiteSpace(durasiPakai) || string.IsNullOrWhiteSpace(kondisi) ||
+                !decimal.TryParse(tbHargaProduk.Text, out harga))
+            {
+                MessageBox.Show("Please fill in all fields and enter a valid price.");
+                return;
+            }
 
             byte[] imageBytes = null;
             if (pbProductImage.Image != null)
@@ -48,7 +57,7 @@ namespace WinFormsApp1
                 }
             }
 
-            using (NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=lisha;Database=scraps"))
+            using (NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=qwerty123;Database=scraps"))
             {
                 try
                 {
@@ -70,6 +79,7 @@ namespace WinFormsApp1
                     }
 
                     MessageBox.Show("Product successfully added!");
+                    ClearForm();  // Optional: Clear form after successful addition
                 }
                 catch (Exception ex)
                 {
@@ -80,6 +90,7 @@ namespace WinFormsApp1
 
         private void AddProductUserControl_Load(object sender, EventArgs e)
         {
+            // Set custom background color for textboxes
             tbNamaProduk.BackColor = Color.FromArgb(128, 7, 79, 84);
             tbUkuranProduk.BackColor = Color.FromArgb(128, 7, 79, 84);
             tbDurasiPakaiProduk.BackColor = Color.FromArgb(128, 7, 79, 84);
@@ -87,9 +98,19 @@ namespace WinFormsApp1
             tbHargaProduk.BackColor = Color.FromArgb(128, 7, 79, 84);
         }
 
+        private void ClearForm()
+        {
+            tbNamaProduk.Clear();
+            tbUkuranProduk.Clear();
+            tbDurasiPakaiProduk.Clear();
+            tbKondisiProduk.Clear();
+            tbHargaProduk.Clear();
+            pbProductImage.Image = null;
+        }
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            // Any custom painting logic can be added here if necessary
         }
     }
 }

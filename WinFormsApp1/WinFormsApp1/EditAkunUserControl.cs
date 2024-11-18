@@ -71,9 +71,6 @@ namespace WinFormsApp1
         }
 
 
-
-
-
         private void btnChat_Click_3(object sender, EventArgs e)
         {
             try

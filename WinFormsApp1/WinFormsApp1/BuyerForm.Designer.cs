@@ -179,7 +179,7 @@ namespace WinFormsApp1
             btnTransaction.TabIndex = 12;
             btnTransaction.Text = "Transaction History";
             btnTransaction.UseVisualStyleBackColor = false;
-            btnTransaction.Click += button1_Click;
+            btnTransaction.Click += btnTransaction_Click;
             // 
             // label4
             // 
@@ -194,18 +194,17 @@ namespace WinFormsApp1
             // transactionHistoryBuyer1
             // 
             transactionHistoryBuyer1.Dock = DockStyle.Fill;
-            transactionHistoryBuyer1.Location = new Point(0, 86);
+            transactionHistoryBuyer1.Location = new Point(0, 0);
             transactionHistoryBuyer1.Name = "transactionHistoryBuyer1";
-            transactionHistoryBuyer1.Size = new Size(1902, 947);
+            transactionHistoryBuyer1.Size = new Size(1902, 1033);
             transactionHistoryBuyer1.TabIndex = 8;
-            transactionHistoryBuyer1.Load += transactionHistoryBuyer1_Load;
             // 
             // homeUserControl1
             // 
             homeUserControl1.Dock = DockStyle.Fill;
-            homeUserControl1.Location = new Point(0, 86);
+            homeUserControl1.Location = new Point(0, 0);
             homeUserControl1.Name = "homeUserControl1";
-            homeUserControl1.Size = new Size(1902, 947);
+            homeUserControl1.Size = new Size(1902, 1033);
             homeUserControl1.TabIndex = 9;
             // 
             // cartUserControl1
@@ -239,8 +238,6 @@ namespace WinFormsApp1
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.White;
             ClientSize = new Size(1902, 1033);
-            Controls.Add(homeUserControl1);
-            Controls.Add(transactionHistoryBuyer1);
             Controls.Add(btnHome);
             Controls.Add(btnAccount);
             Controls.Add(btnChat);
@@ -249,6 +246,8 @@ namespace WinFormsApp1
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(panel1);
+            Controls.Add(homeUserControl1);
+            Controls.Add(transactionHistoryBuyer1);
             Controls.Add(accountUserControl1);
             Controls.Add(chatUserControl1);
             Controls.Add(cartUserControl1);
@@ -256,7 +255,7 @@ namespace WinFormsApp1
             MaximumSize = new Size(1920, 1080);
             MinimumSize = new Size(640, 360);
             Name = "BuyerForm";
-            Text = "USer";
+            Text = "Buyer";
             FormClosed += BuyerForm_FormClosed;
             Load += BuyerForm_Load;
             KeyDown += BuyerForm_KeyDown;
