@@ -38,7 +38,7 @@
             label3 = new Label();
             label5 = new Label();
             panel1 = new Panel();
-            pictureBox1 = new PictureBox();
+            image1 = new PictureBox();
             txtAlamat = new TextBox();
             label13 = new Label();
             label12 = new Label();
@@ -49,7 +49,7 @@
             button1 = new Button();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)image1).BeginInit();
             panel4.SuspendLayout();
             SuspendLayout();
             // 
@@ -71,7 +71,7 @@
             btnChat.FlatStyle = FlatStyle.Flat;
             btnChat.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
             btnChat.ForeColor = Color.DarkCyan;
-            btnChat.Location = new Point(867, 235);
+            btnChat.Location = new Point(961, 238);
             btnChat.Margin = new Padding(0);
             btnChat.Name = "btnChat";
             btnChat.Size = new Size(278, 38);
@@ -160,13 +160,13 @@
             panel1.Size = new Size(1462, 60);
             panel1.TabIndex = 57;
             // 
-            // pictureBox1
+            // image1
             // 
-            pictureBox1.Location = new Point(1005, 58);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(192, 168);
-            pictureBox1.TabIndex = 55;
-            pictureBox1.TabStop = false;
+            image1.Location = new Point(1005, 58);
+            image1.Name = "image1";
+            image1.Size = new Size(192, 168);
+            image1.TabIndex = 55;
+            image1.TabStop = false;
             // 
             // txtAlamat
             // 
@@ -244,6 +244,7 @@
             button1.TabIndex = 64;
             button1.Text = "Simpan";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // EditAkunSellerUserControl
             // 
@@ -253,7 +254,7 @@
             Controls.Add(btnChat);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Controls.Add(pictureBox1);
+            Controls.Add(image1);
             Controls.Add(label13);
             Controls.Add(label12);
             Controls.Add(label11);
@@ -267,7 +268,7 @@
             panel2.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)image1).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ResumeLayout(false);
@@ -286,7 +287,7 @@
         private Label label3;
         private Label label5;
         private Panel panel1;
-        private PictureBox pictureBox1;
+        private PictureBox image1;
         private TextBox txtAlamat;
         private Label label13;
         private Label label12;

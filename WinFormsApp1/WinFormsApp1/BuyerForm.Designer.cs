@@ -226,6 +226,7 @@ namespace WinFormsApp1
             // 
             // accountUserControl1
             // 
+            accountUserControl1.AllowDrop = true;
             accountUserControl1.Dock = DockStyle.Fill;
             accountUserControl1.Location = new Point(0, 0);
             accountUserControl1.Name = "accountUserControl1";

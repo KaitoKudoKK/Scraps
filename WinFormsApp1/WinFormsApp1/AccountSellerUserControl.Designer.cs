@@ -67,6 +67,7 @@
             button1.TabIndex = 52;
             button1.Text = "Edit";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label15
             // 
@@ -158,6 +159,7 @@
             btnPlus2.Size = new Size(69, 52);
             btnPlus2.TabIndex = 51;
             btnPlus2.UseVisualStyleBackColor = false;
+            btnPlus2.Click += btnPlus2_Click;
             // 
             // label6
             // 
@@ -303,6 +305,7 @@
             Controls.Add(label1);
             Name = "AccountSellerUserControl";
             Size = new Size(1902, 908);
+            Load += AccountSellerUserControl_Load;
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             panel2.ResumeLayout(false);
