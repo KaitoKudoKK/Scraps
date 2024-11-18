@@ -48,7 +48,7 @@ namespace WinFormsApp1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            // Asumsikan pictureBoxUpload.ImageLocation berisi jalur gambar setelah upload
+            // Pastikan image1 berisi jalur gambar yang valid
             var updatedEventArgs = new UserDataEventArgs(
                 txtName.Text,
                 txtEmail.Text,
@@ -57,62 +57,19 @@ namespace WinFormsApp1
                 image1.ImageLocation // Pastikan ini memuat jalur terbaru
             );
 
-            UserDataUpdated?.Invoke(this, updatedEventArgs); // Panggil event dengan data terbaru
-            this.Parent.Controls["AccountUserControl"].Show();
-            this.Hide();
+            // Panggil event dengan data terbaru
+            UserDataUpdated?.Invoke(this, updatedEventArgs);
+
+            // Kembali ke AccountUserControl dan sembunyikan EditAkunUserControl
+            var accountUserControl = this.Parent.Controls["AccountUserControl"] as AccountUserControl;
+            if (accountUserControl != null)
+            {
+                accountUserControl.Show();  // Menampilkan AccountUserControl lagi
+            }
+
+            this.Hide(); // Menyembunyikan EditAkunUserControl
         }
 
-        private void btnChat_Click_1(object sender, EventArgs e)
-        {
-            try
-            {
-                // Membuat dan mengatur OpenFileDialog
-                OpenFileDialog dialog = new OpenFileDialog();
-                dialog.Filter = "JPG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|All Files (*.*)|*.*";
-                dialog.Title = "Select an Image File";
-
-                // Menampilkan dialog dan memeriksa apakah pengguna memilih file
-                if (dialog.ShowDialog() == DialogResult.OK)
-                {
-                    // Mengambil lokasi file yang dipilih
-                    String imageLocation = dialog.FileName;
-
-                    // Menampilkan gambar pada PictureBox
-                    image1.ImageLocation = imageLocation;
-                }
-            }
-            catch (Exception ex)
-            {
-                // Menampilkan pesan error jika ada kesalahan
-                MessageBox.Show("An Error Occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void btnChat_Click_2(object sender, EventArgs e)
-        {
-            try
-            {
-                // Membuat dan mengatur OpenFileDialog
-                OpenFileDialog dialog = new OpenFileDialog();
-                dialog.Filter = "JPG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|All Files (*.*)|*.*";
-                dialog.Title = "Select an Image File";
-
-                // Menampilkan dialog dan memeriksa apakah pengguna memilih file
-                if (dialog.ShowDialog() == DialogResult.OK)
-                {
-                    // Mengambil lokasi file yang dipilih
-                    String imageLocation = dialog.FileName;
-
-                    // Menampilkan gambar pada PictureBox
-                    image1.ImageLocation = imageLocation;
-                }
-            }
-            catch (Exception ex)
-            {
-                // Menampilkan pesan error jika ada kesalahan
-                MessageBox.Show("An Error Occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
         private void btnChat_Click_3(object sender, EventArgs e)
         {

@@ -163,5 +163,10 @@ namespace WinFormsApp1
         {
             Application.Exit();
         }
+
+        private void RegisterForm_Load(object sender, EventArgs e)
+        {
+               
+        }
     }
 }

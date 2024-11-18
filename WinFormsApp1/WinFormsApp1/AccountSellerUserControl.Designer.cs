@@ -68,6 +68,7 @@
             button1.TabIndex = 52;
             button1.Text = "Edit";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label15
             // 
@@ -310,7 +311,8 @@
             Controls.Add(label1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "AccountSellerUserControl";
-            Size = new Size(1664, 681);
+            Size = new Size(1902, 908);
+            Load += AccountSellerUserControl_Load;
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             panel2.ResumeLayout(false);
