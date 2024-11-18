@@ -72,6 +72,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Update="AccountSellerUserControl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Update="AccountUserControl.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
