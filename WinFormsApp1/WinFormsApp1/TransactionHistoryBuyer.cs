@@ -67,7 +67,8 @@ namespace WinFormsApp1
 
         private void TransactionHistoryBuyer_Load(object sender, EventArgs e)
         {
-
+            button1.BackColor = Color.FromArgb(7, 79, 84); // Warna aktif
+            button1.ForeColor = Color.White; // Teks tombol aktif
         }
 
         private void panel1_Paint_1(object sender, PaintEventArgs e)

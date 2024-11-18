@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AccountUserControl));
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            btnChat = new Button();
             panel1 = new Panel();
             label4 = new Label();
             lblNama = new Label();
@@ -77,22 +76,6 @@
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click_1;
-            // 
-            // btnChat
-            // 
-            btnChat.BackColor = Color.Transparent;
-            btnChat.BackgroundImageLayout = ImageLayout.None;
-            btnChat.Cursor = Cursors.Hand;
-            btnChat.FlatAppearance.BorderSize = 0;
-            btnChat.FlatStyle = FlatStyle.Flat;
-            btnChat.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
-            btnChat.ForeColor = Color.Gray;
-            btnChat.Location = new Point(742, 273);
-            btnChat.Margin = new Padding(0);
-            btnChat.Name = "btnChat";
-            btnChat.Size = new Size(482, 38);
-            btnChat.TabIndex = 7;
-            btnChat.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -305,7 +288,6 @@
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Controls.Add(btnChat);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(btnPlus2);
@@ -327,7 +309,6 @@
         #endregion
 
         private Label label1;
-        private Button btnChat;
         private Panel panel1;
         private Label label4;
         private Label lblNama;
@@ -340,7 +321,6 @@
         private Panel panel4;
         private Label label8;
         private Label lblAlamat;
-        private PictureBox pictureBox5;
         private Label label10;
         private Label label11;
         private Label label12;

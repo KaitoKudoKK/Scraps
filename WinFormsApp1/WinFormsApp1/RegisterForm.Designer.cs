@@ -55,16 +55,16 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(325, 29);
+            label1.Location = new Point(371, 39);
             label1.Name = "label1";
-            label1.Size = new Size(0, 15);
+            label1.Size = new Size(0, 20);
             label1.TabIndex = 0;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 40F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label2.Location = new Point(100, 252);
+            label2.Location = new Point(114, 336);
             label2.Name = "label2";
             label2.Size = new Size(236, 46);
             label2.TabIndex = 1;
@@ -74,7 +74,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 40F, FontStyle.Regular, GraphicsUnit.Pixel);
-            label3.Location = new Point(100, 308);
+            label3.Location = new Point(114, 411);
             label3.Margin = new Padding(0);
             label3.Name = "label3";
             label3.Size = new Size(153, 46);
@@ -85,7 +85,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 40F, FontStyle.Regular, GraphicsUnit.Pixel);
-            label4.Location = new Point(100, 369);
+            label4.Location = new Point(114, 492);
             label4.Name = "label4";
             label4.Size = new Size(169, 46);
             label4.TabIndex = 3;
@@ -95,7 +95,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 40F, FontStyle.Regular, GraphicsUnit.Pixel);
-            label5.Location = new Point(100, 482);
+            label5.Location = new Point(114, 643);
             label5.Name = "label5";
             label5.Size = new Size(229, 46);
             label5.TabIndex = 4;
@@ -105,7 +105,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 40F, FontStyle.Regular, GraphicsUnit.Pixel);
-            label6.Location = new Point(100, 425);
+            label6.Location = new Point(114, 567);
             label6.Name = "label6";
             label6.Size = new Size(188, 46);
             label6.TabIndex = 5;
@@ -115,45 +115,50 @@
             // 
             tbUsername.BorderStyle = BorderStyle.FixedSingle;
             tbUsername.Font = new Font("Microsoft Sans Serif", 35F, FontStyle.Regular, GraphicsUnit.Pixel);
-            tbUsername.Location = new Point(328, 257);
+            tbUsername.Location = new Point(375, 343);
+            tbUsername.Margin = new Padding(3, 4, 3, 4);
             tbUsername.Name = "tbUsername";
-            tbUsername.Size = new Size(445, 47);
+            tbUsername.Size = new Size(508, 47);
             tbUsername.TabIndex = 6;
             // 
             // tbEmail
             // 
             tbEmail.BorderStyle = BorderStyle.FixedSingle;
             tbEmail.Font = new Font("Microsoft Sans Serif", 35F, FontStyle.Regular, GraphicsUnit.Pixel);
-            tbEmail.Location = new Point(328, 314);
+            tbEmail.Location = new Point(375, 419);
+            tbEmail.Margin = new Padding(3, 4, 3, 4);
             tbEmail.Name = "tbEmail";
-            tbEmail.Size = new Size(445, 47);
+            tbEmail.Size = new Size(508, 47);
             tbEmail.TabIndex = 7;
             // 
             // tbPhone
             // 
             tbPhone.BorderStyle = BorderStyle.FixedSingle;
             tbPhone.Font = new Font("Microsoft Sans Serif", 35F, FontStyle.Regular, GraphicsUnit.Pixel);
-            tbPhone.Location = new Point(328, 374);
+            tbPhone.Location = new Point(375, 499);
+            tbPhone.Margin = new Padding(3, 4, 3, 4);
             tbPhone.Name = "tbPhone";
-            tbPhone.Size = new Size(445, 47);
+            tbPhone.Size = new Size(508, 47);
             tbPhone.TabIndex = 8;
             // 
             // tbAddress
             // 
             tbAddress.BorderStyle = BorderStyle.FixedSingle;
             tbAddress.Font = new Font("Microsoft Sans Serif", 35F, FontStyle.Regular, GraphicsUnit.Pixel);
-            tbAddress.Location = new Point(328, 430);
+            tbAddress.Location = new Point(375, 573);
+            tbAddress.Margin = new Padding(3, 4, 3, 4);
             tbAddress.Name = "tbAddress";
-            tbAddress.Size = new Size(445, 47);
+            tbAddress.Size = new Size(508, 47);
             tbAddress.TabIndex = 9;
             // 
             // tbPassword
             // 
             tbPassword.BorderStyle = BorderStyle.FixedSingle;
             tbPassword.Font = new Font("Microsoft Sans Serif", 35F, FontStyle.Regular, GraphicsUnit.Pixel);
-            tbPassword.Location = new Point(328, 487);
+            tbPassword.Location = new Point(375, 649);
+            tbPassword.Margin = new Padding(3, 4, 3, 4);
             tbPassword.Name = "tbPassword";
-            tbPassword.Size = new Size(445, 47);
+            tbPassword.Size = new Size(508, 47);
             tbPassword.TabIndex = 10;
             // 
             // label7
@@ -162,7 +167,7 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Microsoft Sans Serif", 78F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
             label7.ForeColor = Color.FromArgb(7, 79, 84);
-            label7.Location = new Point(248, 80);
+            label7.Location = new Point(283, 107);
             label7.Name = "label7";
             label7.Size = new Size(464, 89);
             label7.TabIndex = 12;
@@ -174,10 +179,9 @@
             btnRegister.Cursor = Cursors.Hand;
             btnRegister.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
             btnRegister.ForeColor = Color.White;
-            btnRegister.Location = new Point(421, 620);
-            btnRegister.Margin = new Padding(3, 2, 3, 2);
+            btnRegister.Location = new Point(481, 827);
             btnRegister.Name = "btnRegister";
-            btnRegister.Size = new Size(258, 60);
+            btnRegister.Size = new Size(295, 80);
             btnRegister.TabIndex = 14;
             btnRegister.Text = "Register";
             btnRegister.UseVisualStyleBackColor = false;
@@ -187,9 +191,9 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel);
-            label8.Location = new Point(329, 582);
+            label8.Location = new Point(376, 776);
             label8.Name = "label8";
-            label8.Size = new Size(284, 29);
+            label8.Size = new Size(306, 29);
             label8.TabIndex = 14;
             label8.Text = "Already have an account?";
             // 
@@ -198,9 +202,9 @@
             lblLogin.AutoSize = true;
             lblLogin.Cursor = Cursors.Hand;
             lblLogin.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold, GraphicsUnit.Pixel);
-            lblLogin.Location = new Point(602, 582);
+            lblLogin.Location = new Point(688, 776);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(85, 29);
+            lblLogin.Size = new Size(88, 29);
             lblLogin.TabIndex = 13;
             lblLogin.Text = "Log in";
             lblLogin.Click += lblLogin_Click;
@@ -211,10 +215,9 @@
             // 
             rbBuyer.AutoSize = true;
             rbBuyer.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            rbBuyer.Location = new Point(324, 538);
-            rbBuyer.Margin = new Padding(3, 2, 3, 2);
+            rbBuyer.Location = new Point(370, 717);
             rbBuyer.Name = "rbBuyer";
-            rbBuyer.Size = new Size(93, 33);
+            rbBuyer.Size = new Size(100, 33);
             rbBuyer.TabIndex = 11;
             rbBuyer.TabStop = true;
             rbBuyer.Text = "Buyer";
@@ -224,10 +227,9 @@
             // 
             rbSeller.AutoSize = true;
             rbSeller.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            rbSeller.Location = new Point(539, 538);
-            rbSeller.Margin = new Padding(3, 2, 3, 2);
+            rbSeller.Location = new Point(616, 717);
             rbSeller.Name = "rbSeller";
-            rbSeller.Size = new Size(95, 33);
+            rbSeller.Size = new Size(99, 33);
             rbSeller.TabIndex = 12;
             rbSeller.TabStop = true;
             rbSeller.Text = "Seller";
@@ -238,25 +240,23 @@
             panel1.BackColor = Color.FromArgb(7, 79, 84);
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Right;
-            panel1.Location = new Point(549, 0);
-            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Location = new Point(627, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(650, 562);
+            panel1.Size = new Size(743, 749);
             panel1.TabIndex = 18;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(80, 291);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(91, 388);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(517, 507);
+            pictureBox1.Size = new Size(591, 676);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // RegisterForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1920, 1080);
             Controls.Add(panel1);
@@ -278,11 +278,13 @@
             Controls.Add(label2);
             Controls.Add(label1);
             KeyPreview = true;
+            Margin = new Padding(3, 4, 3, 4);
             MaximumSize = new Size(1920, 1080);
             MinimumSize = new Size(562, 280);
             Name = "RegisterForm";
             Text = "register";
             FormClosed += RegisterForm_FormClosed;
+            Load += RegisterForm_Load;
             KeyDown += RegisterForm_KeyDown;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

@@ -62,20 +62,39 @@ namespace WinFormsApp1
             this.Hide(); // Menyembunyikan form login setelah berhasil login
         }
 
+        // Di AccountUserControl
         private void button1_Click(object sender, EventArgs e)
         {
             EditAkunUserControl editForm = new EditAkunUserControl(lblNama.Text, lblEmail.Text, lblNoHP.Text, lblAlamat.Text, pictureBox1.ImageLocation);
-            editForm.UserDataUpdated += OnUserDataUpdated; // Subscribe event
-            this.Parent.Controls.Add(editForm);
-            this.Hide();
+
+            // Subscribe ke event untuk mendapatkan data terbaru
+            editForm.UserDataUpdated += OnUserDataUpdated;
+
+            // Tambahkan EditAkunUserControl ke container
+            if (this.Parent != null)
+            {
+                this.Parent.Controls.Add(editForm);
+                editForm.Dock = DockStyle.Fill;  // Memastikan editForm mengisi area container
+                editForm.BringToFront();         // Pastikan editForm terlihat di depan
+                this.Hide();                     // Menyembunyikan AccountUserControl
+            }
+            else
+            {
+                MessageBox.Show("Parent container tidak ditemukan.");
+            }
         }
+
 
         // Event handler untuk update data
         private void OnUserDataUpdated(object sender, UserDataEventArgs e)
         {
+            // Update data pada AccountUserControl
             LoadUserData(e.Name, e.Email, e.Phone, e.Address, e.ImageLocation);
+
+            // Tampilkan kembali AccountUserControl setelah pembaruan
             this.Show();
         }
+
 
         private void label15_Click(object sender, EventArgs e)
         {
@@ -101,6 +120,11 @@ namespace WinFormsApp1
         }
 
         private void lblNama_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnChat_Click(object sender, EventArgs e)
         {
 
         }
