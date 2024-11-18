@@ -65,6 +65,7 @@ namespace WinFormsApp1
             transactionHistorySeller1.Hide();
             homeSellerUserControl1.Show();
             homeSellerUserControl1.BringToFront();
+            homeSellerUserControl1.LoadProductsFromDatabase();
         }
 
         // Click event for "Add Product" button

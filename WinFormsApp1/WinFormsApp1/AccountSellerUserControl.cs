@@ -16,5 +16,12 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
+        private void btnPlus2_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new();
+            loginForm.Show();
+            this.ParentForm.Hide();
+        }
     }
 }

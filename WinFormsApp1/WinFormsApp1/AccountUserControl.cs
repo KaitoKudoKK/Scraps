@@ -59,7 +59,7 @@ namespace WinFormsApp1
             // Buka LoginForm dan tutup BuyerForm
             LoginForm loginForm = new();
             loginForm.Show();
-            this.Hide(); // Menyembunyikan form login setelah berhasil login
+            this.ParentForm.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)

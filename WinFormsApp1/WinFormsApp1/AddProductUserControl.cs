@@ -1,5 +1,6 @@
 ﻿using Npgsql;
 using System;
+using System.Configuration;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
@@ -9,19 +10,21 @@ namespace WinFormsApp1
     public partial class AddProductUserControl : UserControl
     {
         private string sellerID;
+        private Image defaultProductImage; // Menyimpan image default
 
         // Constructor with sellerID parameter
         public AddProductUserControl(string sellerID)
         {
             InitializeComponent();
             this.sellerID = sellerID;  // Store the sellerID as a string
+            defaultProductImage = pbProductImage.Image;
         }
 
         private void pbProductImage_Click(object sender, EventArgs e)
         {
             // Open the file dialog to select an image
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Image Files|.jpg;.jpeg;*.png;";
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;";
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 // Display the selected image in the PictureBox
@@ -57,7 +60,7 @@ namespace WinFormsApp1
                 }
             }
 
-            using (NpgsqlConnection conn = new NpgsqlConnection("Host=localhost;Port=5432;Username=postgres;Password=qwerty123;Database=scraps"))
+            using (NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["AivenScrapsDB"].ConnectionString))
             {
                 try
                 {
@@ -105,7 +108,7 @@ namespace WinFormsApp1
             tbDurasiPakaiProduk.Clear();
             tbKondisiProduk.Clear();
             tbHargaProduk.Clear();
-            pbProductImage.Image = null;
+            pbProductImage.Image = defaultProductImage;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
