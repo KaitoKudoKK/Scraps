@@ -40,6 +40,7 @@ namespace WinFormsApp1
             btnTransaction = new Button();
             label4 = new Label();
             transactionHistoryBuyer1 = new TransactionHistoryBuyer();
+            homeUserControl1 = new HomeUserControl();
             cartUserControl1 = new CartUserControl();
             chatUserControl1 = new ChatUserControl();
             accountUserControl1 = new AccountUserControl();
@@ -210,6 +211,14 @@ namespace WinFormsApp1
             transactionHistoryBuyer1.Size = new Size(1096, 599);
             transactionHistoryBuyer1.TabIndex = 8;
             // 
+            // homeUserControl1
+            // 
+            homeUserControl1.Dock = DockStyle.Fill;
+            homeUserControl1.Location = new Point(0, 0);
+            homeUserControl1.Name = "homeUserControl1";
+            homeUserControl1.Size = new Size(1902, 1033);
+            homeUserControl1.TabIndex = 9;
+            // 
             // cartUserControl1
             // 
             cartUserControl1.Dock = DockStyle.Fill;
@@ -252,6 +261,7 @@ namespace WinFormsApp1
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(panel1);
+            Controls.Add(homeUserControl1);
             Controls.Add(transactionHistoryBuyer1);
             Controls.Add(accountUserControl1);
             Controls.Add(chatUserControl1);
