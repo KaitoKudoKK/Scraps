@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
-using static System.Net.Mime.MediaTypeNames;
+using Npgsql;
 
 namespace WinFormsApp1
 {
@@ -17,6 +14,70 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
+        private void AccountUserControl_Load(object sender, EventArgs e)
+        {
+            // Load data pengguna dari database
+            if (!string.IsNullOrEmpty(LoginForm.currentBuyerID))
+            {
+                LoadUserDataFromDatabase(LoginForm.currentBuyerID);
+            }
+            else
+            {
+                MessageBox.Show("Buyer ID tidak ditemukan. Pastikan Anda login dengan benar.");
+            }
+        }
+
+        private void LoadUserDataFromDatabase(string buyerId)
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["AivenScrapsDB"].ConnectionString;
+            string query = "SELECT buyer_username, buyer_email, buyer_phone, buyer_address, buyer_photo FROM buyer WHERE buyerid = @BuyerId";
+
+            using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@BuyerId", buyerId);
+
+                        using (NpgsqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                lblNama.Text = reader["buyer_username"].ToString();
+                                lblEmail.Text = reader["buyer_email"].ToString();
+                                lblNoHP.Text = reader["buyer_phone"].ToString();
+                                lblAlamat.Text = reader["buyer_address"].ToString();
+
+                                byte[] photo = reader["buyer_photo"] as byte[];
+                                if (photo != null && photo.Length > 0)
+                                {
+                                    using (MemoryStream ms = new MemoryStream(photo))
+                                    {
+                                        pictureBox1.Image = Image.FromStream(ms);
+                                    }
+                                }
+                                else
+                                {
+                                    pictureBox1.Image = null; // Kosongkan jika tidak ada gambar
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Data pengguna tidak ditemukan.");
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Terjadi kesalahan saat memuat data pengguna: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
         public void LoadUserData(string name, string email, string phone, string address, string imageLocation = "")
         {
             lblNama.Text = name;
@@ -24,59 +85,39 @@ namespace WinFormsApp1
             lblNoHP.Text = phone;
             lblAlamat.Text = address;
 
-            if (!string.IsNullOrEmpty(imageLocation) && System.IO.File.Exists(imageLocation))
+            if (!string.IsNullOrEmpty(imageLocation) && File.Exists(imageLocation))
             {
                 pictureBox1.ImageLocation = imageLocation;
-                pictureBox1.Load(); // Muat ulang gambar secara eksplisit
+                pictureBox1.Load();
             }
             else
             {
-                pictureBox1.Image = null; // Kosongkan jika tidak ada jalur yang valid
+                pictureBox1.Image = null;
             }
-        }
-        private void AccountUserControl_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnPlus2_Paint(object sender, PaintEventArgs e)
-        {
-            System.Drawing.Drawing2D.GraphicsPath buttonPath = new();
-            // Membuat button berbentuk lingkaran
-            buttonPath.AddEllipse(0, 0, btnPlus2.Width, btnPlus2.Height);
-            btnPlus2.Region = new Region(buttonPath);
-        }
-
-
-
-        private void btnPlus1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnPlus2_Click(object sender, EventArgs e)
         {
             // Buka LoginForm dan tutup BuyerForm
-            LoginForm loginForm = new();
+            LoginForm loginForm = new LoginForm();
             loginForm.Show();
-            this.ParentForm.Hide();
+            this.ParentForm?.Hide();
         }
 
-        // Di AccountUserControl
         private void button1_Click(object sender, EventArgs e)
         {
+            // Buka EditAkunUserControl
             EditAkunUserControl editForm = new EditAkunUserControl(lblNama.Text, lblEmail.Text, lblNoHP.Text, lblAlamat.Text, pictureBox1.ImageLocation);
 
-            // Subscribe ke event untuk mendapatkan data terbaru
+            // Subscribe ke event untuk update data
             editForm.UserDataUpdated += OnUserDataUpdated;
 
-            // Tambahkan EditAkunUserControl ke container
             if (this.Parent != null)
             {
                 this.Parent.Controls.Add(editForm);
-                editForm.Dock = DockStyle.Fill;  // Memastikan editForm mengisi area container
-                editForm.BringToFront();         // Pastikan editForm terlihat di depan
-                this.Hide();                     // Menyembunyikan AccountUserControl
+                editForm.Dock = DockStyle.Fill;
+                editForm.BringToFront();
+                this.Hide();
             }
             else
             {
@@ -84,49 +125,13 @@ namespace WinFormsApp1
             }
         }
 
-
-        // Event handler untuk update data
         private void OnUserDataUpdated(object sender, UserDataEventArgs e)
         {
-            // Update data pada AccountUserControl
+            // Update data di AccountUserControl
             LoadUserData(e.Name, e.Email, e.Phone, e.Address, e.ImageLocation);
 
-            // Tampilkan kembali AccountUserControl setelah pembaruan
+            // Tampilkan kembali AccountUserControl
             this.Show();
-        }
-
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-            // Buka EditAkunUserControl untuk mengubah gambar
-            EditAkunUserControl editForm = new EditAkunUserControl(lblNama.Text, lblEmail.Text, lblNoHP.Text, lblAlamat.Text, pictureBox1.ImageLocation);
-
-            // Subscribe ke event untuk mendapatkan data terbaru
-            editForm.UserDataUpdated += OnUserDataUpdated;
-
-            this.Parent.Controls.Add(editForm);
-            this.Hide(); // Sembunyikan AccountUserControl sementara
-            editForm.Show(); // Tampilkan EditAkunUserControl untuk edit gambar
-        }
-
-        private void lblNama_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnChat_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

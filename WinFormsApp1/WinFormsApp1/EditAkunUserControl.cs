@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+using System.Configuration;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
-using System.Xml.Linq;
+using Npgsql;
 
 namespace WinFormsApp1
 {
@@ -26,81 +22,102 @@ namespace WinFormsApp1
             this.imageLocation = imageLocation;
         }
 
-        private void AkunuserControl_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnChat_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
-            // Pastikan image1 berisi jalur gambar yang valid
+            // Simpan data ke database
+            SaveUserData();
+
+            // Buat event untuk memperbarui kontrol lain
             var updatedEventArgs = new UserDataEventArgs(
                 txtName.Text,
                 txtEmail.Text,
                 txtNoHP.Text,
                 txtAlamat.Text,
-                image1.ImageLocation // Pastikan ini memuat jalur terbaru
+                image1.ImageLocation
             );
 
-            // Panggil event dengan data terbaru
             UserDataUpdated?.Invoke(this, updatedEventArgs);
 
-            // Kembali ke AccountUserControl dan sembunyikan EditAkunUserControl
-            var accountUserControl = this.Parent.Controls["AccountUserControl"] as AccountUserControl;
+            // Kembali ke AccountUserControl
+            var accountUserControl = this.Parent.Controls.OfType<AccountUserControl>().FirstOrDefault();
             if (accountUserControl != null)
             {
-                accountUserControl.Show();  // Menampilkan AccountUserControl lagi
+                accountUserControl.Show();
             }
 
-            this.Hide(); // Menyembunyikan EditAkunUserControl
+            this.Hide();
         }
 
+        private void SaveUserData()
+        {
+            // Periksa apakah ID pengguna yang sedang login tersedia
+            if (string.IsNullOrEmpty(LoginForm.currentBuyerID))
+            {
+                MessageBox.Show("Buyer ID tidak ditemukan. Login ulang untuk melanjutkan.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Koneksi ke database
+            string connectionString = ConfigurationManager.ConnectionStrings["AivenScrapsDB"].ConnectionString;
+            string query = "UPDATE buyer SET buyer_username = @Name, buyer_email = @Email, buyer_phone = @Phone, buyer_address = @Address, buyer_photo = @Photo WHERE buyerid = @BuyerId";
+
+            using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Name", txtName.Text);
+                        command.Parameters.AddWithValue("@Email", txtEmail.Text);
+                        command.Parameters.AddWithValue("@Phone", txtNoHP.Text);
+                        command.Parameters.AddWithValue("@Address", txtAlamat.Text);
+
+                        // Konversi gambar menjadi byte array
+                        byte[] photo = null;
+                        if (!string.IsNullOrEmpty(image1.ImageLocation))
+                        {
+                            photo = File.ReadAllBytes(image1.ImageLocation);
+                        }
+                        else
+                        {
+                            photo = new byte[0]; // Jika tidak ada gambar
+                        }
+
+                        command.Parameters.AddWithValue("@Photo", photo);
+                        command.Parameters.AddWithValue("@BuyerId", LoginForm.currentBuyerID);
+
+                        command.ExecuteNonQuery();
+                        MessageBox.Show("Data berhasil diperbarui.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Terjadi kesalahan saat menyimpan data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
 
         private void btnChat_Click_3(object sender, EventArgs e)
         {
             try
             {
-                // Membuat dan mengatur OpenFileDialog
-                OpenFileDialog dialog = new OpenFileDialog();
-                dialog.Filter = "JPG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|All Files (*.*)|*.*";
-                dialog.Title = "Select an Image File";
+                OpenFileDialog dialog = new OpenFileDialog
+                {
+                    Filter = "JPG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|All Files (*.*)|*.*",
+                    Title = "Select an Image File"
+                };
 
-                // Menampilkan dialog dan memeriksa apakah pengguna memilih file
                 if (dialog.ShowDialog() == DialogResult.OK)
                 {
-                    // Mengambil lokasi file yang dipilih
-                    String imageLocation = dialog.FileName;
-
-                    // Menampilkan gambar pada PictureBox
+                    imageLocation = dialog.FileName;
                     image1.ImageLocation = imageLocation;
                 }
             }
             catch (Exception ex)
             {
-                // Menampilkan pesan error jika ada kesalahan
                 MessageBox.Show("An Error Occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void txtName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
-

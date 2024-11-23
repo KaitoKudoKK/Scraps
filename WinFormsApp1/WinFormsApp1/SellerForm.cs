@@ -13,6 +13,10 @@ namespace WinFormsApp1
 
         private void SellerForm_Load(object sender, EventArgs e)
         {
+            AccountSellerUserControl accountSellerUserControl = new AccountSellerUserControl();
+            this.Controls.Add(accountSellerUserControl);
+            accountSellerUserControl.Dock = DockStyle.Fill;
+
             // Set button colors to transparent
             btnAccount.BackColor = Color.FromArgb(0, 0, 0, 0);
             btnAdd.BackColor = Color.FromArgb(0, 0, 0, 0);
