@@ -133,7 +133,10 @@ namespace WinFormsApp1
             // Buka LoginForm dan tutup BuyerForm
             LoginForm loginForm = new();
             loginForm.Show();
-            this.ParentForm.Hide();
+            if (ParentForm != null)
+            {
+                this.ParentForm.Hide();
+            }
         }
 
         private void lblNama_Click(object sender, EventArgs e)

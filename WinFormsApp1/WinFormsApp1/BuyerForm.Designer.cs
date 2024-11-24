@@ -32,17 +32,12 @@ namespace WinFormsApp1
             btnHome = new Button();
             label1 = new Label();
             btnCart = new Button();
-            label2 = new Label();
-            btnChat = new Button();
             label3 = new Label();
             btnAccount = new Button();
             panel1 = new Panel();
-            btnTransaction = new Button();
             label4 = new Label();
-            transactionHistoryBuyer1 = new TransactionHistoryBuyer();
             homeUserControl1 = new HomeUserControl();
             cartUserControl1 = new CartUserControl();
-            chatUserControl1 = new ChatUserControl();
             accountUserControl1 = new AccountUserControl();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -58,10 +53,10 @@ namespace WinFormsApp1
             btnHome.FlatAppearance.MouseOverBackColor = Color.LightGray;
             btnHome.FlatStyle = FlatStyle.Flat;
             btnHome.Font = new Font("Microsoft Sans Serif", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnHome.Location = new Point(41, 0);
-            btnHome.Margin = new Padding(2, 2, 2, 2);
+            btnHome.Location = new Point(51, 0);
+            btnHome.Margin = new Padding(2);
             btnHome.Name = "btnHome";
-            btnHome.Size = new Size(167, 69);
+            btnHome.Size = new Size(209, 86);
             btnHome.TabIndex = 0;
             btnHome.Text = "Home";
             btnHome.UseVisualStyleBackColor = false;
@@ -71,7 +66,7 @@ namespace WinFormsApp1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
-            label1.Location = new Point(180, 16);
+            label1.Location = new Point(225, 20);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(85, 37);
@@ -89,51 +84,20 @@ namespace WinFormsApp1
             btnCart.FlatAppearance.MouseOverBackColor = Color.LightGray;
             btnCart.FlatStyle = FlatStyle.Flat;
             btnCart.Font = new Font("Microsoft Sans Serif", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCart.Location = new Point(213, 0);
-            btnCart.Margin = new Padding(2, 2, 2, 2);
+            btnCart.Location = new Point(271, 0);
+            btnCart.Margin = new Padding(2);
             btnCart.Name = "btnCart";
-            btnCart.Size = new Size(120, 69);
+            btnCart.Size = new Size(150, 86);
             btnCart.TabIndex = 2;
             btnCart.Text = "Cart";
             btnCart.UseVisualStyleBackColor = false;
             btnCart.Click += btnCart_Click;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
-            label2.Location = new Point(303, 16);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(85, 37);
-            label2.TabIndex = 3;
-            label2.Text = "   |   ";
-            // 
-            // btnChat
-            // 
-            btnChat.BackColor = Color.White;
-            btnChat.BackgroundImageLayout = ImageLayout.None;
-            btnChat.Cursor = Cursors.Hand;
-            btnChat.FlatAppearance.BorderColor = Color.White;
-            btnChat.FlatAppearance.BorderSize = 0;
-            btnChat.FlatAppearance.MouseDownBackColor = Color.DarkGray;
-            btnChat.FlatAppearance.MouseOverBackColor = Color.LightGray;
-            btnChat.FlatStyle = FlatStyle.Flat;
-            btnChat.Font = new Font("Microsoft Sans Serif", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnChat.Location = new Point(338, 0);
-            btnChat.Margin = new Padding(2, 2, 2, 2);
-            btnChat.Name = "btnChat";
-            btnChat.Size = new Size(125, 69);
-            btnChat.TabIndex = 4;
-            btnChat.Text = "Chat";
-            btnChat.UseVisualStyleBackColor = false;
-            btnChat.Click += btnChat_Click;
-            // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
-            label3.Location = new Point(434, 16);
+            label3.Location = new Point(382, 20);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
             label3.Size = new Size(85, 37);
@@ -151,10 +115,10 @@ namespace WinFormsApp1
             btnAccount.FlatAppearance.MouseOverBackColor = Color.LightGray;
             btnAccount.FlatStyle = FlatStyle.Flat;
             btnAccount.Font = new Font("Microsoft Sans Serif", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAccount.Location = new Point(468, 0);
-            btnAccount.Margin = new Padding(2, 2, 2, 2);
+            btnAccount.Location = new Point(429, 0);
+            btnAccount.Margin = new Padding(2);
             btnAccount.Name = "btnAccount";
-            btnAccount.Size = new Size(172, 69);
+            btnAccount.Size = new Size(215, 86);
             btnAccount.TabIndex = 6;
             btnAccount.Text = "Account";
             btnAccount.UseVisualStyleBackColor = false;
@@ -162,115 +126,72 @@ namespace WinFormsApp1
             // 
             // panel1
             // 
-            panel1.Controls.Add(btnTransaction);
             panel1.Controls.Add(label4);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(2, 2, 2, 2);
+            panel1.Margin = new Padding(2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1096, 69);
+            panel1.Size = new Size(1920, 86);
             panel1.TabIndex = 7;
-            // 
-            // btnTransaction
-            // 
-            btnTransaction.BackColor = Color.White;
-            btnTransaction.BackgroundImageLayout = ImageLayout.None;
-            btnTransaction.Cursor = Cursors.Hand;
-            btnTransaction.FlatAppearance.BorderColor = Color.White;
-            btnTransaction.FlatAppearance.BorderSize = 0;
-            btnTransaction.FlatAppearance.MouseDownBackColor = Color.DarkGray;
-            btnTransaction.FlatAppearance.MouseOverBackColor = Color.LightGray;
-            btnTransaction.FlatStyle = FlatStyle.Flat;
-            btnTransaction.Font = new Font("Microsoft Sans Serif", 19.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnTransaction.Location = new Point(647, -1);
-            btnTransaction.Margin = new Padding(2, 2, 2, 2);
-            btnTransaction.Name = "btnTransaction";
-            btnTransaction.Size = new Size(261, 69);
-            btnTransaction.TabIndex = 12;
-            btnTransaction.Text = "Transaction History";
-            btnTransaction.UseVisualStyleBackColor = false;
-            btnTransaction.Click += btnTransaction_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Bold, GraphicsUnit.Pixel, 0);
-            label4.Location = new Point(614, 15);
+            label4.Location = new Point(608, 19);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
             label4.Size = new Size(85, 37);
             label4.TabIndex = 11;
             label4.Text = "   |   ";
             // 
-            // transactionHistoryBuyer1
+            // cartUserControl1
             // 
-            transactionHistoryBuyer1.Dock = DockStyle.Fill;
-            transactionHistoryBuyer1.Location = new Point(0, 0);
-            transactionHistoryBuyer1.Margin = new Padding(2, 2, 2, 2);
-            transactionHistoryBuyer1.Name = "transactionHistoryBuyer1";
-            transactionHistoryBuyer1.Size = new Size(1096, 599);
-            transactionHistoryBuyer1.TabIndex = 8;
+            cartUserControl1.Dock = DockStyle.Fill;
+            cartUserControl1.Location = new Point(0, 86);
+            cartUserControl1.Margin = new Padding(2);
+            cartUserControl1.Name = "cartUserControl1";
+            cartUserControl1.Size = new Size(1920, 947);
+            cartUserControl1.TabIndex = 10;
             // 
             // homeUserControl1
             // 
             homeUserControl1.Dock = DockStyle.Fill;
             homeUserControl1.Location = new Point(0, 0);
             homeUserControl1.Name = "homeUserControl1";
-            homeUserControl1.Size = new Size(1902, 1033);
+            homeUserControl1.Size = new Size(1920, 1033);
             homeUserControl1.TabIndex = 9;
-            // 
-            // cartUserControl1
-            // 
-            cartUserControl1.Dock = DockStyle.Fill;
-            cartUserControl1.Location = new Point(0, 0);
-            cartUserControl1.Margin = new Padding(2, 2, 2, 2);
-            cartUserControl1.Name = "cartUserControl1";
-            cartUserControl1.Size = new Size(1096, 599);
-            cartUserControl1.TabIndex = 10;
-            // 
-            // chatUserControl1
-            // 
-            chatUserControl1.Dock = DockStyle.Fill;
-            chatUserControl1.Location = new Point(0, 0);
-            chatUserControl1.Margin = new Padding(2, 2, 2, 2);
-            chatUserControl1.Name = "chatUserControl1";
-            chatUserControl1.Size = new Size(1096, 599);
-            chatUserControl1.TabIndex = 11;
-            // 
+            //  
             // accountUserControl1
             // 
             accountUserControl1.AllowDrop = true;
             accountUserControl1.Dock = DockStyle.Fill;
-            accountUserControl1.Location = new Point(0, 0);
-            accountUserControl1.Margin = new Padding(2, 2, 2, 2);
+            accountUserControl1.Location = new Point(0, 86);
+            accountUserControl1.Margin = new Padding(2);
             accountUserControl1.Name = "accountUserControl1";
-            accountUserControl1.Size = new Size(1096, 599);
+            accountUserControl1.Size = new Size(1920, 947);
             accountUserControl1.TabIndex = 12;
             // 
             // BuyerForm
             // 
-            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleDimensions = new SizeF(120F, 120F);
             AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.White;
-            ClientSize = new Size(1096, 599);
+            ClientSize = new Size(1920, 1033);
             Controls.Add(btnHome);
             Controls.Add(btnAccount);
-            Controls.Add(btnChat);
             Controls.Add(btnCart);
             Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(panel1);
             Controls.Add(homeUserControl1);
-            Controls.Add(transactionHistoryBuyer1);
-            Controls.Add(accountUserControl1);
-            Controls.Add(chatUserControl1);
             Controls.Add(cartUserControl1);
+            Controls.Add(accountUserControl1);
+            Controls.Add(panel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             KeyPreview = true;
-            Margin = new Padding(2, 2, 2, 2);
-            MaximumSize = new Size(1539, 872);
-            MinimumSize = new Size(515, 296);
+            Margin = new Padding(2);
+            MaximumSize = new Size(1920, 1080);
+            MinimumSize = new Size(639, 358);
             Name = "BuyerForm";
             Text = "Buyer";
             FormClosed += BuyerForm_FormClosed;
@@ -287,17 +208,12 @@ namespace WinFormsApp1
         private Button btnHome;
         private Label label1;
         private Button btnCart;
-        private Label label2;
-        private Button btnChat;
         private Label label3;
         private Button btnAccount;
         private Panel panel1;
         private HomeUserControl homeUserControl1;
         private CartUserControl cartUserControl1;
-        private ChatUserControl chatUserControl1;
         private AccountUserControl accountUserControl1;
-        private Button btnTransaction;
         private Label label4;
-        private TransactionHistoryBuyer transactionHistoryBuyer1;
     }
 }

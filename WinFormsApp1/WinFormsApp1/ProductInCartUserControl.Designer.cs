@@ -29,38 +29,41 @@
         private void InitializeComponent()
         {
             lblSubtotalProduk = new Label();
-            numericUpDown1 = new NumericUpDown();
+            nUDQuantity = new NumericUpDown();
             lblHarga = new Label();
             pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            lblNamaProduk = new Label();
+            panel1 = new Panel();
+            ((System.ComponentModel.ISupportInitialize)nUDQuantity).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // lblSubtotalProduk
             // 
             lblSubtotalProduk.AutoSize = true;
             lblSubtotalProduk.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            lblSubtotalProduk.Location = new Point(918, 69);
+            lblSubtotalProduk.Location = new Point(1172, 79);
             lblSubtotalProduk.Name = "lblSubtotalProduk";
             lblSubtotalProduk.Size = new Size(106, 29);
             lblSubtotalProduk.TabIndex = 20;
             lblSubtotalProduk.Text = "Subtotal";
             // 
-            // numericUpDown1
+            // nUDQuantity
             // 
-            numericUpDown1.Location = new Point(688, 78);
-            numericUpDown1.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(47, 27);
-            numericUpDown1.TabIndex = 19;
-            numericUpDown1.Value = new decimal(new int[] { 1, 0, 0, 0 });
-            numericUpDown1.ValueChanged += numericUpDown1_ValueChanged;
+            nUDQuantity.Location = new Point(958, 81);
+            nUDQuantity.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            nUDQuantity.Name = "nUDQuantity";
+            nUDQuantity.Size = new Size(47, 27);
+            nUDQuantity.TabIndex = 19;
+            nUDQuantity.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            nUDQuantity.ValueChanged += nUDQuantity_ValueChanged;
             // 
             // lblHarga
             // 
             lblHarga.AutoSize = true;
             lblHarga.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            lblHarga.Location = new Point(334, 72);
+            lblHarga.Location = new Point(674, 79);
             lblHarga.Name = "lblHarga";
             lblHarga.Size = new Size(81, 29);
             lblHarga.TabIndex = 18;
@@ -68,33 +71,55 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(-2, 0);
+            pictureBox1.Location = new Point(26, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(202, 181);
             pictureBox1.TabIndex = 17;
             pictureBox1.TabStop = false;
             // 
+            // lblNamaProduk
+            // 
+            lblNamaProduk.AutoSize = true;
+            lblNamaProduk.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
+            lblNamaProduk.Location = new Point(314, 79);
+            lblNamaProduk.Name = "lblNamaProduk";
+            lblNamaProduk.Size = new Size(168, 29);
+            lblNamaProduk.TabIndex = 21;
+            lblNamaProduk.Text = "Nama Produk";
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(lblSubtotalProduk);
+            panel1.Controls.Add(lblNamaProduk);
+            panel1.Controls.Add(nUDQuantity);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(lblHarga);
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1378, 208);
+            panel1.TabIndex = 22;
+            // 
             // ProductInCartUserControl
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(lblSubtotalProduk);
-            Controls.Add(numericUpDown1);
-            Controls.Add(lblHarga);
-            Controls.Add(pictureBox1);
+            Controls.Add(panel1);
             Name = "ProductInCartUserControl";
-            Size = new Size(1056, 200);
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            Size = new Size(1378, 227);
+            ((System.ComponentModel.ISupportInitialize)nUDQuantity).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private Label lblSubtotalProduk;
-        private NumericUpDown numericUpDown1;
+        private NumericUpDown nUDQuantity;
         private Label lblHarga;
         private PictureBox pictureBox1;
+        private Label lblNamaProduk;
+        private Panel panel1;
     }
 }

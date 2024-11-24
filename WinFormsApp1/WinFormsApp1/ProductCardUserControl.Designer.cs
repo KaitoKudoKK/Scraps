@@ -113,7 +113,6 @@
         private Panel panel1;
         private Button btnAdd;
         private Label lblProductDetails;
-        private PictureBox pictureBox1;
         private Label lblProductName;
         private PictureBox pictureBoxProduct;
     }

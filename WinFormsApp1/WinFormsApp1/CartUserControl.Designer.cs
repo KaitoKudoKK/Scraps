@@ -48,6 +48,7 @@
             radioButton2 = new RadioButton();
             flowLayoutPanel1 = new FlowLayoutPanel();
             productInCartUserControl1 = new ProductInCartUserControl();
+            label6 = new Label();
             flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -75,7 +76,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label2.Location = new Point(431, 108);
+            label2.Location = new Point(760, 108);
             label2.Name = "label2";
             label2.Size = new Size(105, 37);
             label2.TabIndex = 7;
@@ -85,7 +86,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label4.Location = new Point(726, 108);
+            label4.Location = new Point(1003, 108);
             label4.Name = "label4";
             label4.Size = new Size(151, 37);
             label4.TabIndex = 8;
@@ -95,7 +96,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
-            label5.Location = new Point(1007, 108);
+            label5.Location = new Point(1261, 108);
             label5.Name = "label5";
             label5.Size = new Size(135, 37);
             label5.TabIndex = 9;
@@ -244,7 +245,7 @@
             flowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanel1.Location = new Point(95, 179);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(1065, 368);
+            flowLayoutPanel1.Size = new Size(1381, 368);
             flowLayoutPanel1.TabIndex = 30;
             flowLayoutPanel1.WrapContents = false;
             // 
@@ -253,15 +254,26 @@
             productInCartUserControl1.Location = new Point(3, 3);
             productInCartUserControl1.Name = "productInCartUserControl1";
             productInCartUserControl1.ProductImage = null;
-            productInCartUserControl1.ProductPrice = new double();
+            productInCartUserControl1.ProductPrice = 0D;
             productInCartUserControl1.Quantity = 1;
-            productInCartUserControl1.Size = new Size(1056, 200);
+            productInCartUserControl1.Size = new Size(1378, 227);
             productInCartUserControl1.TabIndex = 0;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Microsoft Sans Serif", 32F, FontStyle.Regular, GraphicsUnit.Pixel, 0);
+            label6.Location = new Point(386, 108);
+            label6.Name = "label6";
+            label6.Size = new Size(215, 37);
+            label6.TabIndex = 31;
+            label6.Text = "Nama Produk";
             // 
             // CartUserControl
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(label6);
             Controls.Add(radioButton2);
             Controls.Add(radioButton1);
             Controls.Add(label11);
@@ -283,6 +295,7 @@
             Controls.Add(flowLayoutPanel1);
             Name = "CartUserControl";
             Size = new Size(1902, 908);
+            Load += CartUserControl_Load;
             flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -310,5 +323,6 @@
         private RadioButton radioButton2;
         private FlowLayoutPanel flowLayoutPanel1;
         private ProductInCartUserControl productInCartUserControl1;
+        private Label label6;
     }
 }
