@@ -46,7 +46,6 @@
             // 
             // productCardUserControl1
             // 
-            productCardUserControl1.CartControl = null;
             productCardUserControl1.Location = new Point(3, 2);
             productCardUserControl1.Margin = new Padding(3, 2, 3, 2);
             productCardUserControl1.Name = "productCardUserControl1";

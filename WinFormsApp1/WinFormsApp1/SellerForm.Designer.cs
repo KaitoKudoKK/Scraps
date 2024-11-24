@@ -91,7 +91,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1902, 86);
+            panel1.Size = new Size(1920, 86);
             panel1.TabIndex = 15;
             // 
             // btnAdd
@@ -147,7 +147,7 @@
             homeSellerUserControl1.Dock = DockStyle.Fill;
             homeSellerUserControl1.Location = new Point(0, 86);
             homeSellerUserControl1.Name = "homeSellerUserControl1";
-            homeSellerUserControl1.Size = new Size(1902, 947);
+            homeSellerUserControl1.Size = new Size(1920, 947);
             homeSellerUserControl1.TabIndex = 16;
             // 
             // accountSellerUserControl1
@@ -155,7 +155,7 @@
             accountSellerUserControl1.Dock = DockStyle.Fill;
             accountSellerUserControl1.Location = new Point(0, 86);
             accountSellerUserControl1.Name = "accountSellerUserControl1";
-            accountSellerUserControl1.Size = new Size(1902, 947);
+            accountSellerUserControl1.Size = new Size(1920, 947);
             accountSellerUserControl1.TabIndex = 18;
             // 
             // addProductUserControl1
@@ -164,14 +164,14 @@
             addProductUserControl1.ForeColor = Color.Black;
             addProductUserControl1.Location = new Point(0, 86);
             addProductUserControl1.Name = "addProductUserControl1";
-            addProductUserControl1.Size = new Size(1902, 947);
+            addProductUserControl1.Size = new Size(1920, 947);
             addProductUserControl1.TabIndex = 17;
             // 
             // SellerForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1902, 1033);
+            ClientSize = new Size(1920, 1033);
             Controls.Add(homeSellerUserControl1);
             Controls.Add(accountSellerUserControl1);
             Controls.Add(addProductUserControl1);

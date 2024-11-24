@@ -13,9 +13,6 @@
     <Compile Update="CartUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="ChatSellerUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="EditAkunSellerUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>

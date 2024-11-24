@@ -7,7 +7,7 @@ namespace WinFormsApp1
     public partial class ProductCardUserControl : UserControl
     {
         // Reference ke CartUserControl untuk menambahkan produk ke keranjang
-        public CartUserControl CartControl { get; set; }
+        public CartUserControl CartControlPC { get ; set; }
 
         public ProductCardUserControl()
         {
@@ -31,10 +31,10 @@ namespace WinFormsApp1
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (CartControl != null)
+            if (CartControlPC != null)
             {
                 // Menambahkan produk ke keranjang
-                CartControl.AddProductToCart(LoginForm.currentBuyerID, ProductId, ProductName, ProductImage, ProductPrice);
+                CartControlPC.AddProductToCart(LoginForm.currentBuyerID, ProductId, ProductName, ProductImage, ProductPrice);
                 MessageBox.Show($"{ProductName} berhasil ditambahkan ke keranjang!");
             }
             else
