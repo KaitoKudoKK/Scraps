@@ -69,7 +69,7 @@
             Controls.Add(label1);
             Controls.Add(flowLayoutPanelProducts);
             Name = "HomeUserControl";
-            Size = new Size(1902, 908);
+            Size = new Size(1920, 908);
             Load += HomeUserControl_Load;
             flowLayoutPanelProducts.ResumeLayout(false);
             ResumeLayout(false);

@@ -294,7 +294,7 @@
             Controls.Add(label1);
             Controls.Add(flowLayoutPanel1);
             Name = "CartUserControl";
-            Size = new Size(1902, 908);
+            Size = new Size(1920, 908);
             Load += CartUserControl_Load;
             flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);

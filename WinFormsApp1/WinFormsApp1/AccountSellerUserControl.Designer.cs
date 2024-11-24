@@ -313,7 +313,7 @@
             Controls.Add(label1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "AccountSellerUserControl";
-            Size = new Size(1902, 908);
+            Size = new Size(1920, 908);
             Load += AccountSellerUserControl_Load;
             panel4.ResumeLayout(false);
             panel4.PerformLayout();

@@ -181,7 +181,7 @@ namespace WinFormsApp1
             AutoScroll = true;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            ClientSize = new Size(1902, 1033);
+            ClientSize = new Size(1920, 1080);
             Controls.Add(tbUsername);
             Controls.Add(btnLogin);
             Controls.Add(tbPassword);
