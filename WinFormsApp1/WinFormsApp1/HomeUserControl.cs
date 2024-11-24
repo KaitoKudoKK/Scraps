@@ -1,15 +1,5 @@
 ﻿using Npgsql;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Configuration;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace WinFormsApp1
 {
@@ -32,7 +22,7 @@ namespace WinFormsApp1
             {
                 try
                 {
-                    
+
                     conn.Open();
                     string query = "SELECT p.productid, p.product_name, p.product_size, p.product_duration, p.product_condition, p.product_price, p.product_image, s.seller_username " +
                                    "FROM product p " +
