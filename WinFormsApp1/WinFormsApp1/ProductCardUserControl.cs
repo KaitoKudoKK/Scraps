@@ -18,7 +18,8 @@ namespace WinFormsApp1
         public void LoadProductData(string productId, string productName, Image productImage, double productPrice,
                                     string productSize, string productDuration, string productCondition, string sellerName)
         {
-            ProductName = productName;
+            ProductId = productId;
+            ProductNamePC = productName;
             ProductImage = productImage;
             ProductPrice = productPrice;
             ProductDetails = $"Harga: Rp{productPrice:N0}\n" +
@@ -33,7 +34,7 @@ namespace WinFormsApp1
             if (CartControl != null)
             {
                 // Menambahkan produk ke keranjang
-                CartControl.AddProductToCart("buyerId", "productId", ProductName, ProductImage, ProductPrice);
+                CartControl.AddProductToCart(LoginForm.currentBuyerID, ProductId, ProductName, ProductImage, ProductPrice);
                 MessageBox.Show($"{ProductName} berhasil ditambahkan ke keranjang!");
             }
             else
@@ -56,7 +57,9 @@ namespace WinFormsApp1
             lblProductName.BackColor = Color.Transparent;
         }
 
-        public string ProductName
+        public string ProductId { get; set; }
+
+        public string ProductNamePC
         {
             get => lblProductName.Text;
             set => lblProductName.Text = value;

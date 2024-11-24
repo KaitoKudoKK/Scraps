@@ -101,5 +101,26 @@ namespace WinFormsApp1
         {
             Application.Exit();
         }
+
+        private void LoginForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                this.Close();
+            }
+            if (e.KeyCode == Keys.F11)
+            {
+                if (this.WindowState == FormWindowState.Maximized)
+                {
+                    this.WindowState = FormWindowState.Normal;
+                    this.FormBorderStyle = FormBorderStyle.Sizable;
+                }
+                else
+                {
+                    this.WindowState = FormWindowState.Maximized;
+                    this.FormBorderStyle = FormBorderStyle.None;
+                }
+            }
+        }
     }
 }

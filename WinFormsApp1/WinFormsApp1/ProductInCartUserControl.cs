@@ -6,7 +6,7 @@ namespace WinFormsApp1
 {
     public partial class ProductInCartUserControl : UserControl
     {
-        public string ProductName { get; set; }
+        public string ProductNameIC { get; set; }
         public double ProductPrice { get; set; }
         public Image ProductImage
         {
@@ -16,8 +16,8 @@ namespace WinFormsApp1
 
         public int Quantity
         {
-            get => (int)numericUpDown1.Value;
-            set => numericUpDown1.Value = value;
+            get => (int)nUDQuantity.Value;
+            set => nUDQuantity.Value = value;
         }
 
         public double Subtotal
@@ -33,7 +33,7 @@ namespace WinFormsApp1
 
         public void LoadProduct(string productName, double productPrice, Image productImage, int quantity = 1)
         {
-            ProductName = productName;
+            ProductNameIC = productName;
             ProductPrice = productPrice;
             ProductImage = productImage;
             Quantity = quantity;
@@ -41,7 +41,7 @@ namespace WinFormsApp1
             Subtotal = ProductPrice * Quantity;
         }
 
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        private void nUDQuantity_ValueChanged(object sender, EventArgs e)
         {
             Subtotal = ProductPrice * Quantity;
         }

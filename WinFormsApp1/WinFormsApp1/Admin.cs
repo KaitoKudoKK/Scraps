@@ -32,7 +32,7 @@ namespace WinFormsApp1
         }
 
         // Optionally, you can add a method to log in as well
-        public void Login(string inputPassword)
+        override public void Login(string inputPassword)
         {
             if (CheckPassword(inputPassword))
             {

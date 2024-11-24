@@ -143,5 +143,10 @@ namespace WinFormsApp1
                 MessageBox.Show($"Error while saving to database: {ex.Message}");
             }
         }
+
+        private void CartUserControl_Load(object sender, EventArgs e)
+        {
+            productInCartUserControl1.Hide();
+        }
     }
 }

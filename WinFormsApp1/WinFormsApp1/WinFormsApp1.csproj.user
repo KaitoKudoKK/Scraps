@@ -10,19 +10,10 @@
     <Compile Update="AddProductUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="BeingProcessedUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="CartUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="ChatSellerUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="ChatUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="CompletedBuyercs.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="EditAkunSellerUserControl.cs">
@@ -40,12 +31,6 @@
     <Compile Update="HomeUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="PesananMasuk.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="PesananSelesai.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="ProductCardUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -60,15 +45,6 @@
     </Compile>
     <Compile Update="SellerForm.cs">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="TransactionHistoryBuyer.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="TransactionHistorySeller.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="TransHistoryUserControl.cs">
-      <SubType>UserControl</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

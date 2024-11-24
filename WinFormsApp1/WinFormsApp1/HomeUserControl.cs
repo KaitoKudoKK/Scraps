@@ -23,7 +23,7 @@ namespace WinFormsApp1
 
         private void HomeUserControl_Load(object sender, EventArgs e)
         {
-           
+            productCardUserControl1.Hide();
         }
 
         private void LoadProductsFromDatabase()
@@ -32,7 +32,7 @@ namespace WinFormsApp1
             {
                 try
                 {
-                    productCardUserControl1.Hide();
+                    
                     conn.Open();
                     string query = "SELECT p.productid, p.product_name, p.product_size, p.product_duration, p.product_condition, p.product_price, p.product_image, s.seller_username " +
                                    "FROM product p " +
