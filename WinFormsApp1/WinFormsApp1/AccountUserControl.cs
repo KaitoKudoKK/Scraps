@@ -22,10 +22,6 @@ namespace WinFormsApp1
             {
                 LoadUserDataFromDatabase(LoginForm.currentBuyerID);
             }
-            else
-            {
-                MessageBox.Show("Buyer ID tidak ditemukan. Pastikan Anda login dengan benar.");
-            }
         }
 
         private void LoadUserDataFromDatabase(string buyerId)

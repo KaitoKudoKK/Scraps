@@ -20,7 +20,7 @@ namespace WinFormsApp1
         public void LoadProductData(string productId, string productName, Image productImage, double productPrice,
                                     string productSize, string productDuration, string productCondition)
         {
-            ProductName = productName;
+            ProductNamePCS = productName;
             ProductImage = productImage;
             ProductDetails = $"Harga: Rp{productPrice:N0}\n" +
                              $"Ukuran: {productSize}\n" +
@@ -34,7 +34,7 @@ namespace WinFormsApp1
             lblProductDetails.BackColor = Color.Transparent;
             lblProductName.BackColor = Color.Transparent;
         }
-        public string ProductName
+        public string ProductNamePCS
         {
             get => lblProductName.Text;
             set => lblProductName.Text = value;

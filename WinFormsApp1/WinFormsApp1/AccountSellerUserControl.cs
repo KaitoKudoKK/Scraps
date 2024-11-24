@@ -22,10 +22,6 @@ namespace WinFormsApp1
             {
                 LoadUserData(LoginForm.currentSellerID);
             }
-            else
-            {
-                MessageBox.Show("Seller ID tidak ditemukan. Pastikan Anda login dengan benar.");
-            }
         }
 
         public void LoadUserData(string sellerId)
